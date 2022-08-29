@@ -4,7 +4,8 @@ interface
 
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
-  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Objects;
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Objects,
+  FMX.Ani;
 
 type
   TForm1 = class(TForm)
@@ -20,11 +21,14 @@ type
     Rectangle6: TRectangle;
     Image4: TImage;
     Text2: TText;
-    Rectangle7: TRectangle;
-    Image5: TImage;
     Rectangle8: TRectangle;
     Image6: TImage;
     Text4: TText;
+    ColorAnimation1: TColorAnimation;
+    ColorAnimation2: TColorAnimation;
+    procedure Image1MouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
+    procedure Rectangle8Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -37,5 +41,16 @@ var
 implementation
 
 {$R *.fmx}
+
+procedure TForm1.Image1MouseDown(Sender: TObject; Button: TMouseButton;
+  Shift: TShiftState; X, Y: Single);
+begin
+  if (Button = TMouseButton.mbLeft) then StartWindowDrag;
+end;
+
+procedure TForm1.Rectangle8Click(Sender: TObject);
+begin
+  application.Terminate;
+end;
 
 end.
