@@ -15,6 +15,16 @@ type
     Rectangle2: TRectangle;
     Rectangle3: TRectangle;
     Text1: TText;
+    Rectangle4: TRectangle;
+    Rectangle5: TRectangle;
+    Rectangle6: TRectangle;
+    Image4: TImage;
+    Text2: TText;
+    Rectangle7: TRectangle;
+    Image5: TImage;
+    Rectangle8: TRectangle;
+    Image6: TImage;
+    Text4: TText;
   private
     { Private declarations }
   public
