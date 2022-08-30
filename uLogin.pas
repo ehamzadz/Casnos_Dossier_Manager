@@ -21,7 +21,6 @@ type
     Text4: TText;
     ColorAnimation1: TColorAnimation;
     ColorAnimation2: TColorAnimation;
-    StyleBook1: TStyleBook;
     Rectangle10: TRectangle;
     Rectangle1: TRectangle;
     Image2: TImage;
@@ -40,6 +39,7 @@ type
     Image7: TImage;
     FloatAnimation1: TFloatAnimation;
     EditButton1: TEditButton;
+    StyleBook1: TStyleBook;
     procedure Image1MouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle8Click(Sender: TObject);

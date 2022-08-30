@@ -2,9 +2,9 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2022/08/16 17:36:16.000.058,=C:\Users\eHamzaDZ\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/08/29 22:35:01.011,=C:\Users\eHamzaDZ\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/08/29 22:36:12.262,D:\Github\Web App\Inventory manager\uLogin.fmx=C:\Users\eHamzaDZ\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
-    <Transaction>2022/08/29 22:36:12.262,D:\Github\Web App\Inventory manager\uLogin.pas=C:\Users\eHamzaDZ\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/08/29 22:36:21.739,D:\Github\Web App\Inventory manager\inventory.dproj=C:\Users\eHamzaDZ\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/08/29 22:35:01.000.011,=C:\Users\eHamzaDZ\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/08/29 22:36:12.000.262,C:\Users\eHamzaDZ\Documents\Embarcadero\Studio\Projects\Unit1.fmx=D:\Github\Web App\Inventory manager\uLogin.fmx</Transaction>
+    <Transaction>2022/08/29 22:36:12.000.262,C:\Users\eHamzaDZ\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Github\Web App\Inventory manager\uLogin.pas</Transaction>
+    <Transaction>2022/08/29 22:36:21.000.739,C:\Users\eHamzaDZ\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Github\Web App\Inventory manager\inventory.dproj</Transaction>
   </Transactions>
 </BorlandProject>
