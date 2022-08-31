@@ -3434,7 +3434,7 @@ object Form1: TForm1
               Size.Width = 102.000000000000000000
               Size.Height = 35.000000000000000000
               Size.PlatformDefault = False
-              Text = 'Enter'
+              Text = 'Connecter'
               TextSettings.Font.Family = 'Tajawal'
               TextSettings.Font.Size = 16.000000000000000000
               TextSettings.Font.StyleExt = {00050000000000000004000000}
@@ -3457,7 +3457,7 @@ object Form1: TForm1
             Size.Width = 239.000000000000000000
             Size.Height = 35.000000000000000000
             Size.PlatformDefault = False
-            Text = 'Authentication'
+            Text = 'Connectez-vous'
             TextSettings.Font.Family = 'Tajawal'
             TextSettings.Font.Size = 16.000000000000000000
             TextSettings.Font.StyleExt = {00050000000000000004000000}
@@ -3473,7 +3473,7 @@ object Form1: TForm1
             Size.Width = 217.000000000000000000
             Size.Height = 35.000000000000000000
             Size.PlatformDefault = False
-            Text = 'Username:'
+            Text = 'Nom d'#39'Utilisateur:'
             TextSettings.Font.Family = 'Tajawal'
             TextSettings.Font.Size = 14.000000000000000000
             TextSettings.FontColor = xFF353535
@@ -3489,7 +3489,7 @@ object Form1: TForm1
             Size.Width = 217.000000000000000000
             Size.Height = 35.000000000000000000
             Size.PlatformDefault = False
-            Text = 'Password:'
+            Text = 'Mot de passe:'
             TextSettings.Font.Family = 'Tajawal'
             TextSettings.Font.Size = 14.000000000000000000
             TextSettings.FontColor = xFF353535
@@ -6349,7 +6349,7 @@ object Form1: TForm1
             Visible = False
             object FloatAnimation2: TFloatAnimation
               Duration = 3.000000000000000000
-              OnFinish = FloatAnimation1Finish
+              OnFinish = FloatAnimation2Finish
               PropertyName = 'RotationAngle'
               StartValue = 0.000000000000000000
               StopValue = 720.000000000000000000
@@ -6766,7 +6766,7 @@ object Form1: TForm1
             Stroke.Kind = None
             XRadius = 10.000000000000000000
             YRadius = 10.000000000000000000
-            OnClick = Rectangle9Click
+            OnClick = Rectangle20Click
             object Text10: TText
               Align = Center
               HitTest = False
@@ -6821,20 +6821,17 @@ object Form1: TForm1
           end
           object Rectangle21: TRectangle
             Align = Right
-            Cursor = crHandPoint
             Fill.Kind = None
-            Margins.Left = 11.000000000000000000
-            Margins.Right = 11.000000000000000000
+            HitTest = False
             Margins.Bottom = 5.000000000000000000
-            Position.X = 265.000000000000000000
+            Position.X = 247.000000000000000000
             Position.Y = 66.000000000000000000
-            Size.Width = 215.000000000000000000
+            Size.Width = 244.000000000000000000
             Size.Height = 193.000000000000000000
             Size.PlatformDefault = False
-            Stroke.Color = xFFB6B6B6
+            Stroke.Kind = None
             XRadius = 10.000000000000000000
             YRadius = 10.000000000000000000
-            OnClick = Rectangle9Click
             object ColorAnimation7: TColorAnimation
               Duration = 0.200000002980232200
               PropertyName = 'Fill.Color'
@@ -6851,7 +6848,7 @@ object Form1: TForm1
               Margins.Bottom = 15.000000000000000000
               Position.X = 11.000000000000000000
               Position.Y = 35.000000000000000000
-              Size.Width = 193.000000000000000000
+              Size.Width = 222.000000000000000000
               Size.Height = 41.000000000000000000
               Size.PlatformDefault = False
               Stroke.Kind = None
@@ -6861,7 +6858,7 @@ object Form1: TForm1
                 Touch.InteractiveGestures = [LongTap, DoubleTap]
                 Align = Client
                 TabOrder = 0
-                Size.Width = 193.000000000000000000
+                Size.Width = 222.000000000000000000
                 Size.Height = 41.000000000000000000
                 Size.PlatformDefault = False
               end
@@ -6872,7 +6869,7 @@ object Form1: TForm1
               Margins.Left = 11.000000000000000000
               Margins.Right = 11.000000000000000000
               Position.X = 11.000000000000000000
-              Size.Width = 193.000000000000000000
+              Size.Width = 222.000000000000000000
               Size.Height = 35.000000000000000000
               Size.PlatformDefault = False
               Text = 'Nom d'#39'Utilisateur:'
@@ -6889,7 +6886,7 @@ object Form1: TForm1
               Margins.Bottom = 15.000000000000000000
               Position.X = 11.000000000000000000
               Position.Y = 126.000000000000000000
-              Size.Width = 193.000000000000000000
+              Size.Width = 222.000000000000000000
               Size.Height = 41.000000000000000000
               Size.PlatformDefault = False
               Stroke.Kind = None
@@ -6899,9 +6896,21 @@ object Form1: TForm1
                 Touch.InteractiveGestures = [LongTap, DoubleTap]
                 Align = Client
                 TabOrder = 0
-                Size.Width = 193.000000000000000000
+                Password = True
+                Size.Width = 222.000000000000000000
                 Size.Height = 41.000000000000000000
                 Size.PlatformDefault = False
+                object EditButton2: TEditButton
+                  CanFocus = False
+                  Cursor = crHandPoint
+                  Size.Width = 28.000000000000000000
+                  Size.Height = 37.000000000000000000
+                  Size.PlatformDefault = False
+                  StyleLookup = 'passwordeditbutton'
+                  TabOrder = 0
+                  Text = 'passwordeditbutton'
+                  OnClick = EditButton2Click
+                end
               end
             end
             object Text16: TText
@@ -6911,7 +6920,7 @@ object Form1: TForm1
               Margins.Right = 11.000000000000000000
               Position.X = 11.000000000000000000
               Position.Y = 91.000000000000000000
-              Size.Width = 193.000000000000000000
+              Size.Width = 222.000000000000000000
               Size.Height = 35.000000000000000000
               Size.PlatformDefault = False
               Text = 'Mot de passe:'
@@ -6923,20 +6932,16 @@ object Form1: TForm1
           end
           object Rectangle19: TRectangle
             Align = Left
-            Cursor = crHandPoint
             Fill.Kind = None
-            Margins.Left = 11.000000000000000000
-            Margins.Right = 11.000000000000000000
+            HitTest = False
             Margins.Bottom = 5.000000000000000000
-            Position.X = 11.000000000000000000
             Position.Y = 66.000000000000000000
-            Size.Width = 217.000000000000000000
+            Size.Width = 244.000000000000000000
             Size.Height = 193.000000000000000000
             Size.PlatformDefault = False
-            Stroke.Color = xFFB6B6B6
+            Stroke.Kind = None
             XRadius = 10.000000000000000000
             YRadius = 10.000000000000000000
-            OnClick = Rectangle9Click
             object ColorAnimation8: TColorAnimation
               Duration = 0.200000002980232200
               PropertyName = 'Fill.Color'
@@ -6953,7 +6958,7 @@ object Form1: TForm1
               Margins.Bottom = 15.000000000000000000
               Position.X = 11.000000000000000000
               Position.Y = 35.000000000000000000
-              Size.Width = 195.000000000000000000
+              Size.Width = 222.000000000000000000
               Size.Height = 41.000000000000000000
               Size.PlatformDefault = False
               Stroke.Kind = None
@@ -6963,7 +6968,7 @@ object Form1: TForm1
                 Touch.InteractiveGestures = [LongTap, DoubleTap]
                 Align = Client
                 TabOrder = 0
-                Size.Width = 195.000000000000000000
+                Size.Width = 222.000000000000000000
                 Size.Height = 41.000000000000000000
                 Size.PlatformDefault = False
               end
@@ -6974,7 +6979,7 @@ object Form1: TForm1
               Margins.Left = 11.000000000000000000
               Margins.Right = 11.000000000000000000
               Position.X = 11.000000000000000000
-              Size.Width = 195.000000000000000000
+              Size.Width = 222.000000000000000000
               Size.Height = 35.000000000000000000
               Size.PlatformDefault = False
               Text = 'Nom et Pr'#233'nom:'
@@ -6991,7 +6996,7 @@ object Form1: TForm1
               Margins.Bottom = 15.000000000000000000
               Position.X = 11.000000000000000000
               Position.Y = 126.000000000000000000
-              Size.Width = 195.000000000000000000
+              Size.Width = 222.000000000000000000
               Size.Height = 41.000000000000000000
               Size.PlatformDefault = False
               Stroke.Kind = None
@@ -7001,9 +7006,10 @@ object Form1: TForm1
                 Touch.InteractiveGestures = [LongTap, DoubleTap]
                 Align = Client
                 TabOrder = 0
-                Size.Width = 195.000000000000000000
+                Size.Width = 222.000000000000000000
                 Size.Height = 41.000000000000000000
                 Size.PlatformDefault = False
+                KillFocusByReturn = True
               end
             end
             object Text13: TText
@@ -7013,10 +7019,10 @@ object Form1: TForm1
               Margins.Right = 11.000000000000000000
               Position.X = 11.000000000000000000
               Position.Y = 91.000000000000000000
-              Size.Width = 195.000000000000000000
+              Size.Width = 222.000000000000000000
               Size.Height = 35.000000000000000000
               Size.PlatformDefault = False
-              Text = 'Adresse Email:'
+              Text = 'Service:'
               TextSettings.Font.Family = 'Tajawal'
               TextSettings.Font.Size = 14.000000000000000000
               TextSettings.FontColor = xFF353535
