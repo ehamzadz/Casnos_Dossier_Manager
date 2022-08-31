@@ -5,7 +5,7 @@ interface
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Objects,
-  FMX.Ani, FMX.Controls.Presentation, FMX.Edit, FMX.StdCtrls;
+  FMX.Ani, FMX.Controls.Presentation, FMX.Edit, FMX.StdCtrls, FMX.TabControl;
 
 type
   TForm1 = class(TForm)
@@ -40,6 +40,51 @@ type
     FloatAnimation1: TFloatAnimation;
     EditButton1: TEditButton;
     StyleBook1: TStyleBook;
+    Text7: TText;
+    TabControl1: TTabControl;
+    tabLogin: TTabItem;
+    tabRegister: TTabItem;
+    Rectangle11: TRectangle;
+    Image8: TImage;
+    Image9: TImage;
+    Rectangle12: TRectangle;
+    Rectangle13: TRectangle;
+    Rectangle14: TRectangle;
+    Image10: TImage;
+    Text8: TText;
+    ColorAnimation4: TColorAnimation;
+    Rectangle15: TRectangle;
+    Image11: TImage;
+    Text9: TText;
+    ColorAnimation5: TColorAnimation;
+    Image12: TImage;
+    Image13: TImage;
+    FloatAnimation2: TFloatAnimation;
+    Rectangle16: TRectangle;
+    Image14: TImage;
+    Rectangle17: TRectangle;
+    Rectangle18: TRectangle;
+    Edit3: TEdit;
+    Rectangle20: TRectangle;
+    Text10: TText;
+    ColorAnimation6: TColorAnimation;
+    Text11: TText;
+    Text12: TText;
+    Text14: TText;
+    Rectangle21: TRectangle;
+    ColorAnimation7: TColorAnimation;
+    Rectangle19: TRectangle;
+    ColorAnimation8: TColorAnimation;
+    Rectangle22: TRectangle;
+    Edit4: TEdit;
+    Text13: TText;
+    Rectangle23: TRectangle;
+    Edit5: TEdit;
+    Text15: TText;
+    Rectangle24: TRectangle;
+    Text16: TText;
+    Edit6: TEdit;
+    EditButton2: TEditButton;
     procedure Image1MouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle8Click(Sender: TObject);
@@ -47,6 +92,11 @@ type
     procedure FloatAnimation1Finish(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure EditButton1Click(Sender: TObject);
+    procedure Text14Click(Sender: TObject);
+    procedure Text7Click(Sender: TObject);
+    procedure EditButton2Click(Sender: TObject);
+    procedure Rectangle20Click(Sender: TObject);
+    procedure FloatAnimation2Finish(Sender: TObject);
   private
     { Private declarations }
   public
@@ -55,7 +105,7 @@ type
 
 var
   Form1: TForm1;
-  ShowPswdClicked: boolean;
+  ShowPswdClicked,ShowPswdClicked2: boolean;
 
 implementation
 
@@ -72,11 +122,30 @@ begin
   end;
 end;
 
+procedure TForm1.EditButton2Click(Sender: TObject);
+begin
+  if (ShowPswdClicked2 = false) then begin
+    edit6.Password := false;
+    ShowPswdClicked2 := true;
+  end else begin
+    edit6.Password := true;
+    ShowPswdClicked2 := false;
+  end;
+
+end;
+
 procedure TForm1.FloatAnimation1Finish(Sender: TObject);
 begin
-  showmessage('Success!');
   image7.Visible := false;
   FloatAnimation1.Enabled := false;
+  showmessage('Success!');
+end;
+
+procedure TForm1.FloatAnimation2Finish(Sender: TObject);
+begin
+  image13.Visible := false;
+  FloatAnimation2.Enabled := false;
+  showmessage('Success!');
 end;
 
 procedure TForm1.FormShow(Sender: TObject);
@@ -88,6 +157,12 @@ procedure TForm1.Image1MouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Single);
 begin
   if (Button = TMouseButton.mbLeft) then StartWindowDrag;
+end;
+
+procedure TForm1.Rectangle20Click(Sender: TObject);
+begin
+  image13.Visible := true;
+  FloatAnimation2.Enabled := true;
 end;
 
 procedure TForm1.Rectangle8Click(Sender: TObject);
@@ -102,6 +177,16 @@ begin
   text5.Color := TAlphaColorRec.White;}
   image7.Visible := true;
   FloatAnimation1.Enabled := true;
+end;
+
+procedure TForm1.Text14Click(Sender: TObject);
+begin
+  tabcontrol1.TabIndex :=0;
+end;
+
+procedure TForm1.Text7Click(Sender: TObject);
+begin
+  tabcontrol1.TabIndex :=1;
 end;
 
 end.
