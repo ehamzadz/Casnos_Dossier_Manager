@@ -111,6 +111,8 @@ implementation
 
 {$R *.fmx}
 
+uses DM;
+
 procedure TForm1.EditButton1Click(Sender: TObject);
 begin
   if (ShowPswdClicked = false) then begin
@@ -135,17 +137,37 @@ begin
 end;
 
 procedure TForm1.FloatAnimation1Finish(Sender: TObject);
+var
+  Var_User, Var_Pswd :string;
 begin
   image7.Visible := false;
   FloatAnimation1.Enabled := false;
-  showmessage('Success!');
+  //showmessage('Success!');
+
+  Var_User := edit1.Text;
+  Var_Pswd := edit2.Text;
+
+  DM.DataModule1.FDQuery1.SQL.Clear;
+  DM.DataModule1.FDQuery1.SQL.Add('select count(username) from users where username=:usr and password=:pswd ');
+  DM.DataModule1.FDQuery1.ParamByName('usr').AsString := Var_User;
+  DM.DataModule1.FDQuery1.ParamByName('pswd').AsString := Var_Pswd;
+
+  DM.DataModule1.FDQuery1.Open();
+
+  if (DM.DataModule1.FDQuery1.Fields[0].asinteger=0) then begin
+    showmessage('Invalid!');
+  end else begin
+    showmessage('Success!');
+  end;
+
+
 end;
 
 procedure TForm1.FloatAnimation2Finish(Sender: TObject);
 begin
   image13.Visible := false;
   FloatAnimation2.Enabled := false;
-  showmessage('Success!');
+  showmessage('Inscrit avec succès');
 end;
 
 procedure TForm1.FormShow(Sender: TObject);
@@ -160,9 +182,44 @@ begin
 end;
 
 procedure TForm1.Rectangle20Click(Sender: TObject);
+var
+  Var_User, Var_Pswd, Var_service, Var_Name: string;
 begin
-  image13.Visible := true;
-  FloatAnimation2.Enabled := true;
+
+  Var_Name := edit3.Text;
+  Var_service := edit4.Text;
+  Var_User := edit5.Text;
+  Var_Pswd := edit6.Text;
+
+  if (Var_Name='') OR (Var_service='') OR (Var_User='') OR (Var_Pswd='') then begin
+    showmessage('Completer tous les champs:');
+  end else begin
+
+    DM.DataModule1.FDQuery1.SQL.Clear;
+    DM.DataModule1.FDQuery1.SQL.Add('select count(username) from users where username=:usr and password=:pswd ');
+    DM.DataModule1.FDQuery1.ParamByName('usr').AsString := Var_User;
+    DM.DataModule1.FDQuery1.ParamByName('pswd').AsString := Var_Pswd;
+
+    DM.DataModule1.FDQuery1.Open();
+
+    if (DM.DataModule1.FDQuery1.Fields[0].asinteger=0) then begin
+      DM.DataModule1.FDQuery1.SQL.Clear;
+      DM.DataModule1.FDQuery1.SQL.Add('insert into users values(:usr,:pswd,:nom,:service)');
+      DM.DataModule1.FDQuery1.ParamByName('usr').value := Var_User;
+      DM.DataModule1.FDQuery1.ParamByName('pswd').value := Var_Pswd;
+      DM.DataModule1.FDQuery1.ParamByName('nom').value := Var_Name;
+      DM.DataModule1.FDQuery1.ParamByName('service').value := Var_service;
+
+      DM.DataModule1.FDQuery1.ExecSQL;
+
+      image13.Visible := true;
+      FloatAnimation2.Enabled := true;
+
+    end else begin
+      showmessage('Invalid Username!');
+    end;
+  end;
+
 end;
 
 procedure TForm1.Rectangle8Click(Sender: TObject);
