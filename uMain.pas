@@ -49,17 +49,20 @@ type
     Rectangle11: TRectangle;
     Text3: TText;
     content: TRectangle;
-    Rectangle13: TRectangle;
-    Rectangle12: TRectangle;
     Rectangle15: TRectangle;
     Image6: TImage;
     Text4: TText;
     ColorAnimation5: TColorAnimation;
     Rectangle16: TRectangle;
     Text5: TText;
-    text_user: TText;
+    Rectangle12: TRectangle;
+    Rectangle13: TRectangle;
+    Rectangle19: TRectangle;
     Image5: TImage;
-    Text8: TText;
+    text_user: TText;
+    text_title: TText;
+    Rectangle20: TRectangle;
+    Image7: TImage;
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle15Click(Sender: TObject);
@@ -68,6 +71,9 @@ type
     procedure Rectangle5Click(Sender: TObject);
     procedure Rectangle7Click(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure Image7Click(Sender: TObject);
+    procedure SubMenu_AnimationFinish(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -76,12 +82,18 @@ type
 
 var
   Form2: TForm2;
+  i:integer;
 
 implementation
 
 {$R *.fmx}
 
 uses uLogin;
+
+procedure TForm2.FormCreate(Sender: TObject);
+begin
+  i := 1;
+end;
 
 procedure TForm2.FormMouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Single);
@@ -94,12 +106,33 @@ begin
   text_user.Text := 'Bienvenue ' + form1.VAR_USER_GLOB;
 end;
 
+procedure TForm2.Image7Click(Sender: TObject);
+begin
+
+  if i=1 then begin
+    i := 0;
+    SubMenu_Animation.StartValue := 224;
+    SubMenu_Animation.StopValue := 0;
+    SubMenu_Animation.Enabled := true;
+    rectangle14.Visible := false;
+  end else begin
+    if i=0 then begin
+      i := 1;
+      SubMenu_Animation.StartValue := 0;
+      SubMenu_Animation.StopValue := 224;
+      SubMenu_Animation.Enabled := true;
+    end;
+  end;
+
+end;
+
 procedure TForm2.Rectangle10Click(Sender: TObject);
 var
   this :TButton;
 begin
   this := TButton(sender);
   current_tab.Parent := this;
+  text_title.Text := 'Adhérent informations';
 end;
 
 procedure TForm2.Rectangle15Click(Sender: TObject);
@@ -113,6 +146,7 @@ var
 begin
   this := TButton(sender);
   current_tab.Parent := this;
+  text_title.Text := 'Acceuil';
 end;
 
 procedure TForm2.Rectangle5Click(Sender: TObject);
@@ -121,6 +155,7 @@ var
 begin
   this := TButton(sender);
   current_tab.Parent := this;
+  text_title.Text := 'Paramétres';
 end;
 
 procedure TForm2.Rectangle7Click(Sender: TObject);
@@ -129,6 +164,13 @@ var
 begin
   this := TButton(sender);
   current_tab.Parent := this;
+  text_title.Text := 'Utilisateurs';
+end;
+
+procedure TForm2.SubMenu_AnimationFinish(Sender: TObject);
+begin
+  SubMenu_Animation.Enabled := false;
+  if i=1 then rectangle14.Visible := true;
 end;
 
 end.
