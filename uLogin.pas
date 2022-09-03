@@ -85,6 +85,7 @@ type
     Text16: TText;
     Edit6: TEdit;
     EditButton2: TEditButton;
+    Image15: TImage;
     procedure Image1MouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle8Click(Sender: TObject);
@@ -111,7 +112,7 @@ implementation
 
 {$R *.fmx}
 
-uses DM;
+uses DM, uMain;
 
 procedure TForm1.EditButton1Click(Sender: TObject);
 begin
@@ -157,7 +158,7 @@ begin
   if (DM.DataModule1.FDQuery1.Fields[0].asinteger=0) then begin
     showmessage('Invalid!');
   end else begin
-    showmessage('Success!');
+    form2.Show;
   end;
 
 

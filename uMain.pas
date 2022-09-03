@@ -1,0 +1,126 @@
+unit uMain;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  System.ImageList, FMX.ImgList, FMX.Objects, FMX.Controls.Presentation,
+  FMX.StdCtrls, FMX.Ani;
+
+type
+  TForm2 = class(TForm)
+    nav_bar: TRectangle;
+    Rectangle17: TRectangle;
+    logo: TImage;
+    Rectangle18: TRectangle;
+    Circle1: TCircle;
+    N_of_Users_Invts: TText;
+    current_tab: TRectangle;
+    ImageList1: TImageList;
+    Rectangle1: TRectangle;
+    Brush1: TBrushObject;
+    Brush2: TBrushObject;
+    sub_menu: TRectangle;
+    SubMenu_Animation: TFloatAnimation;
+    Rectangle14: TRectangle;
+    Rectangle9: TRectangle;
+    ag_de_wly: TLabel;
+    Text7: TText;
+    Rectangle2: TRectangle;
+    Brush3: TBrushObject;
+    Rectangle3: TRectangle;
+    Rectangle4: TRectangle;
+    Image1: TImage;
+    ColorAnimation1: TColorAnimation;
+    Rectangle5: TRectangle;
+    Image2: TImage;
+    ColorAnimation2: TColorAnimation;
+    Rectangle7: TRectangle;
+    Image3: TImage;
+    ColorAnimation3: TColorAnimation;
+    Rectangle10: TRectangle;
+    Image4: TImage;
+    ColorAnimation4: TColorAnimation;
+    Rectangle6: TRectangle;
+    Text1: TText;
+    Rectangle8: TRectangle;
+    Text2: TText;
+    Rectangle11: TRectangle;
+    Text3: TText;
+    content: TRectangle;
+    Rectangle13: TRectangle;
+    Rectangle12: TRectangle;
+    Rectangle15: TRectangle;
+    Image6: TImage;
+    Text4: TText;
+    ColorAnimation5: TColorAnimation;
+    Rectangle16: TRectangle;
+    Text5: TText;
+    Text6: TText;
+    Image5: TImage;
+    Text8: TText;
+    procedure FormMouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
+    procedure Rectangle15Click(Sender: TObject);
+    procedure Rectangle3Click(Sender: TObject);
+    procedure Rectangle10Click(Sender: TObject);
+    procedure Rectangle5Click(Sender: TObject);
+    procedure Rectangle7Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.fmx}
+
+procedure TForm2.FormMouseDown(Sender: TObject; Button: TMouseButton;
+  Shift: TShiftState; X, Y: Single);
+begin
+  if (Button = TMouseButton.mbLeft) then StartWindowDrag;
+end;
+
+procedure TForm2.Rectangle10Click(Sender: TObject);
+var
+  this :TButton;
+begin
+  this := TButton(sender);
+  current_tab.Parent := this;
+end;
+
+procedure TForm2.Rectangle15Click(Sender: TObject);
+begin
+  application.Terminate;
+end;
+
+procedure TForm2.Rectangle3Click(Sender: TObject);
+var
+  this :TButton;
+begin
+  this := TButton(sender);
+  current_tab.Parent := this;
+end;
+
+procedure TForm2.Rectangle5Click(Sender: TObject);
+var
+  this :TButton;
+begin
+  this := TButton(sender);
+  current_tab.Parent := this;
+end;
+
+procedure TForm2.Rectangle7Click(Sender: TObject);
+var
+  this :TButton;
+begin
+  this := TButton(sender);
+  current_tab.Parent := this;
+end;
+
+end.
