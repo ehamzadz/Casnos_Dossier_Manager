@@ -2615,7 +2615,7 @@ object Form1: TForm1
             YRadius = 10.000000000000000000
             object Rectangle5: TRectangle
               Align = Right
-              Fill.Color = x61E0E0E0
+              Fill.Kind = None
               HitTest = False
               Position.X = 595.000000000000000000
               Size.Width = 68.000000000000000000
@@ -2637,6 +2637,7 @@ object Form1: TForm1
                 Size.Height = 29.000000000000000000
                 Size.PlatformDefault = False
                 Stroke.Kind = None
+                Visible = False
                 XRadius = 14.500000000000000000
                 YRadius = 14.500000000000000000
                 object Image4: TImage
