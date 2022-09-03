@@ -102,6 +102,7 @@ type
     { Private declarations }
   public
     { Public declarations }
+    VAR_USER_GLOB :string;
   end;
 
 var
@@ -158,7 +159,14 @@ begin
   if (DM.DataModule1.FDQuery1.Fields[0].asinteger=0) then begin
     showmessage('Invalid!');
   end else begin
-    form2.Show;
+    VAR_USER_GLOB := Var_User;
+
+    Visible := False; // Makes Form1 invisible
+    try
+      form2.ShowModal; // Shows the Form
+    finally
+      close;
+    end;
   end;
 
 

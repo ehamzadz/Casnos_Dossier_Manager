@@ -57,7 +57,7 @@ type
     ColorAnimation5: TColorAnimation;
     Rectangle16: TRectangle;
     Text5: TText;
-    Text6: TText;
+    text_user: TText;
     Image5: TImage;
     Text8: TText;
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton;
@@ -67,6 +67,7 @@ type
     procedure Rectangle10Click(Sender: TObject);
     procedure Rectangle5Click(Sender: TObject);
     procedure Rectangle7Click(Sender: TObject);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -80,10 +81,17 @@ implementation
 
 {$R *.fmx}
 
+uses uLogin;
+
 procedure TForm2.FormMouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Single);
 begin
   if (Button = TMouseButton.mbLeft) then StartWindowDrag;
+end;
+
+procedure TForm2.FormShow(Sender: TObject);
+begin
+  text_user.Text := 'Bienvenue ' + form1.VAR_USER_GLOB;
 end;
 
 procedure TForm2.Rectangle10Click(Sender: TObject);
