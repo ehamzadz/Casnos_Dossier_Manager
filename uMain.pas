@@ -168,6 +168,7 @@ begin
   this := TButton(sender);
   current_tab.Parent := this;
   text_title.Text := 'Adhérent informations';
+  tabcontrol1.TabIndex := 1;
 end;
 
 procedure TForm2.Rectangle15Click(Sender: TObject);
@@ -182,6 +183,7 @@ begin
   this := TButton(sender);
   current_tab.Parent := this;
   text_title.Text := 'Acceuil';
+  tabcontrol1.TabIndex := 0;
 end;
 
 procedure TForm2.Rectangle5Click(Sender: TObject);
@@ -191,6 +193,7 @@ begin
   this := TButton(sender);
   current_tab.Parent := this;
   text_title.Text := 'Paramétres';
+  tabcontrol1.TabIndex := 3;
 end;
 
 procedure TForm2.Rectangle7Click(Sender: TObject);
@@ -200,6 +203,7 @@ begin
   this := TButton(sender);
   current_tab.Parent := this;
   text_title.Text := 'Utilisateurs';
+  tabcontrol1.TabIndex := 2;
 end;
 
 procedure TForm2.SubMenu_AnimationFinish(Sender: TObject);
