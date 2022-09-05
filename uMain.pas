@@ -6,7 +6,7 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
   System.ImageList, FMX.ImgList, FMX.Objects, FMX.Controls.Presentation,
-  FMX.StdCtrls, FMX.Ani;
+  FMX.StdCtrls, FMX.Ani, FMX.Effects, FMX.TabControl;
 
 type
   TForm2 = class(TForm)
@@ -55,7 +55,7 @@ type
     ColorAnimation5: TColorAnimation;
     Rectangle16: TRectangle;
     Text5: TText;
-    Rectangle12: TRectangle;
+    top_bar: TRectangle;
     Rectangle13: TRectangle;
     Rectangle19: TRectangle;
     Image5: TImage;
@@ -63,6 +63,25 @@ type
     text_title: TText;
     Rectangle20: TRectangle;
     Image7: TImage;
+    TabControl1: TTabControl;
+    acceuil: TTabItem;
+    adherent: TTabItem;
+    users: TTabItem;
+    settings: TTabItem;
+    Rectangle12: TRectangle;
+    Rectangle22: TRectangle;
+    Text8: TText;
+    Rectangle21: TRectangle;
+    Brush4: TBrushObject;
+    Rectangle23: TRectangle;
+    Text6: TText;
+    Rectangle24: TRectangle;
+    Rectangle25: TRectangle;
+    Text10: TText;
+    Brush5: TBrushObject;
+    Brush6: TBrushObject;
+    Brush7: TBrushObject;
+    Brush8: TBrushObject;
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle15Click(Sender: TObject);
