@@ -109,6 +109,8 @@ type
     procedure Image7Click(Sender: TObject);
     procedure SubMenu_AnimationFinish(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure Rectangle19MouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
   private
     { Private declarations }
   public
@@ -174,6 +176,12 @@ end;
 procedure TForm2.Rectangle15Click(Sender: TObject);
 begin
   application.Terminate;
+end;
+
+procedure TForm2.Rectangle19MouseDown(Sender: TObject; Button: TMouseButton;
+  Shift: TShiftState; X, Y: Single);
+begin
+  if (Button = TMouseButton.mbLeft) then StartWindowDrag;
 end;
 
 procedure TForm2.Rectangle3Click(Sender: TObject);

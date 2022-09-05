@@ -29698,7 +29698,6 @@ object Form2: TForm2
       object top_bar: TRectangle
         Align = Top
         Fill.Kind = None
-        HitTest = False
         Margins.Left = 10.000000000000000000
         Margins.Top = 10.000000000000000000
         Margins.Right = 10.000000000000000000
@@ -33577,6 +33576,7 @@ object Form2: TForm2
           Align = Client
           Cursor = crSizeAll
           Fill.Color = claWhite
+          HitTest = False
           Padding.Left = 3.000000000000000000
           Padding.Top = 3.000000000000000000
           Padding.Right = 3.000000000000000000
@@ -33587,7 +33587,6 @@ object Form2: TForm2
           Stroke.Kind = None
           XRadius = 10.000000000000000000
           YRadius = 10.000000000000000000
-          OnMouseDown = Rectangle19MouseDown
           object Image5: TImage
             MultiResBitmap.Height = 1956
             MultiResBitmap.Width = 1716
