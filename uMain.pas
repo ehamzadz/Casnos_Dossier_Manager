@@ -9,7 +9,8 @@ uses
   FMX.StdCtrls, FMX.Ani, FMX.Effects, FMX.TabControl, System.Rtti,
   FMX.Grid.Style, FMX.ScrollBox, FMX.Grid, Data.Bind.EngExt, Fmx.Bind.DBEngExt,
   Fmx.Bind.Grid, System.Bindings.Outputs, Fmx.Bind.Editors,
-  Data.Bind.Components, Data.Bind.Grid, Data.Bind.DBScope;
+  Data.Bind.Components, Data.Bind.Grid, Data.Bind.DBScope, FireDAC.UI.Intf,
+  FireDAC.FMXUI.Wait, FireDAC.Stan.Intf, FireDAC.Comp.UI;
 
 type
   TForm2 = class(TForm)
@@ -78,7 +79,6 @@ type
     Brush4: TBrushObject;
     btn_add_adherent: TRectangle;
     Text6: TText;
-    Rectangle24: TRectangle;
     Rectangle25: TRectangle;
     Text10: TText;
     Brush5: TBrushObject;
@@ -88,9 +88,16 @@ type
     StringGrid1: TStringGrid;
     BindSourceDB1: TBindSourceDB;
     BindingsList1: TBindingsList;
-    LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
     StyleBook1: TStyleBook;
     Brush9: TBrushObject;
+    FDGUIxWaitCursor1: TFDGUIxWaitCursor;
+    btn_del_adherent: TRectangle;
+    Rectangle24: TRectangle;
+    Text9: TText;
+    Text11: TText;
+    Brush10: TBrushObject;
+    Brush11: TBrushObject;
+    LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle15Click(Sender: TObject);
