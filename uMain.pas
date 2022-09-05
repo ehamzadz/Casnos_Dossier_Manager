@@ -6,7 +6,10 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
   System.ImageList, FMX.ImgList, FMX.Objects, FMX.Controls.Presentation,
-  FMX.StdCtrls, FMX.Ani, FMX.Effects, FMX.TabControl;
+  FMX.StdCtrls, FMX.Ani, FMX.Effects, FMX.TabControl, System.Rtti,
+  FMX.Grid.Style, FMX.ScrollBox, FMX.Grid, Data.Bind.EngExt, Fmx.Bind.DBEngExt,
+  Fmx.Bind.Grid, System.Bindings.Outputs, Fmx.Bind.Editors,
+  Data.Bind.Components, Data.Bind.Grid, Data.Bind.DBScope;
 
 type
   TForm2 = class(TForm)
@@ -73,7 +76,7 @@ type
     Text8: TText;
     Rectangle21: TRectangle;
     Brush4: TBrushObject;
-    Rectangle23: TRectangle;
+    btn_add_adherent: TRectangle;
     Text6: TText;
     Rectangle24: TRectangle;
     Rectangle25: TRectangle;
@@ -82,6 +85,12 @@ type
     Brush6: TBrushObject;
     Brush7: TBrushObject;
     Brush8: TBrushObject;
+    StringGrid1: TStringGrid;
+    BindSourceDB1: TBindSourceDB;
+    BindingsList1: TBindingsList;
+    LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
+    StyleBook1: TStyleBook;
+    Brush9: TBrushObject;
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle15Click(Sender: TObject);
@@ -107,7 +116,7 @@ implementation
 
 {$R *.fmx}
 
-uses uLogin;
+uses uLogin, DM;
 
 procedure TForm2.FormCreate(Sender: TObject);
 begin
