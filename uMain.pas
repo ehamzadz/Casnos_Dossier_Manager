@@ -10,7 +10,7 @@ uses
   FMX.Grid.Style, FMX.ScrollBox, FMX.Grid, Data.Bind.EngExt, Fmx.Bind.DBEngExt,
   Fmx.Bind.Grid, System.Bindings.Outputs, Fmx.Bind.Editors,
   Data.Bind.Components, Data.Bind.Grid, Data.Bind.DBScope, FireDAC.UI.Intf,
-  FireDAC.FMXUI.Wait, FireDAC.Stan.Intf, FireDAC.Comp.UI;
+  FireDAC.FMXUI.Wait, FireDAC.Stan.Intf, FireDAC.Comp.UI, Vcl.Dialogs;
 
 type
   TForm2 = class(TForm)
@@ -111,6 +111,7 @@ type
     procedure FormCreate(Sender: TObject);
     procedure Rectangle19MouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
+    procedure btn_del_adherentClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -126,6 +127,24 @@ implementation
 {$R *.fmx}
 
 uses uLogin, DM;
+
+procedure TForm2.btn_del_adherentClick(Sender: TObject);
+var
+  matricule :integer;
+begin
+  if MessageDlg('Voulez vous sure?',
+    mtConfirmation, [mbYes, mbNo], 0, mbYes) = mrYes then
+  begin
+    matricule := strtoint(Stringgrid1.Cells[0,Stringgrid1.Selected]);
+
+    DM.DataModule1.FDQuery1.SQL.Clear;
+    DM.DataModule1.FDQuery1.SQL.Add(' DELETE From adherent where mat_adh=:mat ');
+    DM.DataModule1.FDQuery1.ParamByName('mat').asinteger := matricule;
+    DM.DataModule1.FDQuery1.ExecSQL;
+    DM.DataModule1.FDTable1.Active := false;
+    DM.DataModule1.FDTable1.Active := true;
+  end;
+end;
 
 procedure TForm2.FormCreate(Sender: TObject);
 begin
