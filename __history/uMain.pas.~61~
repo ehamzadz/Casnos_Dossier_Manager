@@ -10,7 +10,7 @@ uses
   FMX.Grid.Style, FMX.ScrollBox, FMX.Grid, Data.Bind.EngExt, Fmx.Bind.DBEngExt,
   Fmx.Bind.Grid, System.Bindings.Outputs, Fmx.Bind.Editors,
   Data.Bind.Components, Data.Bind.Grid, Data.Bind.DBScope, FireDAC.UI.Intf,
-  FireDAC.FMXUI.Wait, FireDAC.Stan.Intf, FireDAC.Comp.UI;
+  FireDAC.FMXUI.Wait, FireDAC.Stan.Intf, FireDAC.Comp.UI, Vcl.Dialogs, FMX.Edit;
 
 type
   TForm2 = class(TForm)
@@ -74,7 +74,6 @@ type
     settings: TTabItem;
     Rectangle12: TRectangle;
     Rectangle22: TRectangle;
-    Text8: TText;
     Rectangle21: TRectangle;
     Brush4: TBrushObject;
     btn_add_adherent: TRectangle;
@@ -98,6 +97,9 @@ type
     Brush10: TBrushObject;
     Brush11: TBrushObject;
     LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
+    Edit1: TEdit;
+    Text12: TText;
+    ClearEditButton1: TClearEditButton;
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle15Click(Sender: TObject);
@@ -109,6 +111,11 @@ type
     procedure Image7Click(Sender: TObject);
     procedure SubMenu_AnimationFinish(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure Rectangle19MouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
+    procedure btn_del_adherentClick(Sender: TObject);
+    procedure ClearEditButton1Click(Sender: TObject);
+    procedure Edit1Change(Sender: TObject);
   private
     { Private declarations }
   public
@@ -124,6 +131,37 @@ implementation
 {$R *.fmx}
 
 uses uLogin, DM;
+
+procedure TForm2.btn_del_adherentClick(Sender: TObject);
+var
+  matricule :integer;
+begin
+  if MessageDlg('Voulez vous sure?',
+    mtConfirmation, [mbYes, mbNo], 0, mbYes) = mrYes then
+  begin
+    matricule := strtoint(Stringgrid1.Cells[0,Stringgrid1.Selected]);
+
+    DM.DataModule1.FDQuery1.SQL.Clear;
+    DM.DataModule1.FDQuery1.SQL.Add(' DELETE From adherent where mat_adh=:mat ');
+    DM.DataModule1.FDQuery1.ParamByName('mat').asinteger := matricule;
+    DM.DataModule1.FDQuery1.ExecSQL;
+    DM.DataModule1.FDTable1.Active := false;
+    DM.DataModule1.FDTable1.Active := true;
+  end;
+end;
+
+procedure TForm2.ClearEditButton1Click(Sender: TObject);
+begin
+  edit1.Text:='';
+end;
+
+procedure TForm2.Edit1Change(Sender: TObject);
+begin
+  DM.DataModule1.FDTable1.Active := false;
+  TableStock.Filter := 'designation like ' + quotedstr('%'+txt+'%');
+  DM.DataModule1.FDTable1.Active := true;
+  FixStockGridWidth;
+end;
 
 procedure TForm2.FormCreate(Sender: TObject);
 begin
@@ -174,6 +212,12 @@ end;
 procedure TForm2.Rectangle15Click(Sender: TObject);
 begin
   application.Terminate;
+end;
+
+procedure TForm2.Rectangle19MouseDown(Sender: TObject; Button: TMouseButton;
+  Shift: TShiftState; X, Y: Single);
+begin
+  if (Button = TMouseButton.mbLeft) then StartWindowDrag;
 end;
 
 procedure TForm2.Rectangle3Click(Sender: TObject);

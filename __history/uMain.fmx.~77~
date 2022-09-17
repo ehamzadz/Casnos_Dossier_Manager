@@ -43631,14 +43631,13 @@ object Form2: TForm2
                   Touch.InteractiveGestures = [LongTap, DoubleTap]
                   Align = Left
                   TabOrder = 0
-                  FilterChar = '0123456789'
+                  KeyboardType = DecimalNumberPad
                   Position.X = 185.000000000000000000
                   Position.Y = 15.000000000000000000
                   Margins.Right = 10.000000000000000000
                   Size.Width = 168.000000000000000000
                   Size.Height = 36.000000000000000000
                   Size.PlatformDefault = False
-                  OnTyping = Edit1Typing
                   object ClearEditButton1: TClearEditButton
                     CanFocus = False
                     Cursor = crArrow
@@ -43656,7 +43655,7 @@ object Form2: TForm2
                   Size.Width = 175.000000000000000000
                   Size.Height = 36.000000000000000000
                   Size.PlatformDefault = False
-                  Text = 'Rechercher par Matricule:'
+                  Text = 'Rechercher par Metricule:'
                   TextSettings.Font.Size = 14.000000000000000000
                   TextSettings.Font.StyleExt = {00060000000000000004000000}
                   TextSettings.HorzAlign = Leading

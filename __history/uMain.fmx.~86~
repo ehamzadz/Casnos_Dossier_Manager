@@ -43639,14 +43639,13 @@ object Form2: TForm2
                   Size.Height = 36.000000000000000000
                   Size.PlatformDefault = False
                   OnTyping = Edit1Typing
-                  object ClearEditButton1: TClearEditButton
+                  object SearchEditButton1: TSearchEditButton
                     CanFocus = False
                     Cursor = crArrow
                     Size.Width = 28.000000000000000000
                     Size.Height = 32.000000000000000000
                     Size.PlatformDefault = False
                     TabOrder = 0
-                    OnClick = ClearEditButton1Click
                   end
                 end
                 object Text12: TText
@@ -43656,7 +43655,7 @@ object Form2: TForm2
                   Size.Width = 175.000000000000000000
                   Size.Height = 36.000000000000000000
                   Size.PlatformDefault = False
-                  Text = 'Rechercher par Matricule:'
+                  Text = 'Rechercher par Metricule:'
                   TextSettings.Font.Size = 14.000000000000000000
                   TextSettings.Font.StyleExt = {00060000000000000004000000}
                   TextSettings.HorzAlign = Leading

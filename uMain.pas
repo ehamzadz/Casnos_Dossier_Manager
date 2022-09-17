@@ -10,7 +10,7 @@ uses
   FMX.Grid.Style, FMX.ScrollBox, FMX.Grid, Data.Bind.EngExt, Fmx.Bind.DBEngExt,
   Fmx.Bind.Grid, System.Bindings.Outputs, Fmx.Bind.Editors,
   Data.Bind.Components, Data.Bind.Grid, Data.Bind.DBScope, FireDAC.UI.Intf,
-  FireDAC.FMXUI.Wait, FireDAC.Stan.Intf, FireDAC.Comp.UI, Vcl.Dialogs;
+  FireDAC.FMXUI.Wait, FireDAC.Stan.Intf, FireDAC.Comp.UI, Vcl.Dialogs, FMX.Edit;
 
 type
   TForm2 = class(TForm)
@@ -74,7 +74,6 @@ type
     settings: TTabItem;
     Rectangle12: TRectangle;
     Rectangle22: TRectangle;
-    Text8: TText;
     Rectangle21: TRectangle;
     Brush4: TBrushObject;
     btn_add_adherent: TRectangle;
@@ -98,6 +97,9 @@ type
     Brush10: TBrushObject;
     Brush11: TBrushObject;
     LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
+    Edit1: TEdit;
+    Text12: TText;
+    ClearEditButton1: TClearEditButton;
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle15Click(Sender: TObject);
@@ -112,6 +114,8 @@ type
     procedure Rectangle19MouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure btn_del_adherentClick(Sender: TObject);
+    procedure Edit1Typing(Sender: TObject);
+    procedure ClearEditButton1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -144,6 +148,18 @@ begin
     DM.DataModule1.FDTable1.Active := false;
     DM.DataModule1.FDTable1.Active := true;
   end;
+end;
+
+procedure TForm2.ClearEditButton1Click(Sender: TObject);
+begin
+  edit1.Text := '';
+end;
+
+procedure TForm2.Edit1Typing(Sender: TObject);
+begin
+  DM.DataModule1.FDTable1.Filtered:= false;
+  DM.DataModule1.FDTable1.Filter := 'mat_adh like ' + quotedstr('%'+edit1.Text+'%');
+  DM.DataModule1.FDTable1.Filtered:= true;
 end;
 
 procedure TForm2.FormCreate(Sender: TObject);
