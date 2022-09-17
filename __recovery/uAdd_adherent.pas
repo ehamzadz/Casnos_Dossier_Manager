@@ -35,6 +35,10 @@ type
     ComboBox1: TComboBox;
     ComboBox2: TComboBox;
     Text11: TText;
+    Edit9: TEdit;
+    Text12: TText;
+    Edit10: TEdit;
+    Text13: TText;
   private
     { Private declarations }
   public

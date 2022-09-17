@@ -1,7 +1,7 @@
 object Form3: TForm3
   Left = 0
   Top = 0
-  Caption = 'Form3'
+  Caption = 'Ajouter un Adh'#233'rent'
   ClientHeight = 483
   ClientWidth = 713
   FormFactor.Width = 320
@@ -43,7 +43,7 @@ object Form3: TForm3
       end
       object Edit1: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
-        TabOrder = 8
+        TabOrder = 10
         Position.X = 152.000000000000000000
         Position.Y = 30.000000000000000000
         Size.Width = 169.000000000000000000
@@ -52,7 +52,7 @@ object Form3: TForm3
       end
       object Edit2: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
-        TabOrder = 7
+        TabOrder = 9
         Position.X = 152.000000000000000000
         Position.Y = 60.000000000000000000
         Size.Width = 169.000000000000000000
@@ -75,7 +75,7 @@ object Form3: TForm3
         Size.Width = 169.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 10
+        TabOrder = 12
         TextSettings.HorzAlign = Center
       end
       object Text3: TText
@@ -98,7 +98,7 @@ object Form3: TForm3
       end
       object Edit4: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
-        TabOrder = 6
+        TabOrder = 8
         Position.X = 512.000000000000000000
         Position.Y = 60.000000000000000000
         Size.Width = 169.000000000000000000
@@ -116,7 +116,7 @@ object Form3: TForm3
       end
       object Edit3: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
-        TabOrder = 1
+        TabOrder = 3
         Position.X = 152.000000000000000000
         Position.Y = 90.000000000000000000
         Size.Width = 169.000000000000000000
@@ -125,7 +125,7 @@ object Form3: TForm3
       end
       object Edit5: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
-        TabOrder = 5
+        TabOrder = 7
         Position.X = 512.000000000000000000
         Position.Y = 90.000000000000000000
         Size.Width = 169.000000000000000000
@@ -152,7 +152,7 @@ object Form3: TForm3
       end
       object Edit6: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
-        TabOrder = 4
+        TabOrder = 6
         Position.X = 512.000000000000000000
         Position.Y = 120.000000000000000000
         Size.Width = 169.000000000000000000
@@ -161,7 +161,7 @@ object Form3: TForm3
       end
       object Edit7: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
-        TabOrder = 3
+        TabOrder = 5
         Position.X = 152.000000000000000000
         Position.Y = 180.000000000000000000
         Size.Width = 137.000000000000000000
@@ -179,7 +179,7 @@ object Form3: TForm3
       end
       object Edit8: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
-        TabOrder = 2
+        TabOrder = 4
         Position.X = 152.000000000000000000
         Position.Y = 150.000000000000000000
         Size.Width = 529.000000000000000000
@@ -214,7 +214,7 @@ object Form3: TForm3
         Size.Width = 105.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 20
+        TabOrder = 22
       end
       object ComboBox2: TComboBox
         Items.Strings = (
@@ -226,7 +226,7 @@ object Form3: TForm3
         Size.Width = 73.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 19
+        TabOrder = 21
       end
       object Text11: TText
         Position.X = 568.000000000000000000
@@ -235,6 +235,42 @@ object Form3: TForm3
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
         Text = 'Sexe'
+        TextSettings.HorzAlign = Leading
+      end
+      object Edit9: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 2
+        Position.X = 152.000000000000000000
+        Position.Y = 210.000000000000000000
+        Size.Width = 137.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Text12: TText
+        Position.X = 32.000000000000000000
+        Position.Y = 210.000000000000000000
+        Size.Width = 121.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Num'#233'ro T'#233'l'#233'phone'
+        TextSettings.HorzAlign = Leading
+      end
+      object Edit10: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 1
+        Position.X = 480.000000000000000000
+        Position.Y = 210.000000000000000000
+        Size.Width = 201.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Text13: TText
+        Position.X = 320.000000000000000000
+        Position.Y = 210.000000000000000000
+        Size.Width = 177.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Num'#233'ro Compte Bancaire'
         TextSettings.HorzAlign = Leading
       end
     end

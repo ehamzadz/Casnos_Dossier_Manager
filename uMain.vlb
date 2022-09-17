@@ -266,3 +266,6 @@ Coordinates=167,164,46,51
 [Edit1]
 Coordinates=167,87,40,51
 
+[ClearEditButton1]
+Coordinates=393,87,98,33
+

@@ -43694,10 +43694,10 @@ object Form2: TForm2
               Size.PlatformDefault = False
               StyleLookup = 'gridstyle'
               TabOrder = 1
-              RowCount = 7
+              RowCount = 3
               Options = [AlternatingRowBackground, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, Header, HeaderClick, AutoDisplacement]
-              Viewport.Width = 800.000000000000000000
-              Viewport.Height = 422.000000000000000000
+              Viewport.Width = 804.000000000000000000
+              Viewport.Height = 482.000000000000000000
             end
           end
         end
