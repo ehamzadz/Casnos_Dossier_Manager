@@ -96,10 +96,10 @@ type
     Text11: TText;
     Brush10: TBrushObject;
     Brush11: TBrushObject;
-    LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
     Edit1: TEdit;
     Text12: TText;
     ClearEditButton1: TClearEditButton;
+    LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle15Click(Sender: TObject);
@@ -116,6 +116,7 @@ type
     procedure btn_del_adherentClick(Sender: TObject);
     procedure Edit1Typing(Sender: TObject);
     procedure ClearEditButton1Click(Sender: TObject);
+    procedure btn_add_adherentClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -130,7 +131,12 @@ implementation
 
 {$R *.fmx}
 
-uses uLogin, DM;
+uses uLogin, DM, uAdd_adherent;
+
+procedure TForm2.btn_add_adherentClick(Sender: TObject);
+begin
+  form3.ShowModal;
+end;
 
 procedure TForm2.btn_del_adherentClick(Sender: TObject);
 var

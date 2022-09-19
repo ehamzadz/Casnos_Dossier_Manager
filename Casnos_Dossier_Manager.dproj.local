@@ -3,18 +3,18 @@
 	<Transactions>
     <Transaction>2022/08/16 17:36:16.000.058,=C:\Users\eHamzaDZ\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2022/08/29 22:35:01.000.011,=C:\Users\eHamzaDZ\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/08/29 22:36:12.000.262,C:\Users\eHamzaDZ\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Github\Web App\Inventory manager\uLogin.pas</Transaction>
-    <Transaction>2022/08/29 22:36:12.000.262,C:\Users\eHamzaDZ\Documents\Embarcadero\Studio\Projects\Unit1.fmx=D:\Github\Web App\Inventory manager\uLogin.fmx</Transaction>
-    <Transaction>2022/08/29 22:36:21.000.739,C:\Users\eHamzaDZ\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Github\Web App\Inventory manager\inventory.dproj</Transaction>
+    <Transaction>2022/08/29 22:36:12.000.262,D:\Github\Web App\Inventory manager\uLogin.pas=C:\Users\eHamzaDZ\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/08/29 22:36:12.000.262,D:\Github\Web App\Inventory manager\uLogin.fmx=C:\Users\eHamzaDZ\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2022/08/29 22:36:21.000.739,D:\Github\Web App\Inventory manager\inventory.dproj=C:\Users\eHamzaDZ\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
     <Transaction>2022/09/01 00:51:35.000.008,=D:\Github\Web App\Inventory manager\Unit1.pas</Transaction>
-    <Transaction>2022/09/01 00:51:48.000.081,D:\Github\Web App\Inventory manager\DM.pas=D:\Github\Web App\Inventory manager\Unit1.pas</Transaction>
-    <Transaction>2022/09/01 00:51:48.000.081,D:\Github\Web App\Inventory manager\DM.dfm=D:\Github\Web App\Inventory manager\Unit1.dfm</Transaction>
-    <Transaction>2022/09/02 18:58:53.000.472,D:\Github\Desktop App\Inventory manager\inventory.dproj=D:\Github\Desktop App\Inventory manager\Casnos_Dossier_Manager.dproj</Transaction>
+    <Transaction>2022/09/01 00:51:48.000.081,D:\Github\Web App\Inventory manager\Unit1.dfm=D:\Github\Web App\Inventory manager\DM.dfm</Transaction>
+    <Transaction>2022/09/01 00:51:48.000.081,D:\Github\Web App\Inventory manager\Unit1.pas=D:\Github\Web App\Inventory manager\DM.pas</Transaction>
+    <Transaction>2022/09/02 18:58:53.000.472,D:\Github\Desktop App\Inventory manager\Casnos_Dossier_Manager.dproj=D:\Github\Desktop App\Inventory manager\inventory.dproj</Transaction>
     <Transaction>2022/09/03 00:43:59.000.808,=D:\Github\Desktop App\Casnos_Dossier_Manager\Unit2.pas</Transaction>
-    <Transaction>2022/09/03 00:44:20.000.360,D:\Github\Desktop App\Casnos_Dossier_Manager\uMain.pas=D:\Github\Desktop App\Casnos_Dossier_Manager\Unit2.pas</Transaction>
-    <Transaction>2022/09/03 00:44:20.000.360,D:\Github\Desktop App\Casnos_Dossier_Manager\uMain.fmx=D:\Github\Desktop App\Casnos_Dossier_Manager\Unit2.fmx</Transaction>
-    <Transaction>2022/09/17 18:23:22.397,=D:\Github\Desktop App\Casnos_Dossier_Manager\Unit3.pas</Transaction>
-    <Transaction>2022/09/17 18:38:56.089,D:\Github\Desktop App\Casnos_Dossier_Manager\uAdd_adherent.fmx=D:\Github\Desktop App\Casnos_Dossier_Manager\Unit3.fmx</Transaction>
-    <Transaction>2022/09/17 18:38:56.089,D:\Github\Desktop App\Casnos_Dossier_Manager\uAdd_adherent.pas=D:\Github\Desktop App\Casnos_Dossier_Manager\Unit3.pas</Transaction>
+    <Transaction>2022/09/03 00:44:20.000.360,D:\Github\Desktop App\Casnos_Dossier_Manager\Unit2.pas=D:\Github\Desktop App\Casnos_Dossier_Manager\uMain.pas</Transaction>
+    <Transaction>2022/09/03 00:44:20.000.360,D:\Github\Desktop App\Casnos_Dossier_Manager\Unit2.fmx=D:\Github\Desktop App\Casnos_Dossier_Manager\uMain.fmx</Transaction>
+    <Transaction>2022/09/17 18:23:22.000.397,=D:\Github\Desktop App\Casnos_Dossier_Manager\Unit3.pas</Transaction>
+    <Transaction>2022/09/17 18:38:56.000.089,D:\Github\Desktop App\Casnos_Dossier_Manager\Unit3.pas=D:\Github\Desktop App\Casnos_Dossier_Manager\uAdd_adherent.pas</Transaction>
+    <Transaction>2022/09/17 18:38:56.000.089,D:\Github\Desktop App\Casnos_Dossier_Manager\Unit3.fmx=D:\Github\Desktop App\Casnos_Dossier_Manager\uAdd_adherent.fmx</Transaction>
   </Transactions>
 </BorlandProject>

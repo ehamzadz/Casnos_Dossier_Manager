@@ -1,213 +1,213 @@
 ﻿[Rectangle9]
-Coordinates=1259,630,69,33
+Coordinates=1259,630,80,36
 
 [content]
-Coordinates=1192,630,51,33
+Coordinates=1192,630,57,36
 
 [text_title]
-Coordinates=131,562,56,51
+Coordinates=131,562,63,58
 
 [SubMenu_Animation]
-Coordinates=519,1,116,33
+Coordinates=519,1,134,36
 
 [Image7]
-Coordinates=921,10,49,51
+Coordinates=921,10,57,58
 
 [top_bar]
-Coordinates=1027,630,52,33
+Coordinates=1027,630,58,36
 
 [nav_bar]
-Coordinates=956,630,53,33
+Coordinates=956,630,61,36
 
 [Text2]
-Coordinates=10,562,41,51
+Coordinates=10,562,47,58
 
 [Rectangle18]
-Coordinates=1115,562,75,33
+Coordinates=1115,562,87,36
 
 [Rectangle5]
-Coordinates=287,630,69,33
+Coordinates=287,630,80,36
 
 [ColorAnimation5]
-Coordinates=519,111,97,33
+Coordinates=519,111,110,36
 
 [Brush2]
-Coordinates=382,365,49,33
+Coordinates=382,365,55,36
 
 [Rectangle19]
-Coordinates=398,562,75,33
+Coordinates=398,562,87,36
 
 [Rectangle7]
-Coordinates=872,562,69,33
+Coordinates=872,562,80,36
 
 [Circle1]
-Coordinates=807,562,48,33
+Coordinates=807,562,55,36
 
 [Text5]
-Coordinates=1495,10,41,51
+Coordinates=1495,10,47,58
 
 [Rectangle6]
-Coordinates=717,562,69,33
+Coordinates=717,562,80,36
 
 [ColorAnimation1]
-Coordinates=519,331,97,33
+Coordinates=519,331,110,36
 
 [Rectangle17]
-Coordinates=460,676,75,33
+Coordinates=460,676,87,36
 
 [Text1]
-Coordinates=807,10,41,51
+Coordinates=807,10,47,58
 
 [Brush3]
-Coordinates=175,365,49,33
+Coordinates=175,365,55,36
 
 [Text7]
-Coordinates=1438,10,41,51
+Coordinates=1438,10,47,58
 
 [text_user]
-Coordinates=1360,10,60,51
+Coordinates=1360,10,68,58
 
 [Rectangle10]
-Coordinates=266,676,75,33
+Coordinates=266,676,87,36
 
 [Image4]
-Coordinates=1169,10,49,51
+Coordinates=1169,10,57,58
 
 [logo]
-Coordinates=455,10,40,51
+Coordinates=455,10,45,58
 
 [Image5]
-Coordinates=988,10,49,51
+Coordinates=988,10,57,58
 
 [ColorAnimation3]
-Coordinates=691,1,97,33
+Coordinates=691,1,110,36
 
 [Image2]
-Coordinates=510,10,49,51
+Coordinates=510,10,57,58
 
 [Brush1]
-Coordinates=27,365,49,33
+Coordinates=27,365,55,36
 
 [Text4]
-Coordinates=1112,10,41,51
+Coordinates=1112,10,47,58
 
 [Rectangle16]
-Coordinates=557,676,75,33
+Coordinates=557,676,87,36
 
 [ImageList1]
-Coordinates=440,365,68,33
+Coordinates=440,365,77,36
 
 [N_of_Users_Invts]
-Coordinates=271,562,101,51
+Coordinates=271,562,117,58
 
 [Rectangle1]
-Coordinates=474,630,69,33
+Coordinates=474,630,80,36
 
 [Rectangle15]
-Coordinates=859,630,75,33
+Coordinates=859,630,87,36
 
 [Text3]
-Coordinates=1055,10,41,51
+Coordinates=1055,10,47,58
 
 [Rectangle13]
-Coordinates=1095,630,75,33
+Coordinates=1095,630,87,36
 
 [ag_de_wly]
-Coordinates=279,10,66,51
+Coordinates=279,10,76,58
 
 [Rectangle14]
-Coordinates=693,630,75,33
+Coordinates=693,630,87,36
 
 [ColorAnimation2]
-Coordinates=691,331,97,33
+Coordinates=691,331,110,36
 
 [Rectangle4]
-Coordinates=197,630,69,33
+Coordinates=197,630,80,36
 
 [current_tab]
-Coordinates=107,630,70,33
+Coordinates=107,630,80,36
 
 [sub_menu]
-Coordinates=85,676,65,33
+Coordinates=85,676,74,36
 
 [Rectangle11]
-Coordinates=10,630,75,33
+Coordinates=10,630,87,36
 
 [Rectangle2]
-Coordinates=1489,562,69,33
+Coordinates=1489,562,80,36
 
 [Rectangle20]
-Coordinates=1392,562,75,33
+Coordinates=1392,562,87,36
 
 [Image3]
-Coordinates=1236,10,49,51
+Coordinates=1236,10,57,58
 
 [Rectangle3]
-Coordinates=1302,562,69,33
+Coordinates=1302,562,80,36
 
 [ColorAnimation4]
-Coordinates=118,439,97,33
+Coordinates=118,439,110,36
 
 [Rectangle8]
-Coordinates=1212,562,69,33
+Coordinates=1212,562,80,36
 
 [Image1]
-Coordinates=204,562,49,51
+Coordinates=204,562,57,58
 
 [Image6]
-Coordinates=577,10,49,51
+Coordinates=577,10,57,58
 
 [StringGrid1]
-Coordinates=250,140,70,411
+Coordinates=300,90,80,366
 Visible=True
 
 [Rectangle12]
-Coordinates=962,562,75,33
+Coordinates=962,562,87,36
 
 [settings]
-Coordinates=790,630,53,33
+Coordinates=790,630,59,36
 
 [Brush4]
-Coordinates=436,513,49,33
+Coordinates=436,513,55,36
 
 [TabControl1]
-Coordinates=1414,630,74,33
+Coordinates=1414,630,85,36
 
 [adherent]
-Coordinates=10,676,57,33
+Coordinates=10,676,65,36
 
 [Brush5]
-Coordinates=308,513,49,33
+Coordinates=308,513,55,36
 
 [Rectangle21]
-Coordinates=169,676,75,33
+Coordinates=169,676,87,36
 
 [Text10]
-Coordinates=67,562,46,51
+Coordinates=67,562,54,58
 
 [Text6]
-Coordinates=864,10,41,51
+Coordinates=864,10,47,58
 
 [Brush6]
-Coordinates=249,513,49,33
+Coordinates=249,513,55,36
 
 [acceuil]
-Coordinates=1349,630,49,33
+Coordinates=1349,630,55,36
 
 [Rectangle25]
-Coordinates=363,676,75,33
+Coordinates=363,676,87,36
 
 [Rectangle22]
-Coordinates=377,630,75,33
+Coordinates=377,630,87,36
 
 [Brush8]
-Coordinates=131,513,49,33
+Coordinates=131,513,55,36
 
 [Brush7]
-Coordinates=72,513,49,33
+Coordinates=72,513,55,36
 
 [users]
-Coordinates=1059,562,41,33
+Coordinates=1059,562,46,36
 
 []
 Coordinates=134,476,107,33
@@ -218,54 +218,54 @@ ActiveLayerNames=
 EditingLayerName=
 
 [DataModule1.FDQuery1]
-Coordinates=644,10,130,51
+Coordinates=644,10,153,58
 
 [DataModule1.FDTable1]
-Coordinates=650,160,127,33
+Coordinates=650,160,151,36
 Visible=False
 
 [BindSourceDB1]
-Coordinates=10,10,115,447
+Coordinates=10,10,138,388
 
 [BindingsList1]
-Coordinates=52,80,82,33
+Coordinates=52,80,91,36
 
 [btn_add_adherent]
-Coordinates=564,630,103,33
+Coordinates=564,630,119,36
 
 [Brush9]
-Coordinates=691,117,49,33
+Coordinates=691,117,55,36
 
 [FDGUIxWaitCursor1]
-Coordinates=871,1,113,33
+Coordinates=871,1,132,36
 
 [StyleBook1]
-Coordinates=871,56,70,33
+Coordinates=871,56,80,36
 
 [Text11]
-Coordinates=158,10,46,51
+Coordinates=158,10,54,58
 
 [Rectangle24]
-Coordinates=620,562,75,33
+Coordinates=620,562,87,36
 
 [Text9]
-Coordinates=222,10,41,51
+Coordinates=222,10,47,58
 
 [Brush10]
-Coordinates=591,56,55,33
+Coordinates=591,56,62,36
 
 [btn_del_adherent]
-Coordinates=495,562,100,33
+Coordinates=495,562,115,36
 
 [Brush11]
-Coordinates=839,166,55,33
+Coordinates=839,166,62,36
 
 [Text12]
-Coordinates=167,164,46,51
+Coordinates=680,180,54,58
 
 [Edit1]
-Coordinates=167,87,40,51
+Coordinates=600,140,44,58
 
 [ClearEditButton1]
-Coordinates=393,87,98,33
+Coordinates=393,87,112,36
 

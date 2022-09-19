@@ -1,9 +1,12 @@
 object Form3: TForm3
   Left = 0
   Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = Single
   Caption = 'Ajouter un Adh'#233'rent'
   ClientHeight = 363
   ClientWidth = 713
+  Position = DesktopCenter
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -32,6 +35,8 @@ object Form3: TForm3
       StyleLookup = ''
       TabOrder = 0
       Text = 'Adh'#233'rent'
+      ExplicitSize.cx = 70.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
       object Text1: TText
         Position.X = 32.000000000000000000
         Position.Y = 30.000000000000000000
@@ -111,7 +116,7 @@ object Form3: TForm3
         Size.Width = 121.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
-        Text = 'Nom du P'#232're'
+        Text = 'Pr'#233'nom du P'#232're'
         TextSettings.HorzAlign = Leading
       end
       object Edit3: TEdit
@@ -209,7 +214,7 @@ object Form3: TForm3
           'Mari'#233
           'Divorc'#233
           'C'#233'libataire')
-        Position.X = 432.000000000000000000
+        Position.X = 440.000000000000000000
         Position.Y = 180.000000000000000000
         Size.Width = 105.000000000000000000
         Size.Height = 22.000000000000000000
@@ -218,9 +223,8 @@ object Form3: TForm3
       end
       object ComboBox2: TComboBox
         Items.Strings = (
-          'Mari'#233
-          'Divorc'#233
-          'C'#233'libataire')
+          'Homme'
+          'Femme')
         Position.X = 608.000000000000000000
         Position.Y = 180.000000000000000000
         Size.Width = 73.000000000000000000
@@ -273,6 +277,60 @@ object Form3: TForm3
         Text = 'Num'#233'ro Compte Bancaire'
         TextSettings.HorzAlign = Leading
       end
+      object CheckBox1: TCheckBox
+        Position.X = 665.000000000000000000
+        Position.Y = 250.000000000000000000
+        Size.Width = 17.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 26
+        OnChange = CheckBox1Change
+      end
+      object Text14: TText
+        Position.X = 608.000000000000000000
+        Position.Y = 250.000000000000000000
+        Size.Width = 49.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Soci'#233't'#233
+        TextSettings.HorzAlign = Leading
+      end
+      object Rectangle9: TRectangle
+        Align = Bottom
+        Cursor = crHandPoint
+        Margins.Left = 11.000000000000000000
+        Margins.Top = 11.000000000000000000
+        Margins.Right = 11.000000000000000000
+        Margins.Bottom = 11.000000000000000000
+        Position.X = 11.000000000000000000
+        Position.Y = 285.000000000000000000
+        Size.Width = 691.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 10.000000000000000000
+        YRadius = 10.000000000000000000
+        OnClick = Rectangle9Click
+        object Text15: TText
+          Align = Center
+          HitTest = False
+          Size.Width = 102.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Ajouter'
+          TextSettings.Font.Family = 'Tajawal'
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.StyleExt = {00050000000000000004000000}
+        end
+        object ColorAnimation3: TColorAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Fill.Color'
+          StartValue = xFFE0E0E0
+          StopValue = claSeagreen
+          Trigger = 'IsMouseOver=true'
+          TriggerInverse = 'IsMouseOver=false'
+        end
+      end
     end
     object TabItem2: TTabItem
       CustomIcon = <
@@ -285,6 +343,8 @@ object Form3: TForm3
       StyleLookup = ''
       TabOrder = 0
       Text = 'Activit'#233
+      ExplicitSize.cx = 60.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
     end
   end
 end
