@@ -191,9 +191,6 @@ Coordinates=864,10,47,58
 [Brush6]
 Coordinates=249,513,55,36
 
-[acceuil]
-Coordinates=1349,630,55,36
-
 [Rectangle25]
 Coordinates=363,676,87,36
 
@@ -268,4 +265,7 @@ Coordinates=600,140,44,58
 
 [ClearEditButton1]
 Coordinates=393,87,112,36
+
+[affiliations]
+Coordinates=1349,630,55,36
 

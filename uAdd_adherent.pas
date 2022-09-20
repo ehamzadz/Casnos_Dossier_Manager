@@ -101,9 +101,11 @@ begin
     DM.DataModule1.FDQuery1.ParamByName('mat_adh').asstring := matricule_adh;
     DM.DataModule1.FDQuery1.ExecSQL;
 
-    //Refresh Table
+    //Refresh Tables
     DM.DataModule1.table_activite.Active := false;
     DM.DataModule1.table_activite.Active := true;
+    DM.DataModule1.table_affiliations.Active := false;
+    DM.DataModule1.table_affiliations.Active := true;
 
   end;
 

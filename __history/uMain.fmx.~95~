@@ -43678,7 +43678,8 @@ object Form2: TForm2
                   Size.Height = 36.000000000000000000
                   Size.PlatformDefault = False
                   Stroke.Kind = None
-                  OnClick = Rectangle28Click
+                  Visible = False
+                  OnClick = btn_add_adherentClick
                   object Rectangle29: TRectangle
                     Align = Right
                     Fill.Color = xFF14CC85
@@ -43777,12 +43778,13 @@ object Form2: TForm2
                   Align = Left
                   TabOrder = 0
                   FilterChar = '0123456789'
-                  Position.X = 217.000000000000000000
+                  Position.X = 185.000000000000000000
                   Position.Y = 15.000000000000000000
                   Margins.Right = 10.000000000000000000
                   Size.Width = 168.000000000000000000
                   Size.Height = 36.000000000000000000
                   Size.PlatformDefault = False
+                  OnTyping = Edit1Typing
                   object ClearEditButton2: TClearEditButton
                     CanFocus = False
                     Cursor = crArrow
@@ -43797,10 +43799,10 @@ object Form2: TForm2
                   Align = Left
                   Position.X = 10.000000000000000000
                   Position.Y = 15.000000000000000000
-                  Size.Width = 207.000000000000000000
+                  Size.Width = 175.000000000000000000
                   Size.Height = 36.000000000000000000
                   Size.PlatformDefault = False
-                  Text = 'Rechercher par Code Affiliation'
+                  Text = 'Rechercher par Matricule:'
                   TextSettings.Font.Size = 14.000000000000000000
                   TextSettings.Font.StyleExt = {00060000000000000004000000}
                   TextSettings.HorzAlign = Leading
@@ -44024,10 +44026,10 @@ object Form2: TForm2
               Size.PlatformDefault = False
               StyleLookup = 'gridstyle'
               TabOrder = 1
-              RowCount = 1
+              RowCount = 0
               Options = [AlternatingRowBackground, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, Header, HeaderClick, AutoDisplacement]
               Viewport.Width = 800.000000000000000000
-              Viewport.Height = 422.000000000000000000
+              Viewport.Height = 438.000000000000000000
             end
           end
         end

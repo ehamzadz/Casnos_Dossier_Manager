@@ -16,6 +16,8 @@ type
     FDQuery1: TFDQuery;
     FDTable1: TFDTable;
     table_activite: TFDTable;
+    table_affiliations: TFDTable;
+    FDQuery2: TFDQuery;
   private
     { Private declarations }
   public

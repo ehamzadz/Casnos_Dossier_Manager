@@ -68,7 +68,7 @@ type
     Rectangle20: TRectangle;
     Image7: TImage;
     TabControl1: TTabControl;
-    acceuil: TTabItem;
+    affiliations: TTabItem;
     adherent: TTabItem;
     users: TTabItem;
     settings: TTabItem;
@@ -96,10 +96,25 @@ type
     Text11: TText;
     Brush10: TBrushObject;
     Brush11: TBrushObject;
-    LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
     Edit1: TEdit;
     Text12: TText;
     ClearEditButton1: TClearEditButton;
+    LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
+    Rectangle23: TRectangle;
+    Rectangle26: TRectangle;
+    Rectangle27: TRectangle;
+    Rectangle28: TRectangle;
+    Rectangle29: TRectangle;
+    Text8: TText;
+    Text13: TText;
+    Rectangle30: TRectangle;
+    Rectangle31: TRectangle;
+    Text14: TText;
+    Text15: TText;
+    Edit2: TEdit;
+    ClearEditButton2: TClearEditButton;
+    Text16: TText;
+    StringGrid2: TStringGrid;
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle15Click(Sender: TObject);
@@ -114,8 +129,9 @@ type
     procedure Rectangle19MouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure btn_del_adherentClick(Sender: TObject);
-    procedure ClearEditButton1Click(Sender: TObject);
     procedure Edit1Typing(Sender: TObject);
+    procedure ClearEditButton1Click(Sender: TObject);
+    procedure btn_add_adherentClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -130,7 +146,12 @@ implementation
 
 {$R *.fmx}
 
-uses uLogin, DM;
+uses uLogin, DM, uAdd_adherent;
+
+procedure TForm2.btn_add_adherentClick(Sender: TObject);
+begin
+  form3.ShowModal;
+end;
 
 procedure TForm2.btn_del_adherentClick(Sender: TObject);
 var
@@ -152,14 +173,14 @@ end;
 
 procedure TForm2.ClearEditButton1Click(Sender: TObject);
 begin
-  edit1.Text:='';
+  edit1.Text := '';
 end;
 
 procedure TForm2.Edit1Typing(Sender: TObject);
 begin
-  DM.DataModule1.FDTable1.Active := false;
+  DM.DataModule1.FDTable1.Filtered:= false;
   DM.DataModule1.FDTable1.Filter := 'mat_adh like ' + quotedstr('%'+edit1.Text+'%');
-  DM.DataModule1.FDTable1.Active := true;
+  DM.DataModule1.FDTable1.Filtered:= true;
 end;
 
 procedure TForm2.FormCreate(Sender: TObject);
@@ -225,7 +246,7 @@ var
 begin
   this := TButton(sender);
   current_tab.Parent := this;
-  text_title.Text := 'Acceuil';
+  text_title.Text := 'Affiliations';
   tabcontrol1.TabIndex := 0;
 end;
 

@@ -226,7 +226,7 @@ var
 begin
   this := TButton(sender);
   current_tab.Parent := this;
-  text_title.Text := 'Adhérent informations';
+  text_title.Text := 'AdhÃ©rent informations';
   tabcontrol1.TabIndex := 1;
 end;
 
@@ -262,7 +262,7 @@ var
 begin
   this := TButton(sender);
   current_tab.Parent := this;
-  text_title.Text := 'Paramétres';
+  text_title.Text := 'ParamÃ©tres';
   tabcontrol1.TabIndex := 3;
 end;
 
