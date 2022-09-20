@@ -168,11 +168,11 @@ begin
 
 
     DM.DataModule1.FDQuery1.SQL.Clear;
-    DM.DataModule1.FDQuery1.SQL.Add(' select code_affiliation From affiliation where mat_adh=:mat ');
+    DM.DataModule1.FDQuery1.SQL.Add(' select * From affiliation where mat_adh=:mat ');
     DM.DataModule1.FDQuery1.ParamByName('mat').asinteger := matricule;
     DM.DataModule1.FDQuery1.open;
 
-    code_act := DM.DataModule1.FDQuery1.FieldByName('code_affiliation').AsInteger;
+    code_act := DM.DataModule1.FDQuery1.FieldByName('code_act').AsInteger;
 
 
     DM.DataModule1.FDQuery1.SQL.Clear;
