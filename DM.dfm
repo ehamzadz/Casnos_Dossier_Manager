@@ -25,7 +25,6 @@ object DataModule1: TDataModule1
     Top = 168
   end
   object table_activite: TFDTable
-    Active = True
     IndexFieldNames = 'code_activite'
     Connection = FDConnection1
     TableName = 'activite'
