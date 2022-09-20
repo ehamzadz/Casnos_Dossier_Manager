@@ -98,7 +98,7 @@ begin
 
     if checkbox1.IsChecked=true then begin
       DM.DataModule1.FDQuery1.ParamByName('type').asstring := 'morale';
-      tabcontrol1.TabIndex := 1;
+      tabcontrol1.TabIndex := 0;
     end else begin
       DM.DataModule1.FDQuery1.ParamByName('type').asstring := 'normale';
     end;

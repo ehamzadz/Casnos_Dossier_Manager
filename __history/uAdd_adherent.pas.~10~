@@ -72,10 +72,9 @@ end;
 
 procedure TForm3.Rectangle9Click(Sender: TObject);
 var
-  matricule_adh :string;
+  nom,pre :string;
 begin
 
-  matricule_adh := edit1.Text;
 
   if (edit1.Text='') or (edit2.Text='') or (edit3.Text='') or (edit4.Text='') or (edit5.Text='') or (edit6.Text='') or (edit7.Text='') or (edit8.Text='') or (edit9.Text='') or (edit10.Text='') then begin
     showmessage('Completer tous les champs!');
