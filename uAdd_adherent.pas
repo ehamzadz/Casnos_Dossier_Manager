@@ -57,10 +57,12 @@ type
     Edit14: TEdit;
     procedure CheckBox1Change(Sender: TObject);
     procedure Rectangle9Click(Sender: TObject);
+    procedure Rectangle1Click(Sender: TObject);
   private
     { Private declarations }
   public
     { Public declarations }
+    matricule_adh :string;
   end;
 
 var
@@ -81,9 +83,34 @@ begin
   end;                       }
 end;
 
+procedure TForm3.Rectangle1Click(Sender: TObject);
+begin
+
+  if (edit11.Text='') or (edit12.Text='') or (edit13.Text='') or (edit14.Text='') then begin
+    showmessage('Completer tous les champs!');
+  end else begin
+
+    DM.DataModule1.FDQuery1.SQL.Clear;
+    DM.DataModule1.FDQuery1.SQL.Add(' INSERT INTO activite values(:code,:raison,:nom,:adr,:mat_adh) ');
+    DM.DataModule1.FDQuery1.ParamByName('code').asinteger := strtoint(edit11.Text);
+    DM.DataModule1.FDQuery1.ParamByName('raison').asstring := edit12.Text;
+    DM.DataModule1.FDQuery1.ParamByName('nom').asstring := edit13.Text;
+    DM.DataModule1.FDQuery1.ParamByName('adr').asstring := edit14.Text;
+    DM.DataModule1.FDQuery1.ParamByName('mat_adh').asstring := matricule_adh;
+    DM.DataModule1.FDQuery1.ExecSQL;
+
+    //Refresh Table
+    DM.DataModule1.table_activite.Active := false;
+    DM.DataModule1.table_activite.Active := true;
+
+  end;
+
+  form3.Close;
+
+
+end;
+
 procedure TForm3.Rectangle9Click(Sender: TObject);
-var
-  matricule_adh :string;
 begin
 
   matricule_adh := edit1.Text;
@@ -109,7 +136,6 @@ begin
 
     if checkbox1.IsChecked=true then begin
       DM.DataModule1.FDQuery1.ParamByName('type').asstring := 'morale';
-      tabcontrol1.TabIndex := 1;
     end else begin
       DM.DataModule1.FDQuery1.ParamByName('type').asstring := 'normale';
     end;
@@ -118,7 +144,7 @@ begin
     DM.DataModule1.FDTable1.Active := false;
     DM.DataModule1.FDTable1.Active := true;
 
-    form3.Close;
+    tabcontrol1.TabIndex := 1;
 
   end;
 

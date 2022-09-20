@@ -15,6 +15,7 @@ type
     FDConnection1: TFDConnection;
     FDQuery1: TFDQuery;
     FDTable1: TFDTable;
+    table_activite: TFDTable;
   private
     { Private declarations }
   public
