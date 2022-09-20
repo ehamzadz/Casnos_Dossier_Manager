@@ -29842,7 +29842,7 @@ object Form2: TForm2
           Size.Width = 204.000000000000000000
           Size.Height = 55.000000000000000000
           Size.PlatformDefault = False
-          Text = 'ACCEUIL'
+          Text = 'Affiliations'
           TextSettings.Font.Size = 14.000000000000000000
           TextSettings.Font.StyleExt = {00060000000000000004000000}
           TextSettings.FontColor = claAzure
@@ -43593,7 +43593,7 @@ object Form2: TForm2
             Size.Width = 496.000000000000000000
             Size.Height = 43.000000000000000000
             Size.PlatformDefault = False
-            Text = 'Acceuil'
+            Text = 'Affiliations'
             TextSettings.Font.Size = 14.000000000000000000
             TextSettings.Font.StyleExt = {00060000000000000004000000}
             TextSettings.HorzAlign = Leading
@@ -43620,7 +43620,7 @@ object Form2: TForm2
           568s
           824s
           568s)
-        object acceuil: TTabItem
+        object affiliations: TTabItem
           CustomIcon = <
             item
             end>
@@ -43632,6 +43632,197 @@ object Form2: TForm2
           TabOrder = 0
           ExplicitSize.cx = 8.000000000000000000
           ExplicitSize.cy = 8.000000000000000000
+          object Rectangle23: TRectangle
+            Align = Client
+            Fill.Color = xFFF6F6F6
+            Padding.Left = 10.000000000000000000
+            Padding.Top = 10.000000000000000000
+            Padding.Right = 10.000000000000000000
+            Padding.Bottom = 10.000000000000000000
+            Size.Width = 824.000000000000000000
+            Size.Height = 568.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object Rectangle26: TRectangle
+              Align = Top
+              Fill.Kind = None
+              Position.X = 10.000000000000000000
+              Position.Y = 10.000000000000000000
+              Size.Width = 804.000000000000000000
+              Size.Height = 66.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object Rectangle27: TRectangle
+                Align = Client
+                Corners = [TopLeft, TopRight]
+                Fill.Color = claWhite
+                HitTest = False
+                Padding.Left = 10.000000000000000000
+                Padding.Top = 15.000000000000000000
+                Padding.Right = 10.000000000000000000
+                Padding.Bottom = 15.000000000000000000
+                Size.Width = 804.000000000000000000
+                Size.Height = 66.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                XRadius = 10.000000000000000000
+                YRadius = 10.000000000000000000
+                object Rectangle28: TRectangle
+                  Align = Right
+                  Cursor = crHandPoint
+                  Fill.Color = xFF09B271
+                  Margins.Right = 10.000000000000000000
+                  Position.X = 484.000000000000000000
+                  Position.Y = 15.000000000000000000
+                  Size.Width = 162.000000000000000000
+                  Size.Height = 36.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  OnClick = Rectangle28Click
+                  object Rectangle29: TRectangle
+                    Align = Right
+                    Fill.Color = xFF14CC85
+                    HitTest = False
+                    Padding.Bottom = 6.000000000000000000
+                    Margins.Left = 5.000000000000000000
+                    Margins.Top = 5.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 5.000000000000000000
+                    Position.X = 131.000000000000000000
+                    Position.Y = 5.000000000000000000
+                    Size.Width = 26.000000000000000000
+                    Size.Height = 26.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Kind = None
+                    object Text8: TText
+                      Align = Center
+                      HitTest = False
+                      Size.Width = 43.000000000000000000
+                      Size.Height = 43.000000000000000000
+                      Size.PlatformDefault = False
+                      Text = '+'
+                      TextSettings.Font.Family = 'Tajawal'
+                      TextSettings.Font.Size = 28.000000000000000000
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.FontColor = claWhite
+                    end
+                  end
+                  object Text13: TText
+                    Align = Client
+                    HitTest = False
+                    Size.Width = 126.000000000000000000
+                    Size.Height = 36.000000000000000000
+                    Size.PlatformDefault = False
+                    Text = 'Ajouter Nouveau'
+                    TextSettings.Font.Family = 'Tajawal'
+                    TextSettings.Font.Size = 14.000000000000000000
+                    TextSettings.Font.StyleExt = {00050000000000000004000000}
+                    TextSettings.FontColor = claWhite
+                  end
+                end
+                object Rectangle30: TRectangle
+                  Align = Right
+                  Cursor = crHandPoint
+                  Fill.Color = xFFD40D12
+                  Position.X = 656.000000000000000000
+                  Position.Y = 15.000000000000000000
+                  Size.Width = 138.000000000000000000
+                  Size.Height = 36.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  OnClick = Rectangle30Click
+                  object Rectangle31: TRectangle
+                    Align = Right
+                    Fill.Color = xFFFF1D23
+                    HitTest = False
+                    Padding.Bottom = 6.000000000000000000
+                    Margins.Left = 5.000000000000000000
+                    Margins.Top = 5.000000000000000000
+                    Margins.Right = 5.000000000000000000
+                    Margins.Bottom = 5.000000000000000000
+                    Position.X = 107.000000000000000000
+                    Position.Y = 5.000000000000000000
+                    Size.Width = 26.000000000000000000
+                    Size.Height = 26.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Kind = None
+                    object Text14: TText
+                      Align = Center
+                      HitTest = False
+                      Size.Width = 43.000000000000000000
+                      Size.Height = 43.000000000000000000
+                      Size.PlatformDefault = False
+                      Text = 'x'
+                      TextSettings.Font.Family = 'Tajawal'
+                      TextSettings.Font.Size = 28.000000000000000000
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.FontColor = claWhite
+                    end
+                  end
+                  object Text15: TText
+                    Align = Client
+                    HitTest = False
+                    Size.Width = 102.000000000000000000
+                    Size.Height = 36.000000000000000000
+                    Size.PlatformDefault = False
+                    Text = 'Supprimer'
+                    TextSettings.Font.Family = 'Tajawal'
+                    TextSettings.Font.Size = 14.000000000000000000
+                    TextSettings.Font.StyleExt = {00050000000000000004000000}
+                    TextSettings.FontColor = claWhite
+                  end
+                end
+                object Edit2: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Left
+                  TabOrder = 0
+                  FilterChar = '0123456789'
+                  Position.X = 217.000000000000000000
+                  Position.Y = 15.000000000000000000
+                  Margins.Right = 10.000000000000000000
+                  Size.Width = 168.000000000000000000
+                  Size.Height = 36.000000000000000000
+                  Size.PlatformDefault = False
+                  object ClearEditButton2: TClearEditButton
+                    CanFocus = False
+                    Cursor = crArrow
+                    Size.Width = 28.000000000000000000
+                    Size.Height = 32.000000000000000000
+                    Size.PlatformDefault = False
+                    TabOrder = 0
+                    OnClick = ClearEditButton1Click
+                  end
+                end
+                object Text16: TText
+                  Align = Left
+                  Position.X = 10.000000000000000000
+                  Position.Y = 15.000000000000000000
+                  Size.Width = 207.000000000000000000
+                  Size.Height = 36.000000000000000000
+                  Size.PlatformDefault = False
+                  Text = 'Rechercher par Code Affiliation'
+                  TextSettings.Font.Size = 14.000000000000000000
+                  TextSettings.Font.StyleExt = {00060000000000000004000000}
+                  TextSettings.HorzAlign = Leading
+                end
+              end
+            end
+            object StringGrid2: TStringGrid
+              Align = Client
+              CanFocus = True
+              ClipChildren = True
+              DisableFocusEffect = True
+              Size.Width = 804.000000000000000000
+              Size.Height = 482.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'gridstyle'
+              TabOrder = 1
+              RowCount = 0
+              Options = [AlternatingRowBackground, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, Header, HeaderClick, AutoDisplacement]
+              Viewport.Width = 800.000000000000000000
+              Viewport.Height = 438.000000000000000000
+            end
+          end
         end
         object adherent: TTabItem
           CustomIcon = <
@@ -43692,6 +43883,7 @@ object Form2: TForm2
                   Size.Height = 36.000000000000000000
                   Size.PlatformDefault = False
                   Stroke.Kind = None
+                  Visible = False
                   OnClick = btn_add_adherentClick
                   object Rectangle25: TRectangle
                     Align = Right
@@ -43832,10 +44024,10 @@ object Form2: TForm2
               Size.PlatformDefault = False
               StyleLookup = 'gridstyle'
               TabOrder = 1
-              RowCount = 1
+              RowCount = 0
               Options = [AlternatingRowBackground, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, Header, HeaderClick, AutoDisplacement]
               Viewport.Width = 800.000000000000000000
-              Viewport.Height = 422.000000000000000000
+              Viewport.Height = 438.000000000000000000
             end
           end
         end
@@ -45519,11 +45711,68 @@ object Form2: TForm2
           Alignment = taCenter
         end>
     end
+    object LinkGridToDataSourceBindSourceDB2: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      GridControl = StringGrid2
+      Columns = <
+        item
+          MemberName = 'code_affiliation'
+          Width = 90
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'date_creat'
+          Width = 100
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'mat_adh'
+          Width = 100
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'nom_adh'
+          Width = 150
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'pre_adh'
+          Width = 150
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'num_tel_adh'
+          Width = 90
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'type_personne'
+          Width = 70
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'code_activite'
+          Width = 100
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'nom_act'
+          Width = 150
+          Alignment = taCenter
+        end>
+    end
   end
   object FDGUIxWaitCursor1: TFDGUIxWaitCursor
     Provider = 'FMX'
     ScreenCursor = gcrNone
     Left = 240
     Top = 248
+  end
+  object BindSourceDB2: TBindSourceDB
+    DataSet = DataModule1.table_affiliations
+    ScopeMappings = <>
+    Left = 544
+    Top = 312
   end
 end

@@ -70,7 +70,7 @@ type
     TabControl1: TTabControl;
     affiliations: TTabItem;
     adherent: TTabItem;
-    users: TTabItem;
+    activite: TTabItem;
     settings: TTabItem;
     Rectangle12: TRectangle;
     Rectangle22: TRectangle;
@@ -117,6 +117,28 @@ type
     StringGrid2: TStringGrid;
     BindSourceDB2: TBindSourceDB;
     LinkGridToDataSourceBindSourceDB2: TLinkGridToDataSource;
+    Rectangle32: TRectangle;
+    Image8: TImage;
+    ColorAnimation6: TColorAnimation;
+    Rectangle33: TRectangle;
+    Text17: TText;
+    Rectangle34: TRectangle;
+    Rectangle35: TRectangle;
+    Rectangle36: TRectangle;
+    Rectangle37: TRectangle;
+    Rectangle38: TRectangle;
+    Text18: TText;
+    Text19: TText;
+    Rectangle39: TRectangle;
+    Rectangle40: TRectangle;
+    Text20: TText;
+    Text21: TText;
+    Edit3: TEdit;
+    ClearEditButton3: TClearEditButton;
+    Text22: TText;
+    StringGrid3: TStringGrid;
+    BindSourceDB3: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB3: TLinkGridToDataSource;
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle15Click(Sender: TObject);
@@ -318,7 +340,7 @@ var
 begin
   this := TButton(sender);
   current_tab.Parent := this;
-  text_title.Text := 'Utilisateurs';
+  text_title.Text := 'Activités';
   tabcontrol1.TabIndex := 2;
 end;
 

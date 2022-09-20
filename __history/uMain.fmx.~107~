@@ -47153,7 +47153,7 @@ object Form2: TForm2
         Size.Width = 824.000000000000000000
         Size.Height = 568.000000000000000000
         Size.PlatformDefault = False
-        TabIndex = 1
+        TabIndex = 0
         TabOrder = 0
         TabPosition = None
         Sizes = (
@@ -47169,7 +47169,7 @@ object Form2: TForm2
           CustomIcon = <
             item
             end>
-          IsSelected = False
+          IsSelected = True
           Size.Width = 8.000000000000000000
           Size.Height = 8.000000000000000000
           Size.PlatformDefault = False
@@ -47373,7 +47373,7 @@ object Form2: TForm2
           CustomIcon = <
             item
             end>
-          IsSelected = True
+          IsSelected = False
           Size.Width = 8.000000000000000000
           Size.Height = 8.000000000000000000
           Size.PlatformDefault = False
@@ -47569,7 +47569,7 @@ object Form2: TForm2
               Size.PlatformDefault = False
               StyleLookup = 'gridstyle'
               TabOrder = 1
-              RowCount = 1
+              RowCount = 0
               Options = [AlternatingRowBackground, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, Header, HeaderClick, AutoDisplacement]
               Viewport.Width = 804.000000000000000000
               Viewport.Height = 482.000000000000000000
@@ -49507,35 +49507,27 @@ object Form2: TForm2
       Columns = <
         item
           MemberName = 'code_act'
-          Width = 100
         end
         item
           MemberName = 'rais_act'
-          Width = 100
         end
         item
           MemberName = 'nom_act'
-          Width = 100
         end
         item
           MemberName = 'adr_act'
-          Width = 100
         end
         item
           MemberName = 'mat_adh'
-          Width = 100
         end
         item
           MemberName = 'nom_adh'
-          Width = 100
         end
         item
           MemberName = 'pre_adh'
-          Width = 100
         end
         item
           MemberName = 'type_personne'
-          Width = 100
         end>
     end
   end

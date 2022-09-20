@@ -115,6 +115,13 @@ type
     ClearEditButton2: TClearEditButton;
     Text16: TText;
     StringGrid2: TStringGrid;
+    BindSourceDB2: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB2: TLinkGridToDataSource;
+    Rectangle32: TRectangle;
+    Image8: TImage;
+    ColorAnimation6: TColorAnimation;
+    Rectangle33: TRectangle;
+    Text17: TText;
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle15Click(Sender: TObject);
@@ -133,6 +140,7 @@ type
     procedure ClearEditButton1Click(Sender: TObject);
     procedure btn_add_adherentClick(Sender: TObject);
     procedure Rectangle28Click(Sender: TObject);
+    procedure Rectangle30Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -156,12 +164,21 @@ end;
 
 procedure TForm2.btn_del_adherentClick(Sender: TObject);
 var
-  matricule :integer;
+  matricule,code_act :integer;
 begin
-  if MessageDlg('Voulez vous sure?',
+  if MessageDlg('Êtes-vous sûr?',
     mtConfirmation, [mbYes, mbNo], 0, mbYes) = mrYes then
   begin
     matricule := strtoint(Stringgrid1.Cells[0,Stringgrid1.Selected]);
+
+
+    DM.DataModule1.FDQuery1.SQL.Clear;
+    DM.DataModule1.FDQuery1.SQL.Add(' select * From affiliation where mat_adh=:mat ');
+    DM.DataModule1.FDQuery1.ParamByName('mat').asinteger := matricule;
+    DM.DataModule1.FDQuery1.open;
+
+    code_act := DM.DataModule1.FDQuery1.FieldByName('code_act').AsInteger;
+
 
     DM.DataModule1.FDQuery1.SQL.Clear;
     DM.DataModule1.FDQuery1.SQL.Add(' DELETE From adherent where mat_adh=:mat ');
@@ -169,6 +186,22 @@ begin
     DM.DataModule1.FDQuery1.ExecSQL;
     DM.DataModule1.FDTable1.Active := false;
     DM.DataModule1.FDTable1.Active := true;
+
+
+    DM.DataModule1.FDQuery1.SQL.Clear;
+    DM.DataModule1.FDQuery1.SQL.Add(' DELETE From activite where code_activite=:code ');
+    DM.DataModule1.FDQuery1.ParamByName('code').asinteger := code_act;
+    DM.DataModule1.FDQuery1.ExecSQL;
+
+
+    DM.DataModule1.FDTable1.Active := false;
+    DM.DataModule1.FDTable1.Active := true;
+
+    DM.DataModule1.table_activite.Active := false;
+    DM.DataModule1.table_activite.Active := true;
+
+    DM.DataModule1.table_affiliations.Active := false;
+    DM.DataModule1.table_affiliations.Active := true;
   end;
 end;
 
@@ -244,6 +277,24 @@ end;
 procedure TForm2.Rectangle28Click(Sender: TObject);
 begin
   form3.ShowModal;
+end;
+
+procedure TForm2.Rectangle30Click(Sender: TObject);
+var
+  code :integer;
+begin
+  if MessageDlg('Êtes-vous sûr?',
+    mtConfirmation, [mbYes, mbNo], 0, mbYes) = mrYes then
+  begin
+    code := strtoint(Stringgrid2.Cells[0,Stringgrid2.Selected]);
+
+    DM.DataModule1.FDQuery1.SQL.Clear;
+    DM.DataModule1.FDQuery1.SQL.Add(' DELETE From affiliation where code_affiliation=:code ');
+    DM.DataModule1.FDQuery1.ParamByName('code').asinteger := code;
+    DM.DataModule1.FDQuery1.ExecSQL;
+    DM.DataModule1.table_affiliations.Active := false;
+    DM.DataModule1.table_affiliations.Active := true;
+  end;
 end;
 
 procedure TForm2.Rectangle3Click(Sender: TObject);

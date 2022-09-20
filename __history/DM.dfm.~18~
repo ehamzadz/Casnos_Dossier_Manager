@@ -6,7 +6,6 @@ object DataModule1: TDataModule1
     Params.Strings = (
       'Database=D:\casnos.mdb'
       'DriverID=MSAcc')
-    Connected = True
     LoginPrompt = False
     Left = 136
     Top = 80
@@ -17,11 +16,23 @@ object DataModule1: TDataModule1
     Top = 80
   end
   object FDTable1: TFDTable
-    Active = True
     IndexFieldNames = 'mat_adh'
     Connection = FDConnection1
     TableName = 'adherent'
     Left = 128
+    Top = 168
+  end
+  object table_activite: TFDTable
+    IndexFieldNames = 'code_activite'
+    Connection = FDConnection1
+    TableName = 'activite'
+    Left = 200
+    Top = 168
+  end
+  object table_affiliations: TFDTable
+    Connection = FDConnection1
+    TableName = 'qry_affiliations'
+    Left = 296
     Top = 168
   end
 end

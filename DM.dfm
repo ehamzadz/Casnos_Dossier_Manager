@@ -26,10 +26,9 @@ object DataModule1: TDataModule1
   end
   object table_activite: TFDTable
     Active = True
-    IndexFieldNames = 'code_activite'
     Connection = FDConnection1
-    TableName = 'activite'
-    Left = 200
+    TableName = 'qry_activite'
+    Left = 208
     Top = 168
   end
   object table_affiliations: TFDTable
@@ -37,6 +36,11 @@ object DataModule1: TDataModule1
     Connection = FDConnection1
     TableName = 'qry_affiliations'
     Left = 296
+    Top = 168
+  end
+  object FDTable2: TFDTable
+    Connection = FDConnection1
+    Left = 408
     Top = 168
   end
 end

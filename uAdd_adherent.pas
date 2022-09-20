@@ -57,6 +57,7 @@ type
     Edit14: TEdit;
     Text21: TText;
     Text22: TText;
+    TabItem3: TTabItem;
     procedure CheckBox1Change(Sender: TObject);
     procedure Rectangle9Click(Sender: TObject);
     procedure Rectangle1Click(Sender: TObject);

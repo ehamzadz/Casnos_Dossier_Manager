@@ -3,8 +3,7 @@ object Form3: TForm3
   Top = 0
   BorderIcons = [biSystemMenu]
   BorderStyle = Single
-  Caption = 'Ajouter un Adh'#233'rent'
-  ClientHeight = 363
+  ClientHeight = 361
   ClientWidth = 713
   Position = DesktopCenter
   FormFactor.Width = 320
@@ -14,23 +13,23 @@ object Form3: TForm3
   object TabControl1: TTabControl
     Align = Contents
     Size.Width = 713.000000000000000000
-    Size.Height = 363.000000000000000000
+    Size.Height = 361.000000000000000000
     Size.PlatformDefault = False
-    TabIndex = 1
+    TabIndex = 0
     TabOrder = 0
-    TabPosition = PlatformDefault
+    TabPosition = None
     Sizes = (
       713s
-      337s
+      361s
       713s
-      337s)
+      361s)
     object TabItem1: TTabItem
       CustomIcon = <
         item
         end>
-      IsSelected = False
-      Size.Width = 70.000000000000000000
-      Size.Height = 26.000000000000000000
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = ''
       TabOrder = 0
@@ -39,7 +38,7 @@ object Form3: TForm3
       ExplicitSize.cy = 26.000000000000000000
       object Text1: TText
         Position.X = 32.000000000000000000
-        Position.Y = 30.000000000000000000
+        Position.Y = 54.000000000000000000
         Size.Width = 121.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -50,7 +49,7 @@ object Form3: TForm3
         Touch.InteractiveGestures = [LongTap, DoubleTap]
         TabOrder = 10
         Position.X = 152.000000000000000000
-        Position.Y = 30.000000000000000000
+        Position.Y = 54.000000000000000000
         Size.Width = 169.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -59,14 +58,14 @@ object Form3: TForm3
         Touch.InteractiveGestures = [LongTap, DoubleTap]
         TabOrder = 9
         Position.X = 152.000000000000000000
-        Position.Y = 60.000000000000000000
+        Position.Y = 84.000000000000000000
         Size.Width = 169.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
       end
       object Text2: TText
         Position.X = 32.000000000000000000
-        Position.Y = 60.000000000000000000
+        Position.Y = 84.000000000000000000
         Size.Width = 121.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -76,7 +75,7 @@ object Form3: TForm3
       object DateEdit1: TDateEdit
         Date = 44821.000000000000000000
         Position.X = 152.000000000000000000
-        Position.Y = 120.000000000000000000
+        Position.Y = 144.000000000000000000
         Size.Width = 169.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -85,7 +84,7 @@ object Form3: TForm3
       end
       object Text3: TText
         Position.X = 32.000000000000000000
-        Position.Y = 90.000000000000000000
+        Position.Y = 114.000000000000000000
         Size.Width = 121.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -94,7 +93,7 @@ object Form3: TForm3
       end
       object Text4: TText
         Position.X = 32.000000000000000000
-        Position.Y = 120.000000000000000000
+        Position.Y = 144.000000000000000000
         Size.Width = 121.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -105,14 +104,14 @@ object Form3: TForm3
         Touch.InteractiveGestures = [LongTap, DoubleTap]
         TabOrder = 8
         Position.X = 512.000000000000000000
-        Position.Y = 60.000000000000000000
+        Position.Y = 84.000000000000000000
         Size.Width = 169.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
       end
       object Text5: TText
         Position.X = 392.000000000000000000
-        Position.Y = 60.000000000000000000
+        Position.Y = 84.000000000000000000
         Size.Width = 121.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -123,7 +122,7 @@ object Form3: TForm3
         Touch.InteractiveGestures = [LongTap, DoubleTap]
         TabOrder = 3
         Position.X = 152.000000000000000000
-        Position.Y = 90.000000000000000000
+        Position.Y = 114.000000000000000000
         Size.Width = 169.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -132,14 +131,14 @@ object Form3: TForm3
         Touch.InteractiveGestures = [LongTap, DoubleTap]
         TabOrder = 7
         Position.X = 512.000000000000000000
-        Position.Y = 90.000000000000000000
+        Position.Y = 114.000000000000000000
         Size.Width = 169.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
       end
       object Text6: TText
         Position.X = 392.000000000000000000
-        Position.Y = 90.000000000000000000
+        Position.Y = 114.000000000000000000
         Size.Width = 121.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -148,7 +147,7 @@ object Form3: TForm3
       end
       object Text7: TText
         Position.X = 392.000000000000000000
-        Position.Y = 120.000000000000000000
+        Position.Y = 144.000000000000000000
         Size.Width = 121.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -159,7 +158,7 @@ object Form3: TForm3
         Touch.InteractiveGestures = [LongTap, DoubleTap]
         TabOrder = 6
         Position.X = 512.000000000000000000
-        Position.Y = 120.000000000000000000
+        Position.Y = 144.000000000000000000
         Size.Width = 169.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -168,14 +167,14 @@ object Form3: TForm3
         Touch.InteractiveGestures = [LongTap, DoubleTap]
         TabOrder = 5
         Position.X = 152.000000000000000000
-        Position.Y = 180.000000000000000000
+        Position.Y = 204.000000000000000000
         Size.Width = 137.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
       end
       object Text8: TText
         Position.X = 32.000000000000000000
-        Position.Y = 180.000000000000000000
+        Position.Y = 204.000000000000000000
         Size.Width = 121.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -186,14 +185,14 @@ object Form3: TForm3
         Touch.InteractiveGestures = [LongTap, DoubleTap]
         TabOrder = 4
         Position.X = 152.000000000000000000
-        Position.Y = 150.000000000000000000
+        Position.Y = 174.000000000000000000
         Size.Width = 529.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
       end
       object Text9: TText
         Position.X = 32.000000000000000000
-        Position.Y = 150.000000000000000000
+        Position.Y = 174.000000000000000000
         Size.Width = 121.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -202,7 +201,7 @@ object Form3: TForm3
       end
       object Text10: TText
         Position.X = 320.000000000000000000
-        Position.Y = 180.000000000000000000
+        Position.Y = 204.000000000000000000
         Size.Width = 112.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -215,7 +214,7 @@ object Form3: TForm3
           'Divorc'#233
           'C'#233'libataire')
         Position.X = 440.000000000000000000
-        Position.Y = 180.000000000000000000
+        Position.Y = 204.000000000000000000
         Size.Width = 105.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -226,7 +225,7 @@ object Form3: TForm3
           'Homme'
           'Femme')
         Position.X = 608.000000000000000000
-        Position.Y = 180.000000000000000000
+        Position.Y = 204.000000000000000000
         Size.Width = 73.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -234,7 +233,7 @@ object Form3: TForm3
       end
       object Text11: TText
         Position.X = 568.000000000000000000
-        Position.Y = 180.000000000000000000
+        Position.Y = 204.000000000000000000
         Size.Width = 32.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -245,14 +244,14 @@ object Form3: TForm3
         Touch.InteractiveGestures = [LongTap, DoubleTap]
         TabOrder = 2
         Position.X = 152.000000000000000000
-        Position.Y = 210.000000000000000000
+        Position.Y = 234.000000000000000000
         Size.Width = 137.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
       end
       object Text12: TText
         Position.X = 32.000000000000000000
-        Position.Y = 210.000000000000000000
+        Position.Y = 234.000000000000000000
         Size.Width = 121.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -263,14 +262,14 @@ object Form3: TForm3
         Touch.InteractiveGestures = [LongTap, DoubleTap]
         TabOrder = 1
         Position.X = 480.000000000000000000
-        Position.Y = 210.000000000000000000
+        Position.Y = 234.000000000000000000
         Size.Width = 201.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
       end
       object Text13: TText
         Position.X = 320.000000000000000000
-        Position.Y = 210.000000000000000000
+        Position.Y = 234.000000000000000000
         Size.Width = 177.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -279,7 +278,7 @@ object Form3: TForm3
       end
       object CheckBox1: TCheckBox
         Position.X = 665.000000000000000000
-        Position.Y = 250.000000000000000000
+        Position.Y = 274.000000000000000000
         Size.Width = 17.000000000000000000
         Size.Height = 17.000000000000000000
         Size.PlatformDefault = False
@@ -288,7 +287,7 @@ object Form3: TForm3
       end
       object Text14: TText
         Position.X = 608.000000000000000000
-        Position.Y = 250.000000000000000000
+        Position.Y = 274.000000000000000000
         Size.Width = 49.000000000000000000
         Size.Height = 17.000000000000000000
         Size.PlatformDefault = False
@@ -303,7 +302,7 @@ object Form3: TForm3
         Margins.Right = 11.000000000000000000
         Margins.Bottom = 11.000000000000000000
         Position.X = 11.000000000000000000
-        Position.Y = 285.000000000000000000
+        Position.Y = 309.000000000000000000
         Size.Width = 691.000000000000000000
         Size.Height = 41.000000000000000000
         Size.PlatformDefault = False
@@ -331,14 +330,26 @@ object Form3: TForm3
           TriggerInverse = 'IsMouseOver=false'
         end
       end
+      object Text21: TText
+        Align = Top
+        Margins.Top = 11.000000000000000000
+        Position.Y = 11.000000000000000000
+        Size.Width = 713.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Ajouter Adh'#233'rent'
+        TextSettings.Font.Family = 'Tajawal'
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.Font.StyleExt = {00050000000000000004000000}
+      end
     end
     object TabItem2: TTabItem
       CustomIcon = <
         item
         end>
-      IsSelected = True
-      Size.Width = 60.000000000000000000
-      Size.Height = 26.000000000000000000
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = ''
       TabOrder = 0
@@ -353,7 +364,7 @@ object Form3: TForm3
         Margins.Right = 11.000000000000000000
         Margins.Bottom = 11.000000000000000000
         Position.X = 11.000000000000000000
-        Position.Y = 285.000000000000000000
+        Position.Y = 309.000000000000000000
         Size.Width = 691.000000000000000000
         Size.Height = 41.000000000000000000
         Size.PlatformDefault = False
@@ -383,7 +394,7 @@ object Form3: TForm3
       end
       object Text17: TText
         Position.X = 40.000000000000000000
-        Position.Y = 62.000000000000000000
+        Position.Y = 78.000000000000000000
         Size.Width = 121.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -394,14 +405,14 @@ object Form3: TForm3
         Touch.InteractiveGestures = [LongTap, DoubleTap]
         TabOrder = 13
         Position.X = 144.000000000000000000
-        Position.Y = 62.000000000000000000
+        Position.Y = 78.000000000000000000
         Size.Width = 153.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
       end
       object Text18: TText
         Position.X = 40.000000000000000000
-        Position.Y = 110.000000000000000000
+        Position.Y = 126.000000000000000000
         Size.Width = 121.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -412,14 +423,14 @@ object Form3: TForm3
         Touch.InteractiveGestures = [LongTap, DoubleTap]
         TabOrder = 12
         Position.X = 144.000000000000000000
-        Position.Y = 110.000000000000000000
+        Position.Y = 126.000000000000000000
         Size.Width = 153.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
       end
       object Text19: TText
         Position.X = 328.000000000000000000
-        Position.Y = 62.000000000000000000
+        Position.Y = 78.000000000000000000
         Size.Width = 121.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -430,14 +441,14 @@ object Form3: TForm3
         Touch.InteractiveGestures = [LongTap, DoubleTap]
         TabOrder = 11
         Position.X = 432.000000000000000000
-        Position.Y = 62.000000000000000000
+        Position.Y = 78.000000000000000000
         Size.Width = 217.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
       end
       object Text20: TText
         Position.X = 40.000000000000000000
-        Position.Y = 174.000000000000000000
+        Position.Y = 190.000000000000000000
         Size.Width = 121.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -448,10 +459,22 @@ object Form3: TForm3
         Touch.InteractiveGestures = [LongTap, DoubleTap]
         TabOrder = 10
         Position.X = 144.000000000000000000
-        Position.Y = 174.000000000000000000
+        Position.Y = 190.000000000000000000
         Size.Width = 505.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
+      end
+      object Text22: TText
+        Align = Top
+        Margins.Top = 11.000000000000000000
+        Position.Y = 11.000000000000000000
+        Size.Width = 713.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Ajouter une Activit'#233
+        TextSettings.Font.Family = 'Tajawal'
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.Font.StyleExt = {00050000000000000004000000}
       end
     end
   end
