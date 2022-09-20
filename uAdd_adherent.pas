@@ -93,13 +93,20 @@ begin
   end else begin
 
     DM.DataModule1.FDQuery1.SQL.Clear;
-    DM.DataModule1.FDQuery1.SQL.Add(' INSERT INTO activite values(:code,:raison,:nom,:adr,:mat_adh) ');
+    DM.DataModule1.FDQuery1.SQL.Add(' INSERT INTO activite values(:code,:raison,:nom,:adr) ');
     DM.DataModule1.FDQuery1.ParamByName('code').asinteger := strtoint(edit11.Text);
     DM.DataModule1.FDQuery1.ParamByName('raison').asstring := edit12.Text;
     DM.DataModule1.FDQuery1.ParamByName('nom').asstring := edit13.Text;
     DM.DataModule1.FDQuery1.ParamByName('adr').asstring := edit14.Text;
-    DM.DataModule1.FDQuery1.ParamByName('mat_adh').asstring := matricule_adh;
     DM.DataModule1.FDQuery1.ExecSQL;
+
+    DM.DataModule1.FDQuery1.SQL.Clear;
+    DM.DataModule1.FDQuery1.SQL.Add(' INSERT INTO affiliation (date_creat,mat_adh,code_act) values(:date,:mat,:code_act) ');
+    DM.DataModule1.FDQuery1.ParamByName('date').asdate := now;
+    DM.DataModule1.FDQuery1.ParamByName('mat').asinteger := strtoint(matricule_adh);
+    DM.DataModule1.FDQuery1.ParamByName('code_act').asinteger := strtoint(edit11.Text);
+    DM.DataModule1.FDQuery1.ExecSQL;
+
 
     //Refresh Tables
     DM.DataModule1.table_activite.Active := false;

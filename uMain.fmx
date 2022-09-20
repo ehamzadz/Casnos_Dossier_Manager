@@ -43730,7 +43730,7 @@ object Form2: TForm2
                   Size.Height = 36.000000000000000000
                   Size.PlatformDefault = False
                   Stroke.Kind = None
-                  OnClick = btn_del_adherentClick
+                  OnClick = Rectangle30Click
                   object Rectangle31: TRectangle
                     Align = Right
                     Fill.Color = xFFFF1D23
@@ -43819,8 +43819,8 @@ object Form2: TForm2
               TabOrder = 1
               RowCount = 0
               Options = [AlternatingRowBackground, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, Header, HeaderClick, AutoDisplacement]
-              Viewport.Width = 800.000000000000000000
-              Viewport.Height = 438.000000000000000000
+              Viewport.Width = 804.000000000000000000
+              Viewport.Height = 482.000000000000000000
             end
           end
         end
@@ -44026,8 +44026,8 @@ object Form2: TForm2
               TabOrder = 1
               RowCount = 1
               Options = [AlternatingRowBackground, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, Header, HeaderClick, AutoDisplacement]
-              Viewport.Width = 800.000000000000000000
-              Viewport.Height = 422.000000000000000000
+              Viewport.Width = 804.000000000000000000
+              Viewport.Height = 482.000000000000000000
             end
           end
         end
@@ -45711,11 +45711,68 @@ object Form2: TForm2
           Alignment = taCenter
         end>
     end
+    object LinkGridToDataSourceBindSourceDB2: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      GridControl = StringGrid2
+      Columns = <
+        item
+          MemberName = 'code_affiliation'
+          Width = 90
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'date_creat'
+          Width = 100
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'mat_adh'
+          Width = 100
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'nom_adh'
+          Width = 150
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'pre_adh'
+          Width = 150
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'num_tel_adh'
+          Width = 90
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'type_personne'
+          Width = 70
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'code_activite'
+          Width = 100
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'nom_act'
+          Width = 150
+          Alignment = taCenter
+        end>
+    end
   end
   object FDGUIxWaitCursor1: TFDGUIxWaitCursor
     Provider = 'FMX'
     ScreenCursor = gcrNone
     Left = 240
     Top = 248
+  end
+  object BindSourceDB2: TBindSourceDB
+    DataSet = DataModule1.table_affiliations
+    ScopeMappings = <>
+    Left = 544
+    Top = 312
   end
 end

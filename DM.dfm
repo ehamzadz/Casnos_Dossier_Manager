@@ -34,9 +34,8 @@ object DataModule1: TDataModule1
   end
   object table_affiliations: TFDTable
     Active = True
-    IndexFieldNames = 'code_affiliation'
     Connection = FDConnection1
-    TableName = 'affiliation'
+    TableName = 'qry_affiliations'
     Left = 296
     Top = 168
   end

@@ -5,5 +5,14 @@ Coordinates=10,10,63,51
 Coordinates=82,1,90,33
 
 [FDTable1]
-Coordinates=92,1,88,429
+Coordinates=92,1,88,303
+
+[table_affiliations]
+Coordinates=199,179,95,411
+
+[table_activite]
+Coordinates=218,1,79,159
+
+[]
+Coordinates=23,80,63,51
 
