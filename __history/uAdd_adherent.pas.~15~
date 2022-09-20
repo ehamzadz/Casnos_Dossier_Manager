@@ -44,17 +44,6 @@ type
     Rectangle9: TRectangle;
     Text15: TText;
     ColorAnimation3: TColorAnimation;
-    Rectangle1: TRectangle;
-    Text16: TText;
-    ColorAnimation1: TColorAnimation;
-    Text17: TText;
-    Edit11: TEdit;
-    Text18: TText;
-    Edit12: TEdit;
-    Text19: TText;
-    Edit13: TEdit;
-    Text20: TText;
-    Edit14: TEdit;
     procedure CheckBox1Change(Sender: TObject);
     procedure Rectangle9Click(Sender: TObject);
   private
@@ -74,11 +63,11 @@ uses DM;
 
 procedure TForm3.CheckBox1Change(Sender: TObject);
 begin
-{  if checkbox1.IsChecked=true then begin
+  if checkbox1.IsChecked=true then begin
     text15.Text := 'Suivant';
   end else begin
     text15.Text := 'Ajouter';
-  end;                       }
+  end;
 end;
 
 procedure TForm3.Rectangle9Click(Sender: TObject);
