@@ -122,13 +122,13 @@ Coordinates=527,513,46,51
 Coordinates=478,662,45,51
 
 [DataModule1.table_affiliations]
-Coordinates=527,53,162,123
+Coordinates=527,53,162,411
 
 [Edit12]
 Coordinates=527,443,45,51
 
 [DataModule1.table_activite]
-Coordinates=527,195,146,159
+Coordinates=527,195,146,195
 
 [Text22]
 Coordinates=527,583,46,51
@@ -153,4 +153,7 @@ Coordinates=201,573,45,51
 
 [DataModule1.]
 Coordinates=727,1,130,51
+
+[DataModule1.FDTable2]
+Coordinates=294,1,127,51
 

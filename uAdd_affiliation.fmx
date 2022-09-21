@@ -4,6 +4,7 @@ object Form4: TForm4
   Caption = 'Form4'
   ClientHeight = 610
   ClientWidth = 1112
+  Position = DesktopCenter
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -360,8 +361,8 @@ object Form4: TForm4
           Size.PlatformDefault = False
           TabOrder = 43
           RowCount = 1
-          Viewport.Width = 393.000000000000000000
-          Viewport.Height = 218.000000000000000000
+          Viewport.Width = 397.000000000000000000
+          Viewport.Height = 259.000000000000000000
         end
         object Edit11: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
@@ -509,8 +510,8 @@ object Form4: TForm4
           Size.PlatformDefault = False
           TabOrder = 43
           RowCount = 0
-          Viewport.Width = 393.000000000000000000
-          Viewport.Height = 114.000000000000000000
+          Viewport.Width = 397.000000000000000000
+          Viewport.Height = 139.000000000000000000
         end
       end
       object Rectangle4: TRectangle

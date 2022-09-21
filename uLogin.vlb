@@ -224,3 +224,12 @@ Coordinates=477,10,57,58
 []
 Coordinates=131,10,44,58
 
+[DataModule1.FDTable1]
+Visible=False
+
+[DataModule1.table_activite]
+Visible=False
+
+[DataModule1.table_affiliations]
+Visible=False
+

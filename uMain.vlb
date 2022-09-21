@@ -369,7 +369,7 @@ Coordinates=899,619,75,33
 Coordinates=1412,465,40,51
 
 [StringGrid3]
-Coordinates=940,130,70,195
+Coordinates=940,130,70,123
 Visible=True
 
 [Rectangle35]
@@ -391,5 +391,5 @@ Coordinates=955,465,46,51
 Coordinates=811,465,46,51
 
 [BindSourceDB3]
-Coordinates=620,90,130,213
+Coordinates=620,90,130,141
 
