@@ -39,8 +39,10 @@ object DataModule1: TDataModule1
     Left = 296
     Top = 168
   end
-  object FDTable2: TFDTable
+  object table_declaration_act: TFDTable
+    Active = True
     Connection = FDConnection1
+    TableName = 'qry_declaration_act'
     Left = 408
     Top = 168
   end

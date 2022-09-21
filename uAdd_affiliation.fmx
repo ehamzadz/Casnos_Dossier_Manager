@@ -1,7 +1,8 @@
 object Form4: TForm4
   Left = 0
   Top = 0
-  Caption = 'Form4'
+  BorderIcons = [biSystemMenu]
+  BorderStyle = Single
   ClientHeight = 610
   ClientWidth = 1112
   Position = DesktopCenter
@@ -48,6 +49,7 @@ object Form4: TForm4
         Stroke.Kind = None
         XRadius = 10.000000000000000000
         YRadius = 10.000000000000000000
+        OnClick = Rectangle9Click
         object Text15: TText
           Align = Center
           HitTest = False
@@ -76,16 +78,10 @@ object Form4: TForm4
         Size.Height = 305.000000000000000000
         Size.PlatformDefault = False
         Stroke.Kind = None
-        object CheckBox1: TCheckBox
-          HitTest = False
-          Position.X = 665.000000000000000000
-          Position.Y = 274.000000000000000000
-          Size.Width = 17.000000000000000000
-          Size.Height = 17.000000000000000000
-          Size.PlatformDefault = False
-          TabOrder = 27
-        end
         object ComboBox1: TComboBox
+          Items.Strings = (
+            'C'#233'libataire')
+          ItemIndex = 0
           Position.X = 440.000000000000000000
           Position.Y = 204.000000000000000000
           Size.Width = 105.000000000000000000
@@ -94,6 +90,9 @@ object Form4: TForm4
           TabOrder = 23
         end
         object ComboBox2: TComboBox
+          Items.Strings = (
+            'Homme')
+          ItemIndex = 0
           Position.X = 608.000000000000000000
           Position.Y = 204.000000000000000000
           Size.Width = 73.000000000000000000
@@ -102,7 +101,7 @@ object Form4: TForm4
           TabOrder = 22
         end
         object DateEdit1: TDateEdit
-          Date = 44821.000000000000000000
+          Date = 35707.000000000000000000
           Position.X = 152.000000000000000000
           Position.Y = 144.000000000000000000
           ReadOnly = True
@@ -116,6 +115,7 @@ object Form4: TForm4
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           TabOrder = 11
           ReadOnly = True
+          Text = '1256214'
           Position.X = 152.000000000000000000
           Position.Y = 54.000000000000000000
           Size.Width = 169.000000000000000000
@@ -126,6 +126,7 @@ object Form4: TForm4
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           TabOrder = 1
           ReadOnly = True
+          Text = '0023458099/88'
           Position.X = 480.000000000000000000
           Position.Y = 234.000000000000000000
           Size.Width = 201.000000000000000000
@@ -136,6 +137,7 @@ object Form4: TForm4
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           TabOrder = 10
           ReadOnly = True
+          Text = 'Mansouri'
           Position.X = 152.000000000000000000
           Position.Y = 84.000000000000000000
           Size.Width = 169.000000000000000000
@@ -146,6 +148,7 @@ object Form4: TForm4
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           TabOrder = 3
           ReadOnly = True
+          Text = 'Hamza'
           Position.X = 152.000000000000000000
           Position.Y = 114.000000000000000000
           Size.Width = 169.000000000000000000
@@ -156,6 +159,7 @@ object Form4: TForm4
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           TabOrder = 9
           ReadOnly = True
+          Text = 'Said'
           Position.X = 512.000000000000000000
           Position.Y = 84.000000000000000000
           Size.Width = 169.000000000000000000
@@ -166,6 +170,7 @@ object Form4: TForm4
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           TabOrder = 7
           ReadOnly = True
+          Text = 'Beghoura'
           Position.X = 512.000000000000000000
           Position.Y = 114.000000000000000000
           Size.Width = 169.000000000000000000
@@ -176,6 +181,7 @@ object Form4: TForm4
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           TabOrder = 6
           ReadOnly = True
+          Text = 'Mira'
           Position.X = 512.000000000000000000
           Position.Y = 144.000000000000000000
           Size.Width = 169.000000000000000000
@@ -186,6 +192,7 @@ object Form4: TForm4
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           TabOrder = 5
           ReadOnly = True
+          Text = 'Algerien'
           Position.X = 152.000000000000000000
           Position.Y = 204.000000000000000000
           Size.Width = 137.000000000000000000
@@ -196,6 +203,7 @@ object Form4: TForm4
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           TabOrder = 4
           ReadOnly = True
+          Text = 'Bordj Bou Arreridj'
           Position.X = 152.000000000000000000
           Position.Y = 174.000000000000000000
           Size.Width = 529.000000000000000000
@@ -206,6 +214,7 @@ object Form4: TForm4
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           TabOrder = 2
           ReadOnly = True
+          Text = '0672138811'
           Position.X = 152.000000000000000000
           Position.Y = 234.000000000000000000
           Size.Width = 137.000000000000000000
@@ -255,15 +264,6 @@ object Form4: TForm4
           Size.Height = 22.000000000000000000
           Size.PlatformDefault = False
           Text = 'Num'#233'ro Compte Bancaire'
-          TextSettings.HorzAlign = Leading
-        end
-        object Text14: TText
-          Position.X = 608.000000000000000000
-          Position.Y = 274.000000000000000000
-          Size.Width = 49.000000000000000000
-          Size.Height = 17.000000000000000000
-          Size.PlatformDefault = False
-          Text = 'Soci'#233't'#233
           TextSettings.HorzAlign = Leading
         end
         object Text2: TText
@@ -355,14 +355,16 @@ object Form4: TForm4
           CanFocus = True
           ClipChildren = True
           Position.X = 704.000000000000000000
-          Position.Y = 38.000000000000000000
+          Position.Y = 36.000000000000000000
           Size.Width = 397.000000000000000000
           Size.Height = 259.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 43
+          TabOrder = 42
           RowCount = 1
-          Viewport.Width = 397.000000000000000000
-          Viewport.Height = 259.000000000000000000
+          Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, AutoDisplacement]
+          OnCellClick = StringGrid1CellClick
+          Viewport.Width = 393.000000000000000000
+          Viewport.Height = 218.000000000000000000
         end
         object Edit11: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
@@ -382,6 +384,27 @@ object Form4: TForm4
           Size.PlatformDefault = False
           Text = 'Rechercher par Matricule'
           TextSettings.HorzAlign = Leading
+        end
+        object Text14: TText
+          Position.X = 619.000000000000000000
+          Position.Y = 274.000000000000000000
+          Size.Width = 49.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Soci'#233't'#233
+          TextSettings.Font.StyleExt = {00060000000000000004000000}
+          TextSettings.FontColor = claTomato
+          TextSettings.HorzAlign = Leading
+        end
+        object CheckBox1: TCheckBox
+          StyledSettings = [Family, Size, Style]
+          Position.X = 664.000000000000000000
+          Position.Y = 274.000000000000000000
+          Size.Width = 17.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 44
+          TextSettings.FontColor = claTomato
         end
       end
       object Rectangle3: TRectangle
@@ -405,6 +428,7 @@ object Form4: TForm4
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           TabOrder = 11
           ReadOnly = True
+          Text = 'Boite de d'#233'veloppement'
           Position.X = 424.000000000000000000
           Position.Y = 54.000000000000000000
           Size.Width = 217.000000000000000000
@@ -437,6 +461,7 @@ object Form4: TForm4
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           TabOrder = 14
           ReadOnly = True
+          Text = '45921'
           Position.X = 136.000000000000000000
           Position.Y = 54.000000000000000000
           Size.Width = 153.000000000000000000
@@ -456,6 +481,7 @@ object Form4: TForm4
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           TabOrder = 12
           ReadOnly = True
+          Text = 'Raison activit'#233' 01'
           Position.X = 136.000000000000000000
           Position.Y = 84.000000000000000000
           Size.Width = 153.000000000000000000
@@ -475,6 +501,7 @@ object Form4: TForm4
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           TabOrder = 10
           ReadOnly = True
+          Text = 'Bordj Bou Arreridj'
           Position.X = 136.000000000000000000
           Position.Y = 114.000000000000000000
           Size.Width = 505.000000000000000000
@@ -509,9 +536,10 @@ object Form4: TForm4
           Size.Height = 139.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 43
-          RowCount = 0
-          Viewport.Width = 397.000000000000000000
-          Viewport.Height = 139.000000000000000000
+          RowCount = 2
+          Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, AutoDisplacement]
+          Viewport.Width = 393.000000000000000000
+          Viewport.Height = 98.000000000000000000
         end
       end
       object Rectangle4: TRectangle
@@ -541,28 +569,6 @@ object Form4: TForm4
     OutputConverters = <>
     Left = 20
     Top = 5
-    object LinkGridToDataSourceBindSourceDB3: TLinkGridToDataSource
-      Category = 'Quick Bindings'
-      DataSource = Form2.BindSourceDB3
-      GridControl = StringGrid2
-      Columns = <
-        item
-          MemberName = 'code_act'
-          Width = 70
-        end
-        item
-          MemberName = 'rais_act'
-          Width = 150
-        end
-        item
-          MemberName = 'nom_act'
-          Width = 150
-        end
-        item
-          MemberName = 'adr_act'
-          Width = 150
-        end>
-    end
     object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
       Category = 'Quick Bindings'
       DataSource = Form2.BindSourceDB1
@@ -588,6 +594,155 @@ object Form4: TForm4
           MemberName = 'type_personne'
           Width = 100
         end>
+    end
+    object LinkGridToDataSourceBindSourceDB3: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = Form2.BindSourceDB3
+      GridControl = StringGrid2
+      Columns = <
+        item
+          MemberName = 'code_activite'
+          Width = 70
+        end
+        item
+          MemberName = 'rais_act'
+          Width = 150
+        end
+        item
+          MemberName = 'nom_act'
+          Width = 150
+        end
+        item
+          MemberName = 'adr_act'
+          Width = 150
+        end>
+    end
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = Form2.BindSourceDB1
+      FieldName = 'mat_adh'
+      Control = Edit1
+      Track = False
+    end
+    object LinkControlToField2: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = Form2.BindSourceDB1
+      FieldName = 'nom_adh'
+      Control = Edit2
+      Track = False
+    end
+    object LinkControlToField3: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = Form2.BindSourceDB1
+      FieldName = 'pre_adh'
+      Control = Edit3
+      Track = False
+    end
+    object LinkControlToField4: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = Form2.BindSourceDB1
+      FieldName = 'date_adh'
+      Control = DateEdit1
+      Track = False
+    end
+    object LinkControlToField5: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = Form2.BindSourceDB1
+      FieldName = 'per_pere_adh'
+      Control = Edit4
+      Track = False
+    end
+    object LinkControlToField6: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = Form2.BindSourceDB1
+      FieldName = 'nom_mer_adh'
+      Control = Edit5
+      Track = False
+    end
+    object LinkControlToField7: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = Form2.BindSourceDB1
+      FieldName = 'per_mer_adh'
+      Control = Edit6
+      Track = False
+    end
+    object LinkControlToField8: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = Form2.BindSourceDB1
+      FieldName = 'adr_adh'
+      Control = Edit8
+      Track = False
+    end
+    object LinkControlToField9: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = Form2.BindSourceDB1
+      FieldName = 'nat_adh'
+      Control = Edit7
+      Track = False
+    end
+    object LinkControlToField10: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = Form2.BindSourceDB1
+      FieldName = 'num_tel_adh'
+      Control = Edit9
+      Track = False
+    end
+    object LinkControlToField11: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = Form2.BindSourceDB1
+      FieldName = 'num_compt_banc'
+      Control = Edit10
+      Track = False
+    end
+    object LinkControlToField12: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = Form2.BindSourceDB3
+      FieldName = 'code_activite'
+      Control = Edit16
+      Track = False
+    end
+    object LinkControlToField13: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = Form2.BindSourceDB3
+      FieldName = 'rais_act'
+      Control = Edit17
+      Track = False
+    end
+    object LinkControlToField14: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = Form2.BindSourceDB3
+      FieldName = 'nom_act'
+      Control = Edit15
+      Track = False
+    end
+    object LinkControlToField15: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = Form2.BindSourceDB3
+      FieldName = 'adr_act'
+      Control = Edit18
+      Track = False
+    end
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = ComboBox2
+      Track = True
+      FillDataSource = Form2.BindSourceDB1
+      FillDisplayFieldName = 'sexe_adh'
+      AutoFill = True
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkFillControlToField2: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = ComboBox1
+      Track = True
+      FillDataSource = Form2.BindSourceDB1
+      FillDisplayFieldName = 'sit_adh'
+      AutoFill = True
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
     end
   end
 end

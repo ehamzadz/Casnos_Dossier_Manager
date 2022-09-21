@@ -1,165 +1,162 @@
 ﻿[Text16]
-Coordinates=172,449,46,51
+Coordinates=739,709,46,51
 
 [Text10]
-Coordinates=745,449,46,51
+Coordinates=81,709,46,51
 
 [Text2]
-Coordinates=923,10,41,51
+Coordinates=275,632,41,51
 
 [StringGrid2]
-Coordinates=550,120,70,123
+Coordinates=887,28,70,123
 
 [Edit2]
-Coordinates=228,449,40,51
+Coordinates=180,50,40,51
 
 [TabControl1]
-Coordinates=158,571,74,33
+Coordinates=906,709,74,33
 
 [Text24]
-Coordinates=1169,449,46,51
+Coordinates=623,632,46,51
 
 [Text27]
-Coordinates=680,10,46,51
+Coordinates=153,709,46,51
 
 [Text18]
-Coordinates=828,510,46,51
+Coordinates=1115,632,46,51
 
 [Edit7]
-Coordinates=1081,10,40,51
+Coordinates=180,320,40,51
 
 [Edit16]
-Coordinates=66,449,45,51
+Coordinates=1250,20,45,51
 
 [Text1]
-Coordinates=121,449,41,51
+Coordinates=910,632,41,51
 
 [Edit11]
-Coordinates=615,510,45,51
+Coordinates=1044,632,45,51
 
 [Text25]
-Coordinates=419,510,46,51
+Coordinates=225,709,46,51
 
 [Edit6]
-Coordinates=520,449,40,51
+Coordinates=180,240,40,51
 
 [Text15]
-Coordinates=257,510,46,51
+Coordinates=667,709,46,51
 
 [Text7]
-Coordinates=413,449,41,51
+Coordinates=240,560,41,51
 
 [Text11]
-Coordinates=201,510,46,51
+Coordinates=838,632,46,51
 
 [Rectangle3]
-Coordinates=242,571,69,33
+Coordinates=1006,709,69,33
 Visible=True
 
 [Rectangle4]
-Coordinates=1148,510,69,33
+Coordinates=1101,709,69,33
 
 [Edit18]
-Coordinates=1014,510,45,51
-
-[Text14]
-Coordinates=1063,449,46,51
+Coordinates=1250,140,45,51
 
 [Text9]
-Coordinates=801,449,41,51
+Coordinates=1075,483,41,51
 
 [ComboBox1]
-Coordinates=441,10,84,123
+Coordinates=30,330,84,123
+Visible=True
 
 [StringGrid1]
-Coordinates=360,20,70,141
+Coordinates=690,50,70,141
+Visible=True
 
 [Text23]
-Coordinates=10,449,46,51
+Coordinates=1003,483,46,51
 
 [Edit4]
-Coordinates=958,449,40,51
+Coordinates=180,160,40,51
 
 [Text26]
-Coordinates=464,449,46,51
+Coordinates=479,632,46,51
 
 [Text4]
-Coordinates=629,10,41,51
+Coordinates=76,632,41,51
 
 [Edit8]
-Coordinates=1119,449,40,51
+Coordinates=180,280,40,51
 
 [Text12]
-Coordinates=721,510,46,51
+Coordinates=1187,632,46,51
 
 [Edit9]
-Coordinates=908,449,40,51
+Coordinates=180,360,40,51
 
 [Rectangle2]
-Coordinates=79,571,69,33
+Coordinates=95,786,69,33
+Visible=True
 
 [DateEdit1]
-Coordinates=620,449,115,51
+Coordinates=150,130,115,51
 
 [Edit17]
-Coordinates=313,510,45,51
+Coordinates=1250,60,45,51
 
 [Text21]
-Coordinates=10,510,46,51
+Coordinates=551,632,46,51
 
 [Edit15]
-Coordinates=146,510,45,51
+Coordinates=1250,100,45,51
 
 [Edit10]
-Coordinates=1008,449,45,51
+Coordinates=180,400,45,51
 
 [Edit5]
-Coordinates=873,10,40,51
+Coordinates=180,200,40,51
 
 [Text13]
-Coordinates=852,449,46,51
+Coordinates=591,483,46,51
 
 [TabItem1]
-Coordinates=10,571,59,33
+Coordinates=10,786,59,33
 
 [Edit12]
-Coordinates=278,449,45,51
+Coordinates=932,483,45,51
 
 [Text6]
-Coordinates=670,510,41,51
-
-[CheckBox1]
-Coordinates=66,510,70,51
+Coordinates=438,709,41,51
 
 [Edit3]
-Coordinates=570,449,40,51
+Coordinates=180,90,40,51
 
 [Text17]
-Coordinates=974,10,46,51
+Coordinates=695,632,46,51
 
 [Edit1]
-Coordinates=884,510,40,51
+Coordinates=180,10,40,51
 
 [ColorAnimation3]
 Coordinates=814,1,97,33
 
 [Text3]
-Coordinates=368,510,41,51
+Coordinates=977,632,41,51
 
 [Text8]
-Coordinates=777,510,41,51
+Coordinates=453,483,41,51
 
 [ComboBox2]
-Coordinates=535,10,84,123
+Coordinates=30,190,84,123
 
 [Text5]
-Coordinates=1030,10,41,51
+Coordinates=1259,632,41,51
 
 [Rectangle9]
-Coordinates=1069,510,69,33
+Coordinates=811,709,69,33
 
 []
-Coordinates=685,188,91,36
+Coordinates=1208,483,46,51
 
 [DataModule1.FDTable1]
 Visible=False
@@ -174,20 +171,33 @@ Visible=False
 Coordinates=459,474,162,33
 
 [DataModule1.FDQuery1]
-Coordinates=475,510,130,51
+Coordinates=297,483,130,51
 
 [Form2.BindSourceDB2]
-Coordinates=10,10,144,429
+Coordinates=-370,10,144,447
 
 [Form2.BindSourceDB3]
-Coordinates=660,100,130,213
+Coordinates=1040,10,130,231
 
 [DataModule1.FDTable2]
 Coordinates=736,10,127,51
 
 [Form2.BindSourceDB1]
-Coordinates=164,10,127,321
+Coordinates=400,10,127,393
 
 [BindingsList1]
 Coordinates=173,350,82,33
+
+[DataModule1.table_declaration_act]
+Visible=False
+Coordinates=310,251,186,33
+
+[Form2.BindSourceDB4]
+Coordinates=483,10,168,231
+
+[Text14]
+Coordinates=89,1,46,51
+
+[CheckBox1]
+Coordinates=0,0,70,51
 

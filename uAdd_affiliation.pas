@@ -41,8 +41,6 @@ type
     Text12: TText;
     Edit10: TEdit;
     Text13: TText;
-    CheckBox1: TCheckBox;
-    Text14: TText;
     Rectangle9: TRectangle;
     Text15: TText;
     ColorAnimation3: TColorAnimation;
@@ -67,8 +65,29 @@ type
     Text18: TText;
     StringGrid2: TStringGrid;
     BindingsList1: TBindingsList;
-    LinkGridToDataSourceBindSourceDB3: TLinkGridToDataSource;
     LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
+    LinkGridToDataSourceBindSourceDB3: TLinkGridToDataSource;
+    LinkControlToField1: TLinkControlToField;
+    LinkControlToField2: TLinkControlToField;
+    LinkControlToField3: TLinkControlToField;
+    LinkControlToField4: TLinkControlToField;
+    LinkControlToField5: TLinkControlToField;
+    LinkControlToField6: TLinkControlToField;
+    LinkControlToField7: TLinkControlToField;
+    LinkControlToField8: TLinkControlToField;
+    LinkControlToField9: TLinkControlToField;
+    LinkControlToField10: TLinkControlToField;
+    LinkControlToField11: TLinkControlToField;
+    LinkControlToField12: TLinkControlToField;
+    LinkControlToField13: TLinkControlToField;
+    LinkControlToField14: TLinkControlToField;
+    LinkControlToField15: TLinkControlToField;
+    Text14: TText;
+    CheckBox1: TCheckBox;
+    LinkFillControlToField1: TLinkFillControlToField;
+    LinkFillControlToField2: TLinkFillControlToField;
+    procedure StringGrid1CellClick(const Column: TColumn; const Row: Integer);
+    procedure Rectangle9Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -83,5 +102,52 @@ implementation
 {$R *.fmx}
 
 uses DM, uMain;
+
+procedure TForm4.Rectangle9Click(Sender: TObject);
+begin
+    // Create Affiliation
+
+    DM.DataModule1.FDQuery1.SQL.Clear;
+    DM.DataModule1.FDQuery1.SQL.Add(' INSERT INTO affiliation (date_creat,mat_adh,code_act) values(:date,:mat,:code_act) ');
+    DM.DataModule1.FDQuery1.ParamByName('date').asdate := now;
+    DM.DataModule1.FDQuery1.ParamByName('mat').asinteger := strtoint(edit1.text);
+    DM.DataModule1.FDQuery1.ParamByName('code_act').asinteger := strtoint(edit16.Text);
+    DM.DataModule1.FDQuery1.ExecSQL;
+
+    //Refresh Tables
+    DM.DataModule1.table_affiliations.Active := false;
+    DM.DataModule1.table_affiliations.Active := true;
+
+                         {
+    edit1.Text :='';
+    edit2.Text :='';
+    edit3.Text :='';
+    edit4.Text :='';
+    edit5.Text :='';
+    edit6.Text :='';
+    edit7.Text :='';
+    edit8.Text :='';
+    edit9.Text :='';
+    edit10.Text :='';
+    edit15.Text :='';
+    edit16.Text :='';
+    edit17.Text :='';
+    edit18.Text :='';
+                        }
+    form4.close;
+
+
+end;
+
+procedure TForm4.StringGrid1CellClick(const Column: TColumn;
+  const Row: Integer);
+begin
+
+
+  DM.DataModule1.table_activite.Filtered:= false;
+  DM.DataModule1.table_activite.Filter := 'mat_adh = ' + edit1.Text;
+  DM.DataModule1.table_activite.Filtered:= true;
+
+end;
 
 end.

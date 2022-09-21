@@ -8,14 +8,14 @@ Coordinates=82,1,90,33
 Coordinates=92,1,88,303
 
 [table_affiliations]
-Coordinates=199,179,95,411
+Coordinates=199,179,95,429
 
 [table_activite]
-Coordinates=218,1,79,123
+Coordinates=218,1,79,141
 
 []
 Coordinates=23,80,63,51
 
-[FDTable2]
-Coordinates=23,80,60,51
+[table_declaration_act]
+Coordinates=360,50,119,213
 

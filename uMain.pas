@@ -164,6 +164,9 @@ type
     ClearEditButton5: TClearEditButton;
     Text32: TText;
     Text25: TText;
+    Brush12: TBrushObject;
+    BindSourceDB4: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB4: TLinkGridToDataSource;
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle15Click(Sender: TObject);
@@ -185,6 +188,8 @@ type
     procedure Rectangle30Click(Sender: TObject);
     procedure Rectangle37Click(Sender: TObject);
     procedure Rectangle32Click(Sender: TObject);
+    procedure Rectangle46Click(Sender: TObject);
+    procedure Rectangle44Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -248,6 +253,9 @@ begin
 
     DM.DataModule1.table_affiliations.Active := false;
     DM.DataModule1.table_affiliations.Active := true;
+
+    DM.DataModule1.table_declaration_act.Active := false;
+    DM.DataModule1.table_declaration_act.Active := true;
   end;
 end;
 
@@ -370,6 +378,20 @@ begin
   current_tab.Parent := this;
   text_title.Text := 'Affiliations';
   tabcontrol1.TabIndex := 0;
+end;
+
+procedure TForm2.Rectangle44Click(Sender: TObject);
+begin
+  form3.tabcontrol1.TabIndex := 2;
+  form3.type_of_operation := 'ajouter activité';
+  form3.ShowModal;
+end;
+
+procedure TForm2.Rectangle46Click(Sender: TObject);
+begin
+  form3.tabcontrol1.TabIndex := 0;
+  form3.type_of_operation := 'ajouter adherent + activité';
+  form3.ShowModal;
 end;
 
 procedure TForm2.Rectangle5Click(Sender: TObject);

@@ -101,7 +101,8 @@ Coordinates=0,289,84,123
 Coordinates=527,1,97,33
 
 [DataModule1.FDTable1]
-Coordinates=129,71,127,303
+Coordinates=1080,60,127,33
+Visible=False
 
 [Edit5]
 Coordinates=378,351,40,51
@@ -122,13 +123,13 @@ Coordinates=527,513,46,51
 Coordinates=478,662,45,51
 
 [DataModule1.table_affiliations]
-Coordinates=527,53,162,411
+Coordinates=527,53,162,429
 
 [Edit12]
 Coordinates=527,443,45,51
 
 [DataModule1.table_activite]
-Coordinates=527,195,146,195
+Coordinates=527,195,146,141
 
 [Text22]
 Coordinates=527,583,46,51
@@ -154,6 +155,58 @@ Coordinates=201,573,45,51
 [DataModule1.]
 Coordinates=727,1,130,51
 
-[DataModule1.FDTable2]
-Coordinates=294,1,127,51
+[DataModule1.table_declaration_act]
+Coordinates=294,1,186,213
+
+[Text26]
+Coordinates=727,351,46,51
+
+[TabItem3]
+Coordinates=609,672,59,33
+
+[Text27]
+Coordinates=727,281,46,51
+
+[ColorAnimation2]
+Coordinates=300,672,97,33
+
+[Edit17]
+Coordinates=727,491,45,51
+
+[Text25]
+Coordinates=727,211,46,51
+
+[Text24]
+Coordinates=727,71,46,51
+
+[Text23]
+Coordinates=727,1,46,51
+
+[StringGrid1]
+Coordinates=820,80,70,195
+Visible=True
+
+[Edit15]
+Coordinates=727,421,45,51
+
+[Edit16]
+Coordinates=727,561,45,51
+
+[Rectangle2]
+Coordinates=221,672,69,33
+
+[Text28]
+Coordinates=678,672,46,51
+
+[Edit18]
+Coordinates=727,631,45,51
+
+[]
+Coordinates=132,672,82,33
+
+[BindSourceDB1]
+Coordinates=1080,60,115,321
+
+[BindingsList1]
+Coordinates=129,71,82,33
 

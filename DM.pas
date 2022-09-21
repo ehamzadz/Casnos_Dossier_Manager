@@ -17,7 +17,7 @@ type
     FDTable1: TFDTable;
     table_activite: TFDTable;
     table_affiliations: TFDTable;
-    FDTable2: TFDTable;
+    table_declaration_act: TFDTable;
   private
     { Private declarations }
   public

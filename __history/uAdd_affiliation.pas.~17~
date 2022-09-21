@@ -1,0 +1,153 @@
+unit uAdd_affiliation;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Ani,
+  FMX.Objects, FMX.StdCtrls, FMX.ListBox, FMX.DateTimeCtrls,
+  FMX.Controls.Presentation, FMX.Edit, FMX.TabControl, System.Rtti,
+  FMX.Grid.Style, FMX.ScrollBox, FMX.Grid, Data.Bind.EngExt, Fmx.Bind.DBEngExt,
+  Fmx.Bind.Grid, System.Bindings.Outputs, Fmx.Bind.Editors,
+  Data.Bind.Components, Data.Bind.Grid;
+
+type
+  TForm4 = class(TForm)
+    TabControl1: TTabControl;
+    TabItem1: TTabItem;
+    Text1: TText;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Text2: TText;
+    DateEdit1: TDateEdit;
+    Text3: TText;
+    Text4: TText;
+    Edit4: TEdit;
+    Text5: TText;
+    Edit3: TEdit;
+    Edit5: TEdit;
+    Text6: TText;
+    Text7: TText;
+    Edit6: TEdit;
+    Edit7: TEdit;
+    Text8: TText;
+    Edit8: TEdit;
+    Text9: TText;
+    Text10: TText;
+    ComboBox1: TComboBox;
+    ComboBox2: TComboBox;
+    Text11: TText;
+    Edit9: TEdit;
+    Text12: TText;
+    Edit10: TEdit;
+    Text13: TText;
+    Rectangle9: TRectangle;
+    Text15: TText;
+    ColorAnimation3: TColorAnimation;
+    Text21: TText;
+    Rectangle2: TRectangle;
+    Rectangle3: TRectangle;
+    Rectangle4: TRectangle;
+    Text23: TText;
+    Edit15: TEdit;
+    Text24: TText;
+    Text25: TText;
+    Edit16: TEdit;
+    Text26: TText;
+    Edit17: TEdit;
+    Text27: TText;
+    Edit18: TEdit;
+    Text16: TText;
+    StringGrid1: TStringGrid;
+    Edit11: TEdit;
+    Text17: TText;
+    Edit12: TEdit;
+    Text18: TText;
+    StringGrid2: TStringGrid;
+    BindingsList1: TBindingsList;
+    LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
+    LinkGridToDataSourceBindSourceDB3: TLinkGridToDataSource;
+    LinkControlToField1: TLinkControlToField;
+    LinkControlToField2: TLinkControlToField;
+    LinkControlToField3: TLinkControlToField;
+    LinkControlToField4: TLinkControlToField;
+    LinkControlToField5: TLinkControlToField;
+    LinkControlToField6: TLinkControlToField;
+    LinkControlToField7: TLinkControlToField;
+    LinkControlToField8: TLinkControlToField;
+    LinkControlToField9: TLinkControlToField;
+    LinkControlToField10: TLinkControlToField;
+    LinkControlToField11: TLinkControlToField;
+    LinkControlToField12: TLinkControlToField;
+    LinkControlToField13: TLinkControlToField;
+    LinkControlToField14: TLinkControlToField;
+    LinkControlToField15: TLinkControlToField;
+    Text14: TText;
+    CheckBox1: TCheckBox;
+    LinkFillControlToField1: TLinkFillControlToField;
+    LinkFillControlToField2: TLinkFillControlToField;
+    procedure StringGrid1CellClick(const Column: TColumn; const Row: Integer);
+    procedure Rectangle9Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form4: TForm4;
+
+implementation
+
+{$R *.fmx}
+
+uses DM, uMain;
+
+procedure TForm4.Rectangle9Click(Sender: TObject);
+begin
+    // Create Affiliation
+
+    DM.DataModule1.FDQuery1.SQL.Clear;
+    DM.DataModule1.FDQuery1.SQL.Add(' INSERT INTO affiliation (date_creat,mat_adh,code_act) values(:date,:mat,:code_act) ');
+    DM.DataModule1.FDQuery1.ParamByName('date').asdate := now;
+    DM.DataModule1.FDQuery1.ParamByName('mat').asinteger := strtoint(edit1.text);
+    DM.DataModule1.FDQuery1.ParamByName('code_act').asinteger := strtoint(edit16.Text);
+    DM.DataModule1.FDQuery1.ExecSQL;
+
+    //Refresh Tables
+    DM.DataModule1.table_affiliations.Active := false;
+    DM.DataModule1.table_affiliations.Active := true;
+
+
+    edit1.Text :='';
+    edit2.Text :='';
+    edit3.Text :='';
+    edit4.Text :='';
+    edit5.Text :='';
+    edit6.Text :='';
+    edit7.Text :='';
+    edit8.Text :='';
+    edit9.Text :='';
+    edit10.Text :='';
+    edit15.Text :='';
+    edit16.Text :='';
+    edit17.Text :='';
+    edit18.Text :='';
+
+    form4.close;
+
+
+end;
+
+procedure TForm4.StringGrid1CellClick(const Column: TColumn;
+  const Row: Integer);
+begin
+
+
+  DM.DataModule1.table_activite.Filtered:= false;
+  DM.DataModule1.table_activite.Filter := 'mat_adh like ' + quotedstr('%'+edit1.Text+'%');
+  DM.DataModule1.table_activite.Filtered:= true;
+
+end;
+
+end.
