@@ -116,18 +116,17 @@ begin
     //Refresh Tables
     DM.DataModule1.table_activite.Active := false;
     DM.DataModule1.table_activite.Active := true;
-    DM.DataModule1.table_affiliations.Active := false;
-    DM.DataModule1.table_affiliations.Active := true;
 
-
-    edit11.Text :='';
-    edit12.Text :='';
-    edit13.Text :='';
-    edit14.Text :='';
-
-    form3.Close;
 
   end;
+
+  edit11.Text :='';
+  edit12.Text :='';
+  edit13.Text :='';
+  edit14.Text :='';
+
+  form3.Close;
+
 
 end;
 
