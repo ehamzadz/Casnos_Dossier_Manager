@@ -72,6 +72,8 @@ type
 var
   Form3: TForm3;
 
+
+
 implementation
 
 {$R *.fmx}
@@ -125,6 +127,8 @@ begin
 end;
 
 procedure TForm3.Rectangle9Click(Sender: TObject);
+var
+  i :integer;
 begin
 
   matricule_adh := edit1.Text;
@@ -159,6 +163,13 @@ begin
     DM.DataModule1.FDTable1.Active := true;
 
 
+    for i := 0 to Owner.ComponentCount - 1 do begin
+      if Owner.Components[i] is TEdit then TEdit(Owner.Components[i]).Text := '';
+    end;
+
+
+
+    showmessage('1');
 
     if type_of_operation='ajouter adherent' then begin
       form3.Close;
@@ -167,6 +178,10 @@ begin
         tabcontrol1.TabIndex := 1;
       end;
     end;
+
+
+    showmessage('2');
+
 
 
 
