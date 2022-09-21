@@ -66,6 +66,7 @@ type
   public
     { Public declarations }
     matricule_adh :string;
+    type_of_operation :string;
   end;
 
 var
@@ -117,6 +118,7 @@ begin
 
   end;
 
+
   form3.Close;
 
 
@@ -156,7 +158,19 @@ begin
     DM.DataModule1.FDTable1.Active := false;
     DM.DataModule1.FDTable1.Active := true;
 
-    tabcontrol1.TabIndex := 1;
+
+
+    if type_of_operation='ajouter adherent' then begin
+      form3.Close;
+    end else begin
+      if type_of_operation='ajouter adherent + activité' then begin
+        tabcontrol1.TabIndex := 1;
+      end;
+    end;
+
+
+
+
 
   end;
 

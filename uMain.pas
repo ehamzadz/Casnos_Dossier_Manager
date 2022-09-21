@@ -158,6 +158,7 @@ type
     procedure btn_add_adherentClick(Sender: TObject);
     procedure Rectangle28Click(Sender: TObject);
     procedure Rectangle30Click(Sender: TObject);
+    procedure Rectangle37Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -176,7 +177,9 @@ uses uLogin, DM, uAdd_adherent;
 
 procedure TForm2.btn_add_adherentClick(Sender: TObject);
 begin
-  //form3.ShowModal;
+  form3.tabcontrol1.TabIndex := 0;
+  form3.ShowModal;
+  form3.type_of_operation := 'ajouter adherent';
 end;
 
 procedure TForm2.btn_del_adherentClick(Sender: TObject);
@@ -293,7 +296,9 @@ end;
 
 procedure TForm2.Rectangle28Click(Sender: TObject);
 begin
+  form3.tabcontrol1.TabIndex := 0;
   form3.ShowModal;
+  form3.type_of_operation := 'ajouter adherent + activité';
 end;
 
 procedure TForm2.Rectangle30Click(Sender: TObject);
@@ -312,6 +317,13 @@ begin
     DM.DataModule1.table_affiliations.Active := false;
     DM.DataModule1.table_affiliations.Active := true;
   end;
+end;
+
+procedure TForm2.Rectangle37Click(Sender: TObject);
+begin
+  form3.tabcontrol1.TabIndex := 1;
+  form3.type_of_operation := 'ajouter activité';
+  form3.ShowModal;
 end;
 
 procedure TForm2.Rectangle3Click(Sender: TObject);
