@@ -173,7 +173,7 @@ implementation
 
 {$R *.fmx}
 
-uses uLogin, DM, uAdd_adherent;
+uses uLogin, DM, uAdd_adherent, uAdd_affiliation;
 
 procedure TForm2.btn_add_adherentClick(Sender: TObject);
 begin
@@ -296,9 +296,9 @@ end;
 
 procedure TForm2.Rectangle28Click(Sender: TObject);
 begin
-  form3.tabcontrol1.TabIndex := 0;
-  form3.ShowModal;
-  form3.type_of_operation := 'ajouter adherent + activité';
+  //form3.tabcontrol1.TabIndex := 0;
+  //form3.type_of_operation := 'ajouter adherent + activité';
+  form4.ShowModal;
 end;
 
 procedure TForm2.Rectangle30Click(Sender: TObject);

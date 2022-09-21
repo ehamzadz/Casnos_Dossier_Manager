@@ -1,0 +1,536 @@
+object Form4: TForm4
+  Left = 0
+  Top = 0
+  Caption = 'Form4'
+  ClientHeight = 610
+  ClientWidth = 1048
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object TabControl1: TTabControl
+    Align = Contents
+    Size.Width = 1048.000000000000000000
+    Size.Height = 610.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = None
+    Sizes = (
+      1048s
+      610s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Adh'#233'rent'
+      ExplicitSize.cx = 70.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object Rectangle9: TRectangle
+        Align = Bottom
+        Cursor = crHandPoint
+        Margins.Left = 11.000000000000000000
+        Margins.Top = 11.000000000000000000
+        Margins.Right = 11.000000000000000000
+        Margins.Bottom = 11.000000000000000000
+        Position.X = 11.000000000000000000
+        Position.Y = 558.000000000000000000
+        Size.Width = 1026.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 10.000000000000000000
+        YRadius = 10.000000000000000000
+        object Text15: TText
+          Align = Center
+          HitTest = False
+          Size.Width = 110.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Suivant'
+          TextSettings.Font.Family = 'Tajawal'
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.StyleExt = {00050000000000000004000000}
+        end
+        object ColorAnimation3: TColorAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Fill.Color'
+          StartValue = xFFE0E0E0
+          StopValue = claSeagreen
+          Trigger = 'IsMouseOver=true'
+          TriggerInverse = 'IsMouseOver=false'
+        end
+      end
+      object Rectangle2: TRectangle
+        Align = Top
+        Fill.Kind = None
+        Position.Y = 49.000000000000000000
+        Size.Width = 1048.000000000000000000
+        Size.Height = 305.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object CheckBox1: TCheckBox
+          HitTest = False
+          Position.X = 665.000000000000000000
+          Position.Y = 274.000000000000000000
+          Size.Width = 17.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 27
+        end
+        object ComboBox1: TComboBox
+          Position.X = 440.000000000000000000
+          Position.Y = 204.000000000000000000
+          Size.Width = 105.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 23
+        end
+        object ComboBox2: TComboBox
+          Position.X = 608.000000000000000000
+          Position.Y = 204.000000000000000000
+          Size.Width = 73.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 22
+        end
+        object DateEdit1: TDateEdit
+          Date = 44821.000000000000000000
+          Position.X = 152.000000000000000000
+          Position.Y = 144.000000000000000000
+          ReadOnly = True
+          Size.Width = 169.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 13
+          TextSettings.HorzAlign = Center
+        end
+        object Edit1: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 11
+          ReadOnly = True
+          Position.X = 152.000000000000000000
+          Position.Y = 54.000000000000000000
+          Size.Width = 169.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Edit10: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 1
+          ReadOnly = True
+          Position.X = 480.000000000000000000
+          Position.Y = 234.000000000000000000
+          Size.Width = 201.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Edit2: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 10
+          ReadOnly = True
+          Position.X = 152.000000000000000000
+          Position.Y = 84.000000000000000000
+          Size.Width = 169.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Edit3: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 3
+          ReadOnly = True
+          Position.X = 152.000000000000000000
+          Position.Y = 114.000000000000000000
+          Size.Width = 169.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Edit4: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 9
+          ReadOnly = True
+          Position.X = 512.000000000000000000
+          Position.Y = 84.000000000000000000
+          Size.Width = 169.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Edit5: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 7
+          ReadOnly = True
+          Position.X = 512.000000000000000000
+          Position.Y = 114.000000000000000000
+          Size.Width = 169.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Edit6: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 6
+          ReadOnly = True
+          Position.X = 512.000000000000000000
+          Position.Y = 144.000000000000000000
+          Size.Width = 169.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Edit7: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 5
+          ReadOnly = True
+          Position.X = 152.000000000000000000
+          Position.Y = 204.000000000000000000
+          Size.Width = 137.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Edit8: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 4
+          ReadOnly = True
+          Position.X = 152.000000000000000000
+          Position.Y = 174.000000000000000000
+          Size.Width = 529.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Edit9: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 2
+          ReadOnly = True
+          Position.X = 152.000000000000000000
+          Position.Y = 234.000000000000000000
+          Size.Width = 137.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Text1: TText
+          Position.X = 32.000000000000000000
+          Position.Y = 54.000000000000000000
+          Size.Width = 121.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Matricule'
+          TextSettings.HorzAlign = Leading
+        end
+        object Text10: TText
+          Position.X = 320.000000000000000000
+          Position.Y = 204.000000000000000000
+          Size.Width = 112.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Situation familiale'
+          TextSettings.HorzAlign = Leading
+        end
+        object Text11: TText
+          Position.X = 568.000000000000000000
+          Position.Y = 204.000000000000000000
+          Size.Width = 32.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Sexe'
+          TextSettings.HorzAlign = Leading
+        end
+        object Text12: TText
+          Position.X = 32.000000000000000000
+          Position.Y = 234.000000000000000000
+          Size.Width = 121.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Num'#233'ro T'#233'l'#233'phone'
+          TextSettings.HorzAlign = Leading
+        end
+        object Text13: TText
+          Position.X = 320.000000000000000000
+          Position.Y = 234.000000000000000000
+          Size.Width = 177.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Num'#233'ro Compte Bancaire'
+          TextSettings.HorzAlign = Leading
+        end
+        object Text14: TText
+          Position.X = 608.000000000000000000
+          Position.Y = 274.000000000000000000
+          Size.Width = 49.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Soci'#233't'#233
+          TextSettings.HorzAlign = Leading
+        end
+        object Text2: TText
+          Position.X = 32.000000000000000000
+          Position.Y = 84.000000000000000000
+          Size.Width = 121.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Nom Adh'#233'rent'
+          TextSettings.HorzAlign = Leading
+        end
+        object Text21: TText
+          Margins.Top = 11.000000000000000000
+          Position.X = 32.000000000000000000
+          Position.Y = 15.000000000000000000
+          Size.Width = 411.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Ajouter Adh'#233'rent'
+          TextSettings.Font.Family = 'Tajawal'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00050000000000000004000000}
+          TextSettings.HorzAlign = Leading
+        end
+        object Text3: TText
+          Position.X = 32.000000000000000000
+          Position.Y = 114.000000000000000000
+          Size.Width = 121.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Pr'#233'nom Adh'#233'rent'
+          TextSettings.HorzAlign = Leading
+        end
+        object Text4: TText
+          Position.X = 32.000000000000000000
+          Position.Y = 144.000000000000000000
+          Size.Width = 121.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Date de naissance'
+          TextSettings.HorzAlign = Leading
+        end
+        object Text5: TText
+          Position.X = 392.000000000000000000
+          Position.Y = 84.000000000000000000
+          Size.Width = 121.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Pr'#233'nom du P'#232're'
+          TextSettings.HorzAlign = Leading
+        end
+        object Text6: TText
+          Position.X = 392.000000000000000000
+          Position.Y = 114.000000000000000000
+          Size.Width = 121.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Nom de la M'#232're'
+          TextSettings.HorzAlign = Leading
+        end
+        object Text7: TText
+          Position.X = 392.000000000000000000
+          Position.Y = 144.000000000000000000
+          Size.Width = 121.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Pr'#233'nom de la M'#232're'
+          TextSettings.HorzAlign = Leading
+        end
+        object Text8: TText
+          Position.X = 32.000000000000000000
+          Position.Y = 204.000000000000000000
+          Size.Width = 121.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Nationalit'#233
+          TextSettings.HorzAlign = Leading
+        end
+        object Text9: TText
+          Position.X = 32.000000000000000000
+          Position.Y = 174.000000000000000000
+          Size.Width = 121.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Adresse Domicile'
+          TextSettings.HorzAlign = Leading
+        end
+        object StringGrid1: TStringGrid
+          CanFocus = True
+          ClipChildren = True
+          Position.X = 704.000000000000000000
+          Position.Y = 54.000000000000000000
+          Size.Width = 320.000000000000000000
+          Size.Height = 243.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 43
+          Viewport.Width = 316.000000000000000000
+          Viewport.Height = 218.000000000000000000
+        end
+        object Edit11: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 8
+          ReadOnly = True
+          Position.X = 855.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 169.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Text17: TText
+          Position.X = 704.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 153.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Rechercher par Matricule'
+          TextSettings.HorzAlign = Leading
+        end
+      end
+      object Rectangle3: TRectangle
+        Align = Top
+        Fill.Kind = None
+        Position.Y = 354.000000000000000000
+        Size.Width = 1048.000000000000000000
+        Size.Height = 151.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object Text23: TText
+          Position.X = 320.000000000000000000
+          Position.Y = 54.000000000000000000
+          Size.Width = 121.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Nom d'#39'activit'#233
+          TextSettings.HorzAlign = Leading
+        end
+        object Edit15: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 11
+          ReadOnly = True
+          Position.X = 424.000000000000000000
+          Position.Y = 54.000000000000000000
+          Size.Width = 217.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Text24: TText
+          Margins.Top = 11.000000000000000000
+          Position.X = 32.000000000000000000
+          Position.Y = 15.000000000000000000
+          Size.Width = 411.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Ajouter une Activit'#233
+          TextSettings.Font.Family = 'Tajawal'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00050000000000000004000000}
+          TextSettings.HorzAlign = Leading
+        end
+        object Text25: TText
+          Position.X = 32.000000000000000000
+          Position.Y = 54.000000000000000000
+          Size.Width = 121.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Code Activit'#233
+          TextSettings.HorzAlign = Leading
+        end
+        object Edit16: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 14
+          ReadOnly = True
+          Position.X = 136.000000000000000000
+          Position.Y = 54.000000000000000000
+          Size.Width = 153.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Text26: TText
+          Position.X = 32.000000000000000000
+          Position.Y = 84.000000000000000000
+          Size.Width = 121.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Raison d'#39'activit'#233
+          TextSettings.HorzAlign = Leading
+        end
+        object Edit17: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 12
+          ReadOnly = True
+          Position.X = 136.000000000000000000
+          Position.Y = 84.000000000000000000
+          Size.Width = 153.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Text27: TText
+          Position.X = 32.000000000000000000
+          Position.Y = 114.000000000000000000
+          Size.Width = 121.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Adresse'
+          TextSettings.HorzAlign = Leading
+        end
+        object Edit18: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 10
+          ReadOnly = True
+          Position.X = 136.000000000000000000
+          Position.Y = 114.000000000000000000
+          Size.Width = 505.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Edit12: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 8
+          ReadOnly = True
+          Position.X = 855.000000000000000000
+          Position.Y = 16.000000000000000000
+          Size.Width = 169.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Text18: TText
+          Position.X = 704.000000000000000000
+          Position.Y = 16.000000000000000000
+          Size.Width = 153.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Rechercher par Code'
+          TextSettings.HorzAlign = Leading
+        end
+        object StringGrid2: TStringGrid
+          CanFocus = True
+          ClipChildren = True
+          Position.X = 704.000000000000000000
+          Position.Y = 54.000000000000000000
+          Size.Width = 320.000000000000000000
+          Size.Height = 131.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 43
+          Viewport.Width = 316.000000000000000000
+          Viewport.Height = 106.000000000000000000
+        end
+      end
+      object Rectangle4: TRectangle
+        Align = Top
+        Fill.Kind = None
+        Size.Width = 1048.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object Text16: TText
+          Align = Top
+          Margins.Top = 11.000000000000000000
+          Position.Y = 11.000000000000000000
+          Size.Width = 1048.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Cr'#233'er Affiliation'
+          TextSettings.Font.Family = 'Tajawal'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00050000000000000004000000}
+        end
+      end
+    end
+  end
+end

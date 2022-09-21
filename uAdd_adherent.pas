@@ -57,7 +57,6 @@ type
     Edit14: TEdit;
     Text21: TText;
     Text22: TText;
-    TabItem3: TTabItem;
     procedure CheckBox1Change(Sender: TObject);
     procedure Rectangle9Click(Sender: TObject);
     procedure Rectangle1Click(Sender: TObject);
@@ -104,12 +103,14 @@ begin
     DM.DataModule1.FDQuery1.ParamByName('adr').asstring := edit14.Text;
     DM.DataModule1.FDQuery1.ExecSQL;
 
+    // Create Affiliation
+    {
     DM.DataModule1.FDQuery1.SQL.Clear;
     DM.DataModule1.FDQuery1.SQL.Add(' INSERT INTO affiliation (date_creat,mat_adh,code_act) values(:date,:mat,:code_act) ');
     DM.DataModule1.FDQuery1.ParamByName('date').asdate := now;
     DM.DataModule1.FDQuery1.ParamByName('mat').asinteger := strtoint(matricule_adh);
     DM.DataModule1.FDQuery1.ParamByName('code_act').asinteger := strtoint(edit11.Text);
-    DM.DataModule1.FDQuery1.ExecSQL;
+    DM.DataModule1.FDQuery1.ExecSQL;  }
 
 
     //Refresh Tables
@@ -118,11 +119,15 @@ begin
     DM.DataModule1.table_affiliations.Active := false;
     DM.DataModule1.table_affiliations.Active := true;
 
+
+    edit11.Text :='';
+    edit12.Text :='';
+    edit13.Text :='';
+    edit14.Text :='';
+
+    form3.Close;
+
   end;
-
-
-  form3.Close;
-
 
 end;
 
@@ -163,13 +168,16 @@ begin
     DM.DataModule1.FDTable1.Active := true;
 
 
-    for i := 0 to Owner.ComponentCount - 1 do begin
-      if Owner.Components[i] is TEdit then TEdit(Owner.Components[i]).Text := '';
-    end;
-
-
-
-    showmessage('1');
+    edit1.Text :='';
+    edit2.Text :='';
+    edit3.Text :='';
+    edit4.Text :='';
+    edit5.Text :='';
+    edit6.Text :='';
+    edit7.Text :='';
+    edit8.Text :='';
+    edit9.Text :='';
+    edit10.Text :='';
 
     if type_of_operation='ajouter adherent' then begin
       form3.Close;
@@ -179,15 +187,8 @@ begin
       end;
     end;
 
-
-    showmessage('2');
-
-
-
-
-
-
   end;
+
 
 end;
 
