@@ -148,7 +148,6 @@ type
     Text24: TText;
     Rectangle46: TRectangle;
     Rectangle47: TRectangle;
-    Text25: TText;
     Text26: TText;
     StringGrid4: TStringGrid;
     Rectangle48: TRectangle;
@@ -164,6 +163,7 @@ type
     Edit5: TEdit;
     ClearEditButton5: TClearEditButton;
     Text32: TText;
+    Text25: TText;
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle15Click(Sender: TObject);

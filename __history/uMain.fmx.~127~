@@ -39202,7 +39202,7 @@ object Form2: TForm2
                     Align = Left
                     TabOrder = 0
                     FilterChar = '0123456789'
-                    Position.X = 257.000000000000000000
+                    Position.X = 217.000000000000000000
                     Position.Y = 15.000000000000000000
                     Margins.Right = 10.000000000000000000
                     Size.Width = 168.000000000000000000
@@ -39222,10 +39222,10 @@ object Form2: TForm2
                     Align = Left
                     Position.X = 10.000000000000000000
                     Position.Y = 15.000000000000000000
-                    Size.Width = 247.000000000000000000
+                    Size.Width = 207.000000000000000000
                     Size.Height = 36.000000000000000000
                     Size.PlatformDefault = False
-                    Text = 'Rechercher par Matricule Adh'#233'rent'
+                    Text = 'Rechercher par Code Affiliation'
                     TextSettings.Font.Size = 14.000000000000000000
                     TextSettings.Font.StyleExt = {00060000000000000004000000}
                     TextSettings.HorzAlign = Leading

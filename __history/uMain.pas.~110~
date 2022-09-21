@@ -10,7 +10,7 @@ uses
   FMX.Grid.Style, FMX.ScrollBox, FMX.Grid, Data.Bind.EngExt, Fmx.Bind.DBEngExt,
   Fmx.Bind.Grid, System.Bindings.Outputs, Fmx.Bind.Editors,
   Data.Bind.Components, Data.Bind.Grid, Data.Bind.DBScope, FireDAC.UI.Intf,
-  FireDAC.FMXUI.Wait, FireDAC.Stan.Intf, FireDAC.Comp.UI, Vcl.Dialogs, FMX.Edit;
+  FireDAC.FMXUI.Wait, FireDAC.Stan.Intf, FireDAC.Comp.UI, Vcl.Dialogs, FMX.Edit, FMX.DialogService, FireDAC.Stan.Param;
 
 type
   TForm2 = class(TForm)
@@ -139,6 +139,31 @@ type
     StringGrid3: TStringGrid;
     BindSourceDB3: TBindSourceDB;
     LinkGridToDataSourceBindSourceDB3: TLinkGridToDataSource;
+    Rectangle41: TRectangle;
+    Rectangle42: TRectangle;
+    Rectangle43: TRectangle;
+    Rectangle44: TRectangle;
+    Rectangle45: TRectangle;
+    Text23: TText;
+    Text24: TText;
+    Rectangle46: TRectangle;
+    Rectangle47: TRectangle;
+    Text25: TText;
+    Text26: TText;
+    StringGrid4: TStringGrid;
+    Rectangle48: TRectangle;
+    Rectangle49: TRectangle;
+    Rectangle50: TRectangle;
+    Rectangle51: TRectangle;
+    Text28: TText;
+    Text29: TText;
+    Rectangle52: TRectangle;
+    Rectangle53: TRectangle;
+    Text30: TText;
+    Text31: TText;
+    Edit5: TEdit;
+    ClearEditButton5: TClearEditButton;
+    Text32: TText;
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle15Click(Sender: TObject);
@@ -159,6 +184,7 @@ type
     procedure Rectangle28Click(Sender: TObject);
     procedure Rectangle30Click(Sender: TObject);
     procedure Rectangle37Click(Sender: TObject);
+    procedure Rectangle32Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -173,10 +199,11 @@ implementation
 
 {$R *.fmx}
 
-uses uLogin, DM, uAdd_adherent;
+uses uLogin, DM, uAdd_adherent, uAdd_affiliation;
 
 procedure TForm2.btn_add_adherentClick(Sender: TObject);
 begin
+  form3.tabcontrol1.TabIndex := 0;
   form3.ShowModal;
   form3.type_of_operation := 'ajouter adherent';
 end;
@@ -295,8 +322,9 @@ end;
 
 procedure TForm2.Rectangle28Click(Sender: TObject);
 begin
-  form3.ShowModal;
-  form3.type_of_operation := 'ajouter adherent + activité';
+  //form3.tabcontrol1.TabIndex := 0;
+  //form3.type_of_operation := 'ajouter adherent + activité';
+  form4.ShowModal;
 end;
 
 procedure TForm2.Rectangle30Click(Sender: TObject);
@@ -315,6 +343,16 @@ begin
     DM.DataModule1.table_affiliations.Active := false;
     DM.DataModule1.table_affiliations.Active := true;
   end;
+end;
+
+procedure TForm2.Rectangle32Click(Sender: TObject);
+var
+  this :TButton;
+begin
+  this := TButton(sender);
+  current_tab.Parent := this;
+  text_title.Text := 'Déclaration d''activité';
+  tabcontrol1.TabIndex := 3;
 end;
 
 procedure TForm2.Rectangle37Click(Sender: TObject);

@@ -38955,7 +38955,7 @@ object Form2: TForm2
                 Padding.Bottom = 15.000000000000000000
                 Margins.Bottom = 5.000000000000000000
                 Size.Width = 804.000000000000000000
-                Size.Height = 77.000000000000000000
+                Size.Height = 66.000000000000000000
                 Size.PlatformDefault = False
                 Stroke.Kind = None
                 XRadius = 10.000000000000000000
@@ -38963,12 +38963,12 @@ object Form2: TForm2
                 object Rectangle44: TRectangle
                   Align = Left
                   Cursor = crHandPoint
-                  Fill.Color = claCadetblue
+                  Fill.Color = xFF09B271
                   Margins.Right = 10.000000000000000000
                   Position.X = 10.000000000000000000
                   Position.Y = 15.000000000000000000
                   Size.Width = 385.000000000000000000
-                  Size.Height = 47.000000000000000000
+                  Size.Height = 36.000000000000000000
                   Size.PlatformDefault = False
                   Stroke.Kind = None
                   OnClick = Rectangle28Click
@@ -38981,10 +38981,10 @@ object Form2: TForm2
                     Margins.Top = 5.000000000000000000
                     Margins.Right = 5.000000000000000000
                     Margins.Bottom = 5.000000000000000000
-                    Position.X = 343.000000000000000000
+                    Position.X = 354.000000000000000000
                     Position.Y = 5.000000000000000000
-                    Size.Width = 37.000000000000000000
-                    Size.Height = 37.000000000000000000
+                    Size.Width = 26.000000000000000000
+                    Size.Height = 26.000000000000000000
                     Size.PlatformDefault = False
                     Stroke.Kind = None
                     object Text23: TText
@@ -39003,8 +39003,8 @@ object Form2: TForm2
                   object Text24: TText
                     Align = Client
                     HitTest = False
-                    Size.Width = 338.000000000000000000
-                    Size.Height = 47.000000000000000000
+                    Size.Width = 349.000000000000000000
+                    Size.Height = 36.000000000000000000
                     Size.PlatformDefault = False
                     Text = 'D'#233'claration d'#39'activit'#233' pour Adh'#233'rent existant'
                     TextSettings.Font.Family = 'Tajawal'
@@ -39016,11 +39016,11 @@ object Form2: TForm2
                 object Rectangle46: TRectangle
                   Align = Right
                   Cursor = crHandPoint
-                  Fill.Color = claDarkcyan
+                  Fill.Color = xFFD40D12
                   Position.X = 409.000000000000000000
                   Position.Y = 15.000000000000000000
                   Size.Width = 385.000000000000000000
-                  Size.Height = 47.000000000000000000
+                  Size.Height = 36.000000000000000000
                   Size.PlatformDefault = False
                   Stroke.Kind = None
                   OnClick = Rectangle30Click
@@ -39033,10 +39033,10 @@ object Form2: TForm2
                     Margins.Top = 5.000000000000000000
                     Margins.Right = 5.000000000000000000
                     Margins.Bottom = 5.000000000000000000
-                    Position.X = 343.000000000000000000
+                    Position.X = 354.000000000000000000
                     Position.Y = 5.000000000000000000
-                    Size.Width = 37.000000000000000000
-                    Size.Height = 37.000000000000000000
+                    Size.Width = 26.000000000000000000
+                    Size.Height = 26.000000000000000000
                     Size.PlatformDefault = False
                     Stroke.Kind = None
                     object Text25: TText
@@ -39045,7 +39045,7 @@ object Form2: TForm2
                       Size.Width = 43.000000000000000000
                       Size.Height = 43.000000000000000000
                       Size.PlatformDefault = False
-                      Text = '+'
+                      Text = 'x'
                       TextSettings.Font.Family = 'Tajawal'
                       TextSettings.Font.Size = 28.000000000000000000
                       TextSettings.Font.StyleExt = {00070000000000000004000000}
@@ -39055,10 +39055,10 @@ object Form2: TForm2
                   object Text26: TText
                     Align = Client
                     HitTest = False
-                    Size.Width = 338.000000000000000000
-                    Size.Height = 47.000000000000000000
+                    Size.Width = 349.000000000000000000
+                    Size.Height = 36.000000000000000000
                     Size.PlatformDefault = False
-                    Text = 'D'#233'claration d'#39'activit'#233' pour Nouvelle Adh'#233'rent'
+                    Text = 'Supprimer'
                     TextSettings.Font.Family = 'Tajawal'
                     TextSettings.Font.Size = 14.000000000000000000
                     TextSettings.Font.StyleExt = {00050000000000000004000000}
@@ -39070,7 +39070,7 @@ object Form2: TForm2
                 Align = Top
                 Fill.Kind = None
                 Margins.Bottom = 5.000000000000000000
-                Position.Y = 82.000000000000000000
+                Position.Y = 71.000000000000000000
                 Size.Width = 804.000000000000000000
                 Size.Height = 132.000000000000000000
                 Size.PlatformDefault = False
@@ -39202,7 +39202,7 @@ object Form2: TForm2
                     Align = Left
                     TabOrder = 0
                     FilterChar = '0123456789'
-                    Position.X = 257.000000000000000000
+                    Position.X = 217.000000000000000000
                     Position.Y = 15.000000000000000000
                     Margins.Right = 10.000000000000000000
                     Size.Width = 168.000000000000000000
@@ -39222,10 +39222,10 @@ object Form2: TForm2
                     Align = Left
                     Position.X = 10.000000000000000000
                     Position.Y = 15.000000000000000000
-                    Size.Width = 247.000000000000000000
+                    Size.Width = 207.000000000000000000
                     Size.Height = 36.000000000000000000
                     Size.PlatformDefault = False
-                    Text = 'Rechercher par Matricule Adh'#233'rent'
+                    Text = 'Rechercher par Code Affiliation'
                     TextSettings.Font.Size = 14.000000000000000000
                     TextSettings.Font.StyleExt = {00060000000000000004000000}
                     TextSettings.HorzAlign = Leading
