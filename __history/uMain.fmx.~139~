@@ -38282,7 +38282,7 @@ object Form2: TForm2
         Size.Width = 824.000000000000000000
         Size.Height = 568.000000000000000000
         Size.PlatformDefault = False
-        TabIndex = 3
+        TabIndex = 0
         TabOrder = 0
         TabPosition = None
         Sizes = (
@@ -38298,7 +38298,7 @@ object Form2: TForm2
           CustomIcon = <
             item
             end>
-          IsSelected = False
+          IsSelected = True
           Size.Width = 8.000000000000000000
           Size.Height = 8.000000000000000000
           Size.PlatformDefault = False
@@ -38904,7 +38904,7 @@ object Form2: TForm2
               Size.PlatformDefault = False
               StyleLookup = 'gridstyle'
               TabOrder = 1
-              RowCount = 1
+              RowCount = 0
               Options = [AlternatingRowBackground, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, Header, HeaderClick, AutoDisplacement]
               Viewport.Width = 800.000000000000000000
               Viewport.Height = 438.000000000000000000
@@ -38915,7 +38915,7 @@ object Form2: TForm2
           CustomIcon = <
             item
             end>
-          IsSelected = True
+          IsSelected = False
           Size.Width = 8.000000000000000000
           Size.Height = 8.000000000000000000
           Size.PlatformDefault = False
@@ -38971,7 +38971,7 @@ object Form2: TForm2
                   Size.Height = 47.000000000000000000
                   Size.PlatformDefault = False
                   Stroke.Kind = None
-                  OnClick = Rectangle28Click
+                  OnClick = Rectangle44Click
                   object Rectangle45: TRectangle
                     Align = Right
                     Fill.Color = xFF2EB8C6
@@ -39023,7 +39023,7 @@ object Form2: TForm2
                   Size.Height = 47.000000000000000000
                   Size.PlatformDefault = False
                   Stroke.Kind = None
-                  OnClick = Rectangle30Click
+                  OnClick = Rectangle46Click
                   object Rectangle47: TRectangle
                     Align = Right
                     Fill.Color = xFF2EB8C6
@@ -39243,10 +39243,10 @@ object Form2: TForm2
               Size.PlatformDefault = False
               StyleLookup = 'gridstyle'
               TabOrder = 1
-              RowCount = 0
+              RowCount = 3
               Options = [AlternatingRowBackground, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, Header, HeaderClick, AutoDisplacement]
               Viewport.Width = 800.000000000000000000
-              Viewport.Height = 362.000000000000000000
+              Viewport.Height = 346.000000000000000000
             end
           end
         end
@@ -40979,6 +40979,57 @@ object Form2: TForm2
           Width = 200
         end>
     end
+    object LinkGridToDataSourceBindSourceDB4: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB4
+      GridControl = StringGrid4
+      Columns = <
+        item
+          MemberName = 'code_activite'
+          Width = 70
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'rais_act'
+          Width = 150
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'nom_act'
+          Width = 150
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'adr_act'
+          Width = 150
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'mat_adh'
+          Width = 100
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'nom_adh'
+          Width = 150
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'num_tel_adh'
+          Width = 150
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'num_compt_banc'
+          Width = 150
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'type_personne'
+          Width = 150
+          Alignment = taCenter
+        end>
+    end
   end
   object FDGUIxWaitCursor1: TFDGUIxWaitCursor
     Provider = 'FMX'
@@ -40997,5 +41048,11 @@ object Form2: TForm2
     ScopeMappings = <>
     Left = 256
     Top = 216
+  end
+  object BindSourceDB4: TBindSourceDB
+    DataSet = DataModule1.table_declaration_act
+    ScopeMappings = <>
+    Left = 544
+    Top = 312
   end
 end
