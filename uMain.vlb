@@ -204,7 +204,7 @@ Coordinates=131,513,49,33
 Coordinates=72,513,49,33
 
 []
-Coordinates=134,476,107,33
+Coordinates=532,696,98,33
 
 [Module Settings]
 ModelLayerNames=
@@ -260,9 +260,6 @@ Coordinates=76,560,46,51
 [Edit1]
 Coordinates=1380,560,40,51
 
-[ClearEditButton1]
-Coordinates=10,696,98,33
-
 [affiliations]
 Coordinates=717,814,65,33
 
@@ -289,9 +286,6 @@ Coordinates=1015,483,41,51
 
 [Rectangle26]
 Coordinates=909,814,75,33
-
-[ClearEditButton2]
-Coordinates=656,696,98,33
 
 [Rectangle30]
 Coordinates=1183,814,75,33
@@ -425,9 +419,6 @@ Coordinates=980,637,75,33
 
 [Text28]
 Coordinates=656,560,46,51
-
-[ClearEditButton5]
-Coordinates=532,696,98,33
 
 [Text31]
 Coordinates=281,560,46,51

@@ -98,7 +98,6 @@ type
     Brush11: TBrushObject;
     Edit1: TEdit;
     Text12: TText;
-    ClearEditButton1: TClearEditButton;
     LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
     Rectangle23: TRectangle;
     Rectangle26: TRectangle;
@@ -112,7 +111,6 @@ type
     Text14: TText;
     Text15: TText;
     Edit2: TEdit;
-    ClearEditButton2: TClearEditButton;
     Text16: TText;
     StringGrid2: TStringGrid;
     BindSourceDB2: TBindSourceDB;
@@ -161,7 +159,6 @@ type
     Text30: TText;
     Text31: TText;
     Edit5: TEdit;
-    ClearEditButton5: TClearEditButton;
     Text32: TText;
     Text25: TText;
     Brush12: TBrushObject;
@@ -181,8 +178,6 @@ type
     procedure Rectangle19MouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure btn_del_adherentClick(Sender: TObject);
-    procedure Edit1Typing(Sender: TObject);
-    procedure ClearEditButton1Click(Sender: TObject);
     procedure btn_add_adherentClick(Sender: TObject);
     procedure Rectangle28Click(Sender: TObject);
     procedure Rectangle30Click(Sender: TObject);
@@ -190,6 +185,11 @@ type
     procedure Rectangle32Click(Sender: TObject);
     procedure Rectangle46Click(Sender: TObject);
     procedure Rectangle44Click(Sender: TObject);
+    procedure nav_barMouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
+    procedure Edit2Change(Sender: TObject);
+    procedure Edit5Change(Sender: TObject);
+    procedure Edit1Change(Sender: TObject);
   private
     { Private declarations }
   public
@@ -259,16 +259,31 @@ begin
   end;
 end;
 
-procedure TForm2.ClearEditButton1Click(Sender: TObject);
+procedure TForm2.Edit1Change(Sender: TObject);
 begin
-  edit1.Text := '';
+  if edit1.Text<>'' then begin
+    DM.DataModule1.FDTable1.Filtered:= false;
+    DM.DataModule1.FDTable1.Filter := 'mat_adh like ' + quotedstr(edit1.Text);
+    DM.DataModule1.FDTable1.Filtered:= true;
+  end else DM.DataModule1.FDTable1.Filtered:= false;
 end;
 
-procedure TForm2.Edit1Typing(Sender: TObject);
+procedure TForm2.Edit2Change(Sender: TObject);
 begin
-  DM.DataModule1.FDTable1.Filtered:= false;
-  DM.DataModule1.FDTable1.Filter := 'mat_adh like ' + quotedstr('%'+edit1.Text+'%');
-  DM.DataModule1.FDTable1.Filtered:= true;
+  if edit2.Text<>'' then begin
+    DM.DataModule1.table_affiliations.Filtered:= false;
+    DM.DataModule1.table_affiliations.Filter := 'code_affiliation  like ' + quotedstr(edit2.Text);
+    DM.DataModule1.table_affiliations.Filtered:= true;
+  end else DM.DataModule1.table_affiliations.Filtered:= false;
+end;
+
+procedure TForm2.Edit5Change(Sender: TObject);
+begin
+  if edit5.Text<>'' then begin
+    DM.DataModule1.table_declaration_act.Filtered:= false;
+    DM.DataModule1.table_declaration_act.Filter := 'mat_adh  like ' + quotedstr(edit5.Text);
+    DM.DataModule1.table_declaration_act.Filtered:= true;
+  end else DM.DataModule1.table_declaration_act.Filtered:= false;
 end;
 
 procedure TForm2.FormCreate(Sender: TObject);
@@ -305,6 +320,12 @@ begin
     end;
   end;
 
+end;
+
+procedure TForm2.nav_barMouseDown(Sender: TObject; Button: TMouseButton;
+  Shift: TShiftState; X, Y: Single);
+begin
+  if (Button = TMouseButton.mbLeft) then StartWindowDrag;
 end;
 
 procedure TForm2.Rectangle10Click(Sender: TObject);

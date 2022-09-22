@@ -17,6 +17,7 @@ object Form2: TForm2
   DesignerMasterStyle = 0
   object nav_bar: TRectangle
     Align = Left
+    Cursor = crSizeAll
     Fill.Kind = Gradient
     Fill.Gradient.Points = <
       item
@@ -31,15 +32,16 @@ object Form2: TForm2
     Fill.Gradient.StartPosition.Y = 1.000000000000000000
     Fill.Gradient.StopPosition.X = 0.499999970197677600
     Fill.Gradient.StopPosition.Y = 0.000000000000000000
-    HitTest = False
     Padding.Top = 10.000000000000000000
     Size.Width = 49.000000000000000000
     Size.Height = 647.000000000000000000
     Size.PlatformDefault = False
     Stroke.Kind = None
+    OnMouseDown = nav_barMouseDown
     object Rectangle17: TRectangle
       Align = Top
       Fill.Kind = None
+      HitTest = False
       Position.Y = 10.000000000000000000
       Size.Width = 49.000000000000000000
       Size.Height = 79.000000000000000000
@@ -2313,12 +2315,14 @@ object Form2: TForm2
     end
     object Rectangle18: TRectangle
       Align = Bottom
+      Cursor = crSizeAll
       Fill.Bitmap.WrapMode = Tile
       Fill.Kind = Bitmap
+      HitTest = False
       Padding.Bottom = 7.000000000000000000
-      Position.Y = 489.000000000000000000
+      Position.Y = 568.000000000000000000
       Size.Width = 49.000000000000000000
-      Size.Height = 158.000000000000000000
+      Size.Height = 79.000000000000000000
       Size.PlatformDefault = False
       Stroke.Kind = None
       object Rectangle15: TRectangle
@@ -2330,7 +2334,7 @@ object Form2: TForm2
         Margins.Right = 3.000000000000000000
         Margins.Bottom = 3.000000000000000000
         Position.X = 3.000000000000000000
-        Position.Y = 105.000000000000000000
+        Position.Y = 26.000000000000000000
         Size.Width = 43.000000000000000000
         Size.Height = 43.000000000000000000
         Size.PlatformDefault = False
@@ -38327,7 +38331,7 @@ object Form2: TForm2
         Size.Width = 824.000000000000000000
         Size.Height = 568.000000000000000000
         Size.PlatformDefault = False
-        TabIndex = 0
+        TabIndex = 1
         TabOrder = 0
         TabPosition = None
         Sizes = (
@@ -38343,7 +38347,7 @@ object Form2: TForm2
           CustomIcon = <
             item
             end>
-          IsSelected = True
+          IsSelected = False
           Size.Width = 8.000000000000000000
           Size.Height = 8.000000000000000000
           Size.PlatformDefault = False
@@ -38502,15 +38506,7 @@ object Form2: TForm2
                   Size.Width = 168.000000000000000000
                   Size.Height = 36.000000000000000000
                   Size.PlatformDefault = False
-                  object ClearEditButton2: TClearEditButton
-                    CanFocus = False
-                    Cursor = crArrow
-                    Size.Width = 28.000000000000000000
-                    Size.Height = 32.000000000000000000
-                    Size.PlatformDefault = False
-                    TabOrder = 0
-                    OnClick = ClearEditButton1Click
-                  end
+                  OnChange = Edit2Change
                 end
                 object Text16: TText
                   Align = Left
@@ -38547,7 +38543,7 @@ object Form2: TForm2
           CustomIcon = <
             item
             end>
-          IsSelected = False
+          IsSelected = True
           Size.Width = 8.000000000000000000
           Size.Height = 8.000000000000000000
           Size.PlatformDefault = False
@@ -38707,16 +38703,7 @@ object Form2: TForm2
                   Size.Width = 168.000000000000000000
                   Size.Height = 36.000000000000000000
                   Size.PlatformDefault = False
-                  OnTyping = Edit1Typing
-                  object ClearEditButton1: TClearEditButton
-                    CanFocus = False
-                    Cursor = crArrow
-                    Size.Width = 28.000000000000000000
-                    Size.Height = 32.000000000000000000
-                    Size.PlatformDefault = False
-                    TabOrder = 0
-                    OnClick = ClearEditButton1Click
-                  end
+                  OnChange = Edit1Change
                 end
                 object Text12: TText
                   Align = Left
@@ -38922,7 +38909,6 @@ object Form2: TForm2
                     Size.Height = 32.000000000000000000
                     Size.PlatformDefault = False
                     TabOrder = 0
-                    OnClick = ClearEditButton1Click
                   end
                 end
                 object Text22: TText
@@ -39253,15 +39239,7 @@ object Form2: TForm2
                     Size.Width = 168.000000000000000000
                     Size.Height = 36.000000000000000000
                     Size.PlatformDefault = False
-                    object ClearEditButton5: TClearEditButton
-                      CanFocus = False
-                      Cursor = crArrow
-                      Size.Width = 28.000000000000000000
-                      Size.Height = 32.000000000000000000
-                      Size.PlatformDefault = False
-                      TabOrder = 0
-                      OnClick = ClearEditButton1Click
-                    end
+                    OnChange = Edit5Change
                   end
                   object Text32: TText
                     Align = Left
