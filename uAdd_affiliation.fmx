@@ -80,8 +80,8 @@ object Form4: TForm4
         Stroke.Kind = None
         object ComboBox1: TComboBox
           Items.Strings = (
+            'C'#233'libataire'
             'C'#233'libataire')
-          ItemIndex = 0
           Position.X = 440.000000000000000000
           Position.Y = 204.000000000000000000
           Size.Width = 105.000000000000000000
@@ -91,8 +91,8 @@ object Form4: TForm4
         end
         object ComboBox2: TComboBox
           Items.Strings = (
+            'Homme'
             'Homme')
-          ItemIndex = 0
           Position.X = 608.000000000000000000
           Position.Y = 204.000000000000000000
           Size.Width = 73.000000000000000000
@@ -101,7 +101,7 @@ object Form4: TForm4
           TabOrder = 22
         end
         object DateEdit1: TDateEdit
-          Date = 35707.000000000000000000
+          Date = 35325.000000000000000000
           Position.X = 152.000000000000000000
           Position.Y = 144.000000000000000000
           ReadOnly = True
@@ -115,7 +115,7 @@ object Form4: TForm4
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           TabOrder = 11
           ReadOnly = True
-          Text = '1256214'
+          Text = '1'
           Position.X = 152.000000000000000000
           Position.Y = 54.000000000000000000
           Size.Width = 169.000000000000000000
@@ -126,7 +126,7 @@ object Form4: TForm4
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           TabOrder = 1
           ReadOnly = True
-          Text = '0023458099/88'
+          Text = '00458795/21'
           Position.X = 480.000000000000000000
           Position.Y = 234.000000000000000000
           Size.Width = 201.000000000000000000
@@ -137,7 +137,7 @@ object Form4: TForm4
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           TabOrder = 10
           ReadOnly = True
-          Text = 'Mansouri'
+          Text = 'Hamouche'
           Position.X = 152.000000000000000000
           Position.Y = 84.000000000000000000
           Size.Width = 169.000000000000000000
@@ -148,7 +148,7 @@ object Form4: TForm4
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           TabOrder = 3
           ReadOnly = True
-          Text = 'Hamza'
+          Text = 'Yaakoube'
           Position.X = 152.000000000000000000
           Position.Y = 114.000000000000000000
           Size.Width = 169.000000000000000000
@@ -159,7 +159,7 @@ object Form4: TForm4
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           TabOrder = 9
           ReadOnly = True
-          Text = 'Said'
+          Text = 'Salim'
           Position.X = 512.000000000000000000
           Position.Y = 84.000000000000000000
           Size.Width = 169.000000000000000000
@@ -170,7 +170,7 @@ object Form4: TForm4
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           TabOrder = 7
           ReadOnly = True
-          Text = 'Beghoura'
+          Text = 'Slimani'
           Position.X = 512.000000000000000000
           Position.Y = 114.000000000000000000
           Size.Width = 169.000000000000000000
@@ -181,7 +181,7 @@ object Form4: TForm4
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           TabOrder = 6
           ReadOnly = True
-          Text = 'Mira'
+          Text = 'Houria'
           Position.X = 512.000000000000000000
           Position.Y = 144.000000000000000000
           Size.Width = 169.000000000000000000
@@ -203,7 +203,7 @@ object Form4: TForm4
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           TabOrder = 4
           ReadOnly = True
-          Text = 'Bordj Bou Arreridj'
+          Text = 'Bordj Zemoura'
           Position.X = 152.000000000000000000
           Position.Y = 174.000000000000000000
           Size.Width = 529.000000000000000000
@@ -214,7 +214,7 @@ object Form4: TForm4
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           TabOrder = 2
           ReadOnly = True
-          Text = '0672138811'
+          Text = '0775489566'
           Position.X = 152.000000000000000000
           Position.Y = 234.000000000000000000
           Size.Width = 137.000000000000000000
@@ -360,11 +360,11 @@ object Form4: TForm4
           Size.Height = 259.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 42
-          RowCount = 1
+          RowCount = 2
           Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, AutoDisplacement]
           OnCellClick = StringGrid1CellClick
-          Viewport.Width = 393.000000000000000000
-          Viewport.Height = 218.000000000000000000
+          Viewport.Width = 397.000000000000000000
+          Viewport.Height = 259.000000000000000000
         end
         object Edit11: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
@@ -536,10 +536,10 @@ object Form4: TForm4
           Size.Height = 139.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 43
-          RowCount = 2
+          RowCount = 4
           Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, AutoDisplacement]
-          Viewport.Width = 393.000000000000000000
-          Viewport.Height = 98.000000000000000000
+          Viewport.Width = 397.000000000000000000
+          Viewport.Height = 139.000000000000000000
         end
       end
       object Rectangle4: TRectangle

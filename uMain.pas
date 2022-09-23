@@ -10,7 +10,8 @@ uses
   FMX.Grid.Style, FMX.ScrollBox, FMX.Grid, Data.Bind.EngExt, Fmx.Bind.DBEngExt,
   Fmx.Bind.Grid, System.Bindings.Outputs, Fmx.Bind.Editors,
   Data.Bind.Components, Data.Bind.Grid, Data.Bind.DBScope, FireDAC.UI.Intf,
-  FireDAC.FMXUI.Wait, FireDAC.Stan.Intf, FireDAC.Comp.UI, Vcl.Dialogs, FMX.Edit, FMX.DialogService, FireDAC.Stan.Param;
+  FireDAC.FMXUI.Wait, FireDAC.Stan.Intf, FireDAC.Comp.UI, Vcl.Dialogs, FMX.Edit, FMX.DialogService, FireDAC.Stan.Param,
+  FMX.Menus;
 
 type
   TForm2 = class(TForm)
@@ -164,6 +165,8 @@ type
     Brush12: TBrushObject;
     BindSourceDB4: TBindSourceDB;
     LinkGridToDataSourceBindSourceDB4: TLinkGridToDataSource;
+    PopupMenu1: TPopupMenu;
+    MenuItem1: TMenuItem;
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle15Click(Sender: TObject);
@@ -190,6 +193,7 @@ type
     procedure Edit2Change(Sender: TObject);
     procedure Edit5Change(Sender: TObject);
     procedure Edit1Change(Sender: TObject);
+    procedure MenuItem1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -204,7 +208,7 @@ implementation
 
 {$R *.fmx}
 
-uses uLogin, DM, uAdd_adherent, uAdd_affiliation;
+uses uLogin, DM, uAdd_adherent, uAdd_affiliation, uPrinter;
 
 procedure TForm2.btn_add_adherentClick(Sender: TObject);
 begin
@@ -320,6 +324,17 @@ begin
     end;
   end;
 
+end;
+
+procedure TForm2.MenuItem1Click(Sender: TObject);
+begin
+  DM.DataModule1.table_activite.Filtered := false;
+  DM.DataModule1.table_activite.Filter := 'code_activite = '+ Stringgrid2.Cells[7,Stringgrid2.Selected];
+  DM.DataModule1.table_activite.Filtered := true;
+
+  DM.DataModule1.table_affiliations.Filtered := false;
+  DM.DataModule1.table_affiliations.Filter := 'mat_adh = '+ Stringgrid2.Cells[0,Stringgrid2.Selected];
+  DM.DataModule1.table_affiliations.Filtered := true;
 end;
 
 procedure TForm2.nav_barMouseDown(Sender: TObject; Button: TMouseButton;
