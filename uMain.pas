@@ -333,8 +333,9 @@ begin
   DM.DataModule1.table_activite.Filtered := true;
 
   DM.DataModule1.table_affiliations.Filtered := false;
-  DM.DataModule1.table_affiliations.Filter := 'mat_adh = '+ Stringgrid2.Cells[0,Stringgrid2.Selected];
+  DM.DataModule1.table_affiliations.Filter := 'mat_adh = '+ Stringgrid2.Cells[2,Stringgrid2.Selected];
   DM.DataModule1.table_affiliations.Filtered := true;
+  form5.ShowModal;
 end;
 
 procedure TForm2.nav_barMouseDown(Sender: TObject; Button: TMouseButton;

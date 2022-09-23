@@ -7,6 +7,7 @@ object Form5: TForm5
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnClose = FormClose
   DesignerMasterStyle = 0
   object Button1: TButton
     Position.X = 120.000000000000000000
@@ -23,7 +24,7 @@ object Form5: TForm5
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 44827.461894525500000000
-    ReportOptions.LastChange = 44827.499515243060000000
+    ReportOptions.LastChange = 44827.512115185190000000
     ReportOptions.IsFMXReport = True
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
@@ -566,9 +567,9 @@ object Form5: TForm5
         DataSetName = 'frxDBDataset2'
         RowCount = 0
         object frxDBDataset2code_activite: TfrxMemoView
-          Left = 15.118120000000000000
-          Top = 3.779529999999909000
-          Width = 79.370130000000000000
+          Left = 170.078850000000000000
+          Top = 22.677180000000020000
+          Width = 449.764070000000000000
           Height = 18.897650000000000000
           ShowHint = False
           DataField = 'code_activite'
@@ -585,10 +586,10 @@ object Form5: TForm5
           VAlign = vaCenter
         end
         object frxDBDataset2rais_act: TfrxMemoView
-          Left = 15.118120000000000000
-          Top = 45.354359999999930000
-          Width = 400.630180000000000000
-          Height = 18.897650000000000000
+          Left = 170.078850000000000000
+          Top = 56.692950000000000000
+          Width = 449.764070000000000000
+          Height = 22.677180000000000000
           ShowHint = False
           DataField = 'rais_act'
           DataSet = frxDBDataset2
@@ -604,9 +605,9 @@ object Form5: TForm5
           VAlign = vaCenter
         end
         object frxDBDataset2nom_act: TfrxMemoView
-          Left = 15.118120000000000000
-          Top = 90.708719999999970000
-          Width = 79.370130000000000000
+          Left = 170.078850000000000000
+          Top = 98.267780000000020000
+          Width = 449.764070000000000000
           Height = 18.897650000000000000
           ShowHint = False
           DataField = 'nom_act'
@@ -623,9 +624,9 @@ object Form5: TForm5
           VAlign = vaCenter
         end
         object frxDBDataset2adr_act: TfrxMemoView
-          Left = 15.118120000000000000
+          Left = 170.078850000000000000
           Top = 136.063080000000000000
-          Width = 79.370130000000000000
+          Width = 449.764070000000000000
           Height = 18.897650000000000000
           ShowHint = False
           DataField = 'adr_act'
@@ -638,6 +639,70 @@ object Form5: TForm5
           Font.Height = -18.666666030883790000
           Memo.UTF8W = (
             '[frxDBDataset2."adr_act"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo26: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 22.677180000000020000
+          Width = 147.401670000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = [fsBold]
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            'Code: d'#39'activit'#233':')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo27: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 60.472480000000020000
+          Width = 151.181200000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = [fsBold]
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            'Raison d'#39'activite:')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo28: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 98.267780000000020000
+          Width = 147.401670000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = [fsBold]
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            'Nom d'#39'activit'#233':')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo29: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 136.063080000000000000
+          Width = 170.078850000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = [fsBold]
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            'Adresse d'#39'activite:')
           ParentFont = False
           VAlign = vaCenter
         end

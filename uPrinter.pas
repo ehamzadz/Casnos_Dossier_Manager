@@ -14,6 +14,7 @@ type
     frxDBDataset1: TfrxDBDataset;
     frxDBDataset2: TfrxDBDataset;
     procedure Button1Click(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
   public
@@ -33,6 +34,12 @@ uses DM;
 procedure TForm5.Button1Click(Sender: TObject);
 begin
   FrxReport1.ShowReport();
+end;
+
+procedure TForm5.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  DM.DataModule1.table_activite.Filtered := false;
+  DM.DataModule1.table_affiliations.Filtered := false;
 end;
 
 end.
