@@ -5,7 +5,8 @@ interface
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
-  FMX.Controls.Presentation, FMX.StdCtrls, FMX.frxClass, FMX.frxDBSet;
+  FMX.Controls.Presentation, FMX.StdCtrls, FMX.frxClass, FMX.frxDBSet,
+  FMX.frxExportPDF;
 
 type
   TForm5 = class(TForm)
@@ -37,6 +38,7 @@ procedure TForm5.Button1Click(Sender: TObject);
 begin
   //FrxReport1.ShowReport();
   //form5.Close;
+  //frxpdfexport1.FileName :=
 end;
 
 procedure TForm5.FormClose(Sender: TObject; var Action: TCloseAction);
