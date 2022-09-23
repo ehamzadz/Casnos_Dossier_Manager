@@ -1,0 +1,742 @@
+object Form5: TForm5
+  Left = 0
+  Top = 0
+  Caption = 'Form5'
+  ClientHeight = 348
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnClose = FormClose
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Position.X = 120.000000000000000000
+    Position.Y = 136.000000000000000000
+    TabOrder = 1
+    Text = 'Button1'
+    OnClick = Button1Click
+  end
+  object frxReport1: TfrxReport
+    Version = '2022.1'
+    DotMatrixReport = False
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFullScreen, pbOutline, pbThumbnails, pbPageSetup, pbEdit, pbNavigator, pbClose]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 44827.461894525500000000
+    ReportOptions.LastChange = 44827.578637187500000000
+    ReportOptions.IsFMXReport = True
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 376
+    Top = 136
+    Datasets = <
+      item
+        DataSet = frxDBDataset1
+        DataSetName = 'frxDBDataset1'
+      end
+      item
+        DataSet = frxDBDataset2
+        DataSetName = 'frxDBDataset2'
+      end>
+    Variables = <>
+    Style = <>
+    object Data: TfrxDataPage
+      Height = 1000.000000000000000000
+      Width = 1000.000000000000000000
+    end
+    object Page1: TfrxReportPage
+      PaperWidth = 210.000000000000000000
+      PaperHeight = 297.000000000000000000
+      PaperSize = 9
+      LeftMargin = 10.000000000000000000
+      RightMargin = 10.000000000000000000
+      TopMargin = 10.000000000000000000
+      BottomMargin = 10.000000000000000000
+      object PageHeader1: TfrxPageHeader
+        Height = 540.472790000000000000
+        Top = 18.897650000000000000
+        Width = 718.110700000000000000
+        object Memo1: TfrxMemoView
+          Align = baWidth
+          Top = 11.338590000000000000
+          Width = 718.110700000000000000
+          Height = 64.252010000000000000
+          ShowHint = False
+          Font.Name = 'Tajawal Black'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = [fsUnderline]
+          Font.Color = claBlack
+          Font.Height = -26.666666030883790000
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Fiche Affiliation')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object frxDBDataset1date_creat: TfrxMemoView
+          Left = 608.504330000000000000
+          Top = 102.047310000000000000
+          Width = 136.063080000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          DisplayFormat.FormatStr = 'dd/mm/yyyy'
+          DisplayFormat.Kind = fkDateTime
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          Memo.UTF8W = (
+            '[frxDBDataset1."date_creat"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo2: TfrxMemoView
+          Left = 472.441250000000000000
+          Top = 102.047310000000000000
+          Width = 136.063080000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = [fsBold]
+          Font.Color = claBlack
+          Font.Height = -13.333333015441890000
+          HAlign = haRight
+          Memo.UTF8W = (
+            'Date d'#39'edition:')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo3: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 102.047310000000000000
+          Width = 102.047310000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = [fsBold]
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            'Matricule:')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object frxDBDataset1mat_adh: TfrxMemoView
+          Left = 105.826840000000000000
+          Top = 102.047310000000000000
+          Width = 222.992270000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'mat_adh'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            '[frxDBDataset1."mat_adh"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo4: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 215.433210000000000000
+          Width = 102.047310000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = [fsBold]
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            'Nom:')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo5: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 253.228510000000000000
+          Width = 102.047310000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = [fsBold]
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            'Pr'#233'nom:')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object frxDBDataset1nom_adh: TfrxMemoView
+          Left = 105.826840000000000000
+          Top = 215.433210000000000000
+          Width = 238.110390000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'nom_adh'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            '[frxDBDataset1."nom_adh"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object frxDBDataset1pre_adh: TfrxMemoView
+          Left = 105.826840000000000000
+          Top = 253.228510000000000000
+          Width = 238.110390000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'pre_adh'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            '[frxDBDataset1."pre_adh"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo6: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 291.023810000000000000
+          Width = 170.078850000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = [fsBold]
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            'Date de naissance:')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo7: TfrxMemoView
+          Left = 377.953000000000000000
+          Top = 215.433210000000000000
+          Width = 124.724490000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = [fsBold]
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            'Pr'#233'nom P'#232're:')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo8: TfrxMemoView
+          Left = 377.953000000000000000
+          Top = 253.228510000000000000
+          Width = 124.724490000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = [fsBold]
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            'Nom M'#233're:')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo9: TfrxMemoView
+          Left = 377.953000000000000000
+          Top = 291.023810000000000000
+          Width = 132.283550000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = [fsBold]
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            'Pr'#233'nom M'#233're:')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo10: TfrxMemoView
+          Left = 173.858380000000000000
+          Top = 291.023810000000000000
+          Width = 170.078850000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            '[frxDBDataset1."date_adh"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo11: TfrxMemoView
+          Left = 510.236550000000000000
+          Top = 215.433210000000000000
+          Width = 207.874150000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            '[frxDBDataset1."per_pere_adh"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo12: TfrxMemoView
+          Left = 510.236550000000000000
+          Top = 253.228510000000000000
+          Width = 207.874150000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            '[frxDBDataset1."nom_mer_adh"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo13: TfrxMemoView
+          Left = 510.236550000000000000
+          Top = 291.023810000000000000
+          Width = 207.874150000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            '[frxDBDataset1."per_mer_adh"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo14: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 328.819110000000000000
+          Width = 170.078850000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = [fsBold]
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            'Adresse Domicile:')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo15: TfrxMemoView
+          Left = 173.858380000000000000
+          Top = 325.039580000000000000
+          Width = 548.031850000000000000
+          Height = 60.472480000000000000
+          ShowHint = False
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            '[frxDBDataset1."adr_adh"]')
+          ParentFont = False
+        end
+        object Memo17: TfrxMemoView
+          Left = 222.992270000000000000
+          Top = 389.291590000000000000
+          Width = 170.078850000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = [fsBold]
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            'Situation familiale:')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo18: TfrxMemoView
+          Left = 113.385900000000000000
+          Top = 389.291590000000000000
+          Width = 105.826840000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            '[frxDBDataset1."nat_adh"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo19: TfrxMemoView
+          Left = 393.071120000000000000
+          Top = 389.291590000000000000
+          Width = 102.047310000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            '[frxDBDataset1."sit_adh"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo20: TfrxMemoView
+          Left = 506.457020000000000000
+          Top = 389.291590000000000000
+          Width = 52.913420000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = [fsBold]
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            'Sexe:')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo21: TfrxMemoView
+          Left = 559.370440000000000000
+          Top = 389.291590000000000000
+          Width = 158.740260000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            '[frxDBDataset1."sexe_adh"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo16: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 389.291590000000000000
+          Width = 109.606370000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = [fsBold]
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            'Nationalit'#233':')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo22: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 427.086890000000000000
+          Width = 109.606370000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = [fsBold]
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            'T'#233'l'#233'phone:')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo23: TfrxMemoView
+          Left = 113.385900000000000000
+          Top = 427.086890000000000000
+          Width = 109.606370000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            '[frxDBDataset1."num_tel_adh"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo24: TfrxMemoView
+          Left = 222.992270000000000000
+          Top = 427.086890000000000000
+          Width = 234.330860000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = [fsBold]
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            'Num'#233'ro compte Bancaire:')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo25: TfrxMemoView
+          Left = 457.323130000000000000
+          Top = 427.086890000000000000
+          Width = 260.787570000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            '[frxDBDataset1."num_compt_banc"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Line1: TfrxLineView
+          Left = -37.795300000000000000
+          Top = 495.118430000000000000
+          Width = 801.260360000000000000
+          ShowHint = False
+          Diagonal = True
+        end
+        object Line2: TfrxLineView
+          Left = -41.574830000000000000
+          Top = 154.960730000000000000
+          Width = 801.260360000000000000
+          ShowHint = False
+          Diagonal = True
+        end
+      end
+      object MasterData1: TfrxMasterData
+        Height = 204.094620000000000000
+        Top = 616.063390000000000000
+        Width = 718.110700000000000000
+        DataSet = frxDBDataset2
+        DataSetName = 'frxDBDataset2'
+        RowCount = 0
+        object frxDBDataset2code_activite: TfrxMemoView
+          Left = 170.078850000000000000
+          Top = 22.677180000000020000
+          Width = 449.764070000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'code_activite'
+          DataSet = frxDBDataset2
+          DataSetName = 'frxDBDataset2'
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            '[frxDBDataset2."code_activite"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object frxDBDataset2rais_act: TfrxMemoView
+          Left = 170.078850000000000000
+          Top = 56.692950000000000000
+          Width = 449.764070000000000000
+          Height = 22.677180000000000000
+          ShowHint = False
+          DataField = 'rais_act'
+          DataSet = frxDBDataset2
+          DataSetName = 'frxDBDataset2'
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            '[frxDBDataset2."rais_act"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object frxDBDataset2nom_act: TfrxMemoView
+          Left = 170.078850000000000000
+          Top = 98.267780000000020000
+          Width = 449.764070000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'nom_act'
+          DataSet = frxDBDataset2
+          DataSetName = 'frxDBDataset2'
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            '[frxDBDataset2."nom_act"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object frxDBDataset2adr_act: TfrxMemoView
+          Left = 170.078850000000000000
+          Top = 136.063080000000000000
+          Width = 449.764070000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'adr_act'
+          DataSet = frxDBDataset2
+          DataSetName = 'frxDBDataset2'
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = []
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            '[frxDBDataset2."adr_act"]')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo26: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 22.677180000000020000
+          Width = 147.401670000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = [fsBold]
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            'Code: d'#39'activit'#233':')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo27: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 60.472480000000020000
+          Width = 151.181200000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = [fsBold]
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            'Raison d'#39'activite:')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo28: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 98.267780000000020000
+          Width = 147.401670000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = [fsBold]
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            'Nom d'#39'activit'#233':')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo29: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 136.063080000000000000
+          Width = 170.078850000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = [fsBold]
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            'Adresse d'#39'activite:')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+      end
+    end
+  end
+  object frxDBDataset1: TfrxDBDataset
+    UserName = 'frxDBDataset1'
+    CloseDataSource = False
+    DataSet = DataModule1.table_affiliations
+    BCDToCurrency = False
+    Left = 376
+    Top = 208
+  end
+  object frxDBDataset2: TfrxDBDataset
+    UserName = 'frxDBDataset2'
+    CloseDataSource = False
+    DataSet = DataModule1.table_activite
+    BCDToCurrency = False
+    Left = 456
+    Top = 208
+  end
+end

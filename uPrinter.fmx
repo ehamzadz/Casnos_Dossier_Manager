@@ -1,19 +1,24 @@
 object Form5: TForm5
   Left = 0
   Top = 0
+  BorderStyle = None
   Caption = 'Form5'
-  ClientHeight = 348
-  ClientWidth = 640
+  ClientHeight = 161
+  ClientWidth = 427
+  Position = DesktopCenter
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   OnClose = FormClose
+  OnShow = FormShow
   DesignerMasterStyle = 0
   object Button1: TButton
-    Position.X = 120.000000000000000000
-    Position.Y = 136.000000000000000000
-    TabOrder = 1
-    Text = 'Button1'
+    Align = Center
+    Size.Width = 161.000000000000000000
+    Size.Height = 100.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Imprimer'
     OnClick = Button1Click
   end
   object frxReport1: TfrxReport
@@ -24,15 +29,15 @@ object Form5: TForm5
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 44827.461894525500000000
-    ReportOptions.LastChange = 44827.512115185190000000
+    ReportOptions.LastChange = 44827.585955717590000000
     ReportOptions.IsFMXReport = True
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
       ''
       'end.')
-    Left = 376
-    Top = 136
+    OnClosePreview = frxReport1ClosePreview
+    Left = 8
     Datasets = <
       item
         DataSet = frxDBDataset1
@@ -57,7 +62,7 @@ object Form5: TForm5
       TopMargin = 10.000000000000000000
       BottomMargin = 10.000000000000000000
       object PageHeader1: TfrxPageHeader
-        Height = 468.661720000000000000
+        Height = 540.472790000000000000
         Top = 18.897650000000000000
         Width = 718.110700000000000000
         object Memo1: TfrxMemoView
@@ -558,10 +563,24 @@ object Form5: TForm5
           ParentFont = False
           VAlign = vaCenter
         end
+        object Line1: TfrxLineView
+          Left = -37.795300000000000000
+          Top = 495.118430000000000000
+          Width = 801.260360000000000000
+          ShowHint = False
+          Diagonal = True
+        end
+        object Line2: TfrxLineView
+          Left = -41.574830000000000000
+          Top = 154.960730000000000000
+          Width = 801.260360000000000000
+          ShowHint = False
+          Diagonal = True
+        end
       end
       object MasterData1: TfrxMasterData
         Height = 204.094620000000000000
-        Top = 544.252320000000100000
+        Top = 616.063390000000000000
         Width = 718.110700000000000000
         DataSet = frxDBDataset2
         DataSetName = 'frxDBDataset2'
@@ -654,7 +673,7 @@ object Form5: TForm5
           Font.Color = claBlack
           Font.Height = -18.666666030883790000
           Memo.UTF8W = (
-            'Code: d'#39'activit'#233':')
+            'Code d'#39'activit'#233':')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -714,15 +733,13 @@ object Form5: TForm5
     CloseDataSource = False
     DataSet = DataModule1.table_affiliations
     BCDToCurrency = False
-    Left = 376
-    Top = 208
+    Left = 48
   end
   object frxDBDataset2: TfrxDBDataset
     UserName = 'frxDBDataset2'
     CloseDataSource = False
     DataSet = DataModule1.table_activite
     BCDToCurrency = False
-    Left = 456
-    Top = 208
+    Left = 88
   end
 end
