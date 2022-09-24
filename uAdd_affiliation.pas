@@ -119,11 +119,20 @@ begin
   DM.DataModule1.table_affiliations.Active := true;
 
   if checkbox1.IsChecked then begin
+
     form6.code_act := edit16.Text;
+
+//    DM.DataModule1.table_employee.filtered := false;
+//    DM.DataModule1.table_employee.filter:= 'code_act = ' + edit16.Text;
+//    DM.DataModule1.table_employee.filtered := true;
+//    showmessage(edit16.Text);
+
     form4.Visible := false;
     try
+
       form6.show;
     finally
+      DM.DataModule1.table_employee.filtered := false;
       close;
     end;
   end else form4.close;

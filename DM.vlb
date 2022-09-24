@@ -19,3 +19,9 @@ Coordinates=23,80,63,51
 [table_declaration_act]
 Coordinates=360,50,119,213
 
+[table_employee]
+Coordinates=90,323,108,159
+
+[table_societe]
+Coordinates=0,291,103,141
+

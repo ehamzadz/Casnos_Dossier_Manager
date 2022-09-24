@@ -19,6 +19,7 @@ type
     table_affiliations: TFDTable;
     table_declaration_act: TFDTable;
     table_employee: TFDTable;
+    table_societe: TFDTable;
   private
     { Private declarations }
   public

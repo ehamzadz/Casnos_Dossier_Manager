@@ -182,6 +182,8 @@ type
     Edit4: TEdit;
     Text36: TText;
     StringGrid5: TStringGrid;
+    BindSourceDB5: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB5: TLinkGridToDataSource;
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle15Click(Sender: TObject);
@@ -209,6 +211,7 @@ type
     procedure Edit5Change(Sender: TObject);
     procedure Edit1Change(Sender: TObject);
     procedure MenuItem1Click(Sender: TObject);
+    procedure Edit4Change(Sender: TObject);
   private
     { Private declarations }
   public
@@ -294,6 +297,15 @@ begin
     DM.DataModule1.table_affiliations.Filter := 'code_affiliation  like ' + quotedstr(edit2.Text);
     DM.DataModule1.table_affiliations.Filtered:= true;
   end else DM.DataModule1.table_affiliations.Filtered:= false;
+end;
+
+procedure TForm2.Edit4Change(Sender: TObject);
+begin
+  if edit4.Text<>'' then begin
+    DM.DataModule1.table_societe.Filtered:= false;
+    DM.DataModule1.table_societe.Filter := 'code_actevete like ' + quotedstr(edit4.Text);
+    DM.DataModule1.table_societe.Filtered:= true;
+  end else DM.DataModule1.table_societe.Filtered:= false;
 end;
 
 procedure TForm2.Edit5Change(Sender: TObject);

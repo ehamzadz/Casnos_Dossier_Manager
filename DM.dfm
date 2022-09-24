@@ -54,4 +54,11 @@ object DataModule1: TDataModule1
     Left = 512
     Top = 168
   end
+  object table_societe: TFDTable
+    Active = True
+    Connection = FDConnection1
+    TableName = 'qry_societe'
+    Left = 512
+    Top = 240
+  end
 end

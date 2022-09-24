@@ -38398,7 +38398,7 @@ object Form2: TForm2
         Size.Width = 824.000000000000000000
         Size.Height = 568.000000000000000000
         Size.PlatformDefault = False
-        TabIndex = 4
+        TabIndex = 0
         TabOrder = 0
         TabPosition = None
         Sizes = (
@@ -38416,7 +38416,7 @@ object Form2: TForm2
           CustomIcon = <
             item
             end>
-          IsSelected = False
+          IsSelected = True
           Size.Width = 8.000000000000000000
           Size.Height = 8.000000000000000000
           Size.PlatformDefault = False
@@ -38604,8 +38604,8 @@ object Form2: TForm2
               TabOrder = 1
               RowCount = 3
               Options = [AlternatingRowBackground, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, Header, HeaderClick, AutoDisplacement]
-              Viewport.Width = 800.000000000000000000
-              Viewport.Height = 422.000000000000000000
+              Viewport.Width = 804.000000000000000000
+              Viewport.Height = 482.000000000000000000
             end
           end
         end
@@ -38801,8 +38801,8 @@ object Form2: TForm2
               TabOrder = 1
               RowCount = 2
               Options = [AlternatingRowBackground, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, Header, HeaderClick, AutoDisplacement]
-              Viewport.Width = 800.000000000000000000
-              Viewport.Height = 422.000000000000000000
+              Viewport.Width = 804.000000000000000000
+              Viewport.Height = 482.000000000000000000
             end
           end
         end
@@ -39007,8 +39007,8 @@ object Form2: TForm2
               TabOrder = 1
               RowCount = 4
               Options = [AlternatingRowBackground, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, Header, HeaderClick, AutoDisplacement]
-              Viewport.Width = 800.000000000000000000
-              Viewport.Height = 438.000000000000000000
+              Viewport.Width = 804.000000000000000000
+              Viewport.Height = 482.000000000000000000
             end
           end
         end
@@ -39338,8 +39338,8 @@ object Form2: TForm2
               TabOrder = 1
               RowCount = 4
               Options = [AlternatingRowBackground, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, Header, HeaderClick, AutoDisplacement]
-              Viewport.Width = 800.000000000000000000
-              Viewport.Height = 346.000000000000000000
+              Viewport.Width = 804.000000000000000000
+              Viewport.Height = 406.000000000000000000
             end
           end
         end
@@ -39347,7 +39347,7 @@ object Form2: TForm2
           CustomIcon = <
             item
             end>
-          IsSelected = True
+          IsSelected = False
           Size.Width = 8.000000000000000000
           Size.Height = 8.000000000000000000
           Size.PlatformDefault = False
@@ -39401,6 +39401,7 @@ object Form2: TForm2
                   Size.Height = 36.000000000000000000
                   Size.PlatformDefault = False
                   Stroke.Kind = None
+                  Visible = False
                   OnClick = Rectangle28Click
                   object Rectangle58: TRectangle
                     Align = Right
@@ -39453,6 +39454,7 @@ object Form2: TForm2
                   Size.Height = 36.000000000000000000
                   Size.PlatformDefault = False
                   Stroke.Kind = None
+                  Visible = False
                   OnClick = Rectangle30Click
                   object Rectangle60: TRectangle
                     Align = Right
@@ -39506,7 +39508,7 @@ object Form2: TForm2
                   Size.Width = 168.000000000000000000
                   Size.Height = 36.000000000000000000
                   Size.PlatformDefault = False
-                  OnChange = Edit2Change
+                  OnChange = Edit4Change
                 end
                 object Text36: TText
                   Align = Left
@@ -39515,7 +39517,7 @@ object Form2: TForm2
                   Size.Width = 207.000000000000000000
                   Size.Height = 36.000000000000000000
                   Size.PlatformDefault = False
-                  Text = 'Rechercher par Code Affiliation'
+                  Text = 'Rechercher par Code Activit'#233
                   TextSettings.Font.Size = 14.000000000000000000
                   TextSettings.Font.StyleExt = {00060000000000000004000000}
                   TextSettings.HorzAlign = Leading
@@ -39533,10 +39535,10 @@ object Form2: TForm2
               Size.PlatformDefault = False
               StyleLookup = 'gridstyle'
               TabOrder = 1
-              RowCount = 3
+              RowCount = 1
               Options = [AlternatingRowBackground, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, Header, HeaderClick, AutoDisplacement]
-              Viewport.Width = 800.000000000000000000
-              Viewport.Height = 438.000000000000000000
+              Viewport.Width = 804.000000000000000000
+              Viewport.Height = 482.000000000000000000
             end
           end
         end
@@ -41874,6 +41876,42 @@ object Form2: TForm2
           Alignment = taCenter
         end>
     end
+    object LinkGridToDataSourceBindSourceDB5: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB5
+      GridControl = StringGrid5
+      Columns = <
+        item
+          MemberName = 'code_activite'
+          ReadOnly = True
+          Width = 80
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'rais_act'
+          ReadOnly = True
+          Width = 150
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'nom_act'
+          ReadOnly = True
+          Width = 200
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'adr_act'
+          ReadOnly = True
+          Width = 200
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'Nombre d'#39'employ'#233'es'
+          ReadOnly = True
+          Width = 130
+          Alignment = taCenter
+        end>
+    end
   end
   object FDGUIxWaitCursor1: TFDGUIxWaitCursor
     Provider = 'FMX'
@@ -41898,5 +41936,11 @@ object Form2: TForm2
     ScopeMappings = <>
     Left = 296
     Top = 368
+  end
+  object BindSourceDB5: TBindSourceDB
+    DataSet = DataModule1.table_societe
+    ScopeMappings = <>
+    Left = 544
+    Top = 312
   end
 end

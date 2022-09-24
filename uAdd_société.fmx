@@ -1,12 +1,13 @@
 object Form6: TForm6
   Left = 0
   Top = 0
-  Caption = 'Form6'
-  ClientHeight = 294
-  ClientWidth = 680
+  BorderStyle = Single
+  ClientHeight = 522
+  ClientWidth = 653
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnShow = FormShow
   DesignerMasterStyle = 0
   object Edit11: TEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]
@@ -40,7 +41,7 @@ object Form6: TForm6
     TabOrder = 9
     Position.X = 104.000000000000000000
     Position.Y = 186.000000000000000000
-    Size.Width = 505.000000000000000000
+    Size.Width = 457.000000000000000000
     Size.Height = 22.000000000000000000
     Size.PlatformDefault = False
   end
@@ -52,8 +53,8 @@ object Form6: TForm6
     Margins.Right = 11.000000000000000000
     Margins.Bottom = 11.000000000000000000
     Position.X = 11.000000000000000000
-    Position.Y = 242.000000000000000000
-    Size.Width = 658.000000000000000000
+    Position.Y = 470.000000000000000000
+    Size.Width = 631.000000000000000000
     Size.Height = 41.000000000000000000
     Size.PlatformDefault = False
     Stroke.Kind = None
@@ -66,7 +67,7 @@ object Form6: TForm6
       Size.Width = 102.000000000000000000
       Size.Height = 35.000000000000000000
       Size.PlatformDefault = False
-      Text = 'Ajouter'
+      Text = 'Terminer'
       TextSettings.Font.Family = 'Tajawal'
       TextSettings.Font.Size = 16.000000000000000000
       TextSettings.Font.StyleExt = {00050000000000000004000000}
@@ -120,10 +121,10 @@ object Form6: TForm6
     Align = Top
     Margins.Top = 11.000000000000000000
     Position.Y = 11.000000000000000000
-    Size.Width = 680.000000000000000000
+    Size.Width = 653.000000000000000000
     Size.Height = 22.000000000000000000
     Size.PlatformDefault = False
-    Text = 'Ajouter Employ'#233'e'
+    Text = 'Ajouter Employ'#233's'
     TextSettings.Font.Family = 'Tajawal'
     TextSettings.Font.Size = 18.000000000000000000
     TextSettings.Font.StyleExt = {00050000000000000004000000}
@@ -145,5 +146,70 @@ object Form6: TForm6
     Size.Height = 22.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 20
+    object StringGrid1: TStringGrid
+      CanFocus = True
+      ClipChildren = True
+      Position.X = -424.000000000000000000
+      Position.Y = 145.000000000000000000
+      Size.Width = 569.000000000000000000
+      Size.Height = 214.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 24
+      RowCount = 4
+      Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, AutoDisplacement]
+      Viewport.Width = 565.000000000000000000
+      Viewport.Height = 173.000000000000000000
+    end
+  end
+  object Button1: TButton
+    StyledSettings = [Family, FontColor]
+    Position.X = 576.000000000000000000
+    Position.Y = 186.000000000000000000
+    Size.Width = 33.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 21
+    Text = '+'
+    TextSettings.Font.Size = 20.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    OnClick = Button1Click
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = DataModule1.table_employee
+    ScopeMappings = <>
+    Left = 312
+    Top = 280
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = StringGrid1
+      Columns = <
+        item
+          MemberName = 'nss'
+          Width = 100
+        end
+        item
+          MemberName = 'nom_emp'
+          Width = 100
+        end
+        item
+          MemberName = 'pre_emp'
+          Width = 100
+        end
+        item
+          MemberName = 'adr_amp'
+          Width = 150
+        end
+        item
+          MemberName = 'date_deb_travail_emp'
+          Width = 150
+        end>
+    end
   end
 end
