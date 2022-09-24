@@ -233,3 +233,9 @@ Visible=False
 [DataModule1.table_affiliations]
 Visible=False
 
+[DataModule1.table_declaration_act]
+Visible=False
+
+[DataModule1.table_societe]
+Visible=False
+

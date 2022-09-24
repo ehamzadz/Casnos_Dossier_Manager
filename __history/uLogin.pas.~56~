@@ -98,7 +98,6 @@ type
     procedure EditButton2Click(Sender: TObject);
     procedure Rectangle20Click(Sender: TObject);
     procedure FloatAnimation2Finish(Sender: TObject);
-    procedure Image2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -177,7 +176,7 @@ procedure TForm1.FloatAnimation2Finish(Sender: TObject);
 begin
   image13.Visible := false;
   FloatAnimation2.Enabled := false;
-  showmessage('Inscrit avec succÃ¨s');
+  showmessage('Inscrit avec succès');
 end;
 
 procedure TForm1.FormShow(Sender: TObject);
@@ -189,11 +188,6 @@ procedure TForm1.Image1MouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Single);
 begin
   if (Button = TMouseButton.mbLeft) then StartWindowDrag;
-end;
-
-procedure TForm1.Image2Click(Sender: TObject);
-begin
-
 end;
 
 procedure TForm1.Rectangle20Click(Sender: TObject);
