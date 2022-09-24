@@ -363,8 +363,8 @@ object Form4: TForm4
           RowCount = 2
           Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, AutoDisplacement]
           OnCellClick = StringGrid1CellClick
-          Viewport.Width = 397.000000000000000000
-          Viewport.Height = 259.000000000000000000
+          Viewport.Width = 393.000000000000000000
+          Viewport.Height = 218.000000000000000000
         end
         object Edit11: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
@@ -428,7 +428,7 @@ object Form4: TForm4
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           TabOrder = 11
           ReadOnly = True
-          Text = 'Boite de d'#233'veloppement'
+          Text = 'sgfh'
           Position.X = 424.000000000000000000
           Position.Y = 54.000000000000000000
           Size.Width = 217.000000000000000000
@@ -461,7 +461,7 @@ object Form4: TForm4
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           TabOrder = 14
           ReadOnly = True
-          Text = '45921'
+          Text = '5'
           Position.X = 136.000000000000000000
           Position.Y = 54.000000000000000000
           Size.Width = 153.000000000000000000
@@ -481,7 +481,7 @@ object Form4: TForm4
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           TabOrder = 12
           ReadOnly = True
-          Text = 'Raison activit'#233' 01'
+          Text = 'seh'
           Position.X = 136.000000000000000000
           Position.Y = 84.000000000000000000
           Size.Width = 153.000000000000000000
@@ -501,7 +501,7 @@ object Form4: TForm4
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           TabOrder = 10
           ReadOnly = True
-          Text = 'Bordj Bou Arreridj'
+          Text = 'sfgh'
           Position.X = 136.000000000000000000
           Position.Y = 114.000000000000000000
           Size.Width = 505.000000000000000000
@@ -538,8 +538,8 @@ object Form4: TForm4
           TabOrder = 43
           RowCount = 4
           Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, AutoDisplacement]
-          Viewport.Width = 397.000000000000000000
-          Viewport.Height = 139.000000000000000000
+          Viewport.Width = 393.000000000000000000
+          Viewport.Height = 98.000000000000000000
         end
       end
       object Rectangle4: TRectangle

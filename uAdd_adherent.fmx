@@ -15,7 +15,7 @@ object Form3: TForm3
     Size.Width = 717.000000000000000000
     Size.Height = 361.000000000000000000
     Size.PlatformDefault = False
-    TabIndex = 2
+    TabIndex = 1
     TabOrder = 0
     TabPosition = None
     Sizes = (
@@ -349,7 +349,7 @@ object Form3: TForm3
       CustomIcon = <
         item
         end>
-      IsSelected = False
+      IsSelected = True
       Size.Width = 8.000000000000000000
       Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
@@ -483,7 +483,7 @@ object Form3: TForm3
       CustomIcon = <
         item
         end>
-      IsSelected = True
+      IsSelected = False
       Size.Width = 8.000000000000000000
       Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
@@ -621,10 +621,10 @@ object Form3: TForm3
         Size.Height = 197.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 42
-        RowCount = 1
+        RowCount = 2
         Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, AutoDisplacement]
-        Viewport.Width = 686.000000000000000000
-        Viewport.Height = 156.000000000000000000
+        Viewport.Width = 690.000000000000000000
+        Viewport.Height = 197.000000000000000000
       end
     end
   end

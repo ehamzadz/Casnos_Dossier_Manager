@@ -6,7 +6,10 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
   FMX.Controls.Presentation, FMX.Edit, FMX.Objects, FMX.TabControl,
-  FMX.DateTimeCtrls, FMX.ListBox, FMX.StdCtrls, FMX.Ani;
+  FMX.DateTimeCtrls, FMX.ListBox, FMX.StdCtrls, FMX.Ani, System.Rtti,
+  FMX.Grid.Style, FMX.ScrollBox, FMX.Grid, Data.Bind.EngExt, Fmx.Bind.DBEngExt,
+  Fmx.Bind.Grid, System.Bindings.Outputs, Fmx.Bind.Editors,
+  Data.Bind.Components, Data.Bind.Grid, Data.Bind.DBScope;
 
 type
   TForm3 = class(TForm)
@@ -58,9 +61,26 @@ type
     Text21: TText;
     Text22: TText;
     TabItem3: TTabItem;
+    Rectangle2: TRectangle;
+    Text23: TText;
+    ColorAnimation2: TColorAnimation;
+    Text24: TText;
+    Edit15: TEdit;
+    Text25: TText;
+    Edit16: TEdit;
+    Text26: TText;
+    Edit17: TEdit;
+    Text27: TText;
+    Edit18: TEdit;
+    Text28: TText;
+    StringGrid1: TStringGrid;
+    BindSourceDB1: TBindSourceDB;
+    BindingsList1: TBindingsList;
+    LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
     procedure CheckBox1Change(Sender: TObject);
     procedure Rectangle9Click(Sender: TObject);
     procedure Rectangle1Click(Sender: TObject);
+    procedure Rectangle2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -97,11 +117,12 @@ begin
   end else begin
 
     DM.DataModule1.FDQuery1.SQL.Clear;
-    DM.DataModule1.FDQuery1.SQL.Add(' INSERT INTO activite values(:code,:raison,:nom,:adr) ');
+    DM.DataModule1.FDQuery1.SQL.Add(' INSERT INTO activite values(:code,:raison,:nom,:adr,:mat) ');
     DM.DataModule1.FDQuery1.ParamByName('code').asinteger := strtoint(edit11.Text);
     DM.DataModule1.FDQuery1.ParamByName('raison').asstring := edit12.Text;
     DM.DataModule1.FDQuery1.ParamByName('nom').asstring := edit13.Text;
     DM.DataModule1.FDQuery1.ParamByName('adr').asstring := edit14.Text;
+    DM.DataModule1.FDQuery1.ParamByName('mat').asinteger := strtoint(matricule_adh);;     //matricule_adh
     DM.DataModule1.FDQuery1.ExecSQL;
 
     // Create Affiliation
@@ -117,24 +138,58 @@ begin
     //Refresh Tables
     DM.DataModule1.table_activite.Active := false;
     DM.DataModule1.table_activite.Active := true;
-    DM.DataModule1.table_affiliations.Active := false;
-    DM.DataModule1.table_affiliations.Active := true;
 
+    DM.DataModule1.table_declaration_act.Active := false;
+    DM.DataModule1.table_declaration_act.Active := true;
 
-    edit11.Text :='';
-    edit12.Text :='';
-    edit13.Text :='';
-    edit14.Text :='';
-
-    form3.Close;
 
   end;
 
+  edit11.Text :='';
+  edit12.Text :='';
+  edit13.Text :='';
+  edit14.Text :='';
+
+  form3.Close;
+
+
+end;
+
+procedure TForm3.Rectangle2Click(Sender: TObject);
+begin
+
+  if (edit15.Text='') or (edit16.Text='') or (edit17.Text='') or (edit18.Text='') then begin
+    showmessage('Completer tous les champs!');
+  end else begin
+
+    DM.DataModule1.FDQuery1.SQL.Clear;
+    DM.DataModule1.FDQuery1.SQL.Add(' INSERT INTO activite values(:code,:raison,:nom,:adr,:mat) ');
+    DM.DataModule1.FDQuery1.ParamByName('code').asinteger := strtoint(edit15.Text);
+    DM.DataModule1.FDQuery1.ParamByName('raison').asstring := edit16.Text;
+    DM.DataModule1.FDQuery1.ParamByName('nom').asstring := edit17.Text;
+    DM.DataModule1.FDQuery1.ParamByName('adr').asstring := edit18.Text;
+    DM.DataModule1.FDQuery1.ParamByName('mat').asinteger := strtoint(Stringgrid1.Cells[0,Stringgrid1.Selected]);
+    DM.DataModule1.FDQuery1.ExecSQL;
+
+    //Refresh Tables
+    DM.DataModule1.table_activite.Active := false;
+    DM.DataModule1.table_activite.Active := true;
+
+    DM.DataModule1.table_declaration_act.Active := false;
+    DM.DataModule1.table_declaration_act.Active := true;
+
+
+  end;
+
+  edit11.Text :='';
+  edit12.Text :='';
+  edit13.Text :='';
+  edit14.Text :='';
+
+  form3.Close;
 end;
 
 procedure TForm3.Rectangle9Click(Sender: TObject);
-var
-  i :integer;
 begin
 
   matricule_adh := edit1.Text;
@@ -189,6 +244,7 @@ begin
     end;
 
   end;
+
 
 end;
 

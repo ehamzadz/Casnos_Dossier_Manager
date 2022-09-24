@@ -101,10 +101,13 @@ implementation
 
 {$R *.fmx}
 
-uses DM, uMain;
+uses DM, uMain, uAdd_société;
 
 procedure TForm4.Rectangle9Click(Sender: TObject);
 begin
+
+
+
     // Create Affiliation
 
     DM.DataModule1.FDQuery1.SQL.Clear;
@@ -134,7 +137,10 @@ begin
     edit17.Text :='';
     edit18.Text :='';
                         }
-    form4.close;
+
+  if checkbox1.IsChecked then begin
+    form6.show;
+  end else form4.close;
 
 
 end;

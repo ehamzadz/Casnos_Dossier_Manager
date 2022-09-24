@@ -1,0 +1,150 @@
+object Form6: TForm6
+  Left = 0
+  Top = 0
+  Caption = 'Form6'
+  ClientHeight = 294
+  ClientWidth = 680
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Edit11: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 12
+    Position.X = 104.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit12: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 11
+    Position.X = 104.000000000000000000
+    Position.Y = 126.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit13: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 10
+    Position.X = 104.000000000000000000
+    Position.Y = 156.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit14: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 9
+    Position.X = 104.000000000000000000
+    Position.Y = 186.000000000000000000
+    Size.Width = 505.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Rectangle1: TRectangle
+    Align = Bottom
+    Cursor = crHandPoint
+    Margins.Left = 11.000000000000000000
+    Margins.Top = 11.000000000000000000
+    Margins.Right = 11.000000000000000000
+    Margins.Bottom = 11.000000000000000000
+    Position.X = 11.000000000000000000
+    Position.Y = 242.000000000000000000
+    Size.Width = 658.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+    OnClick = Rectangle1Click
+    object Text16: TText
+      Align = Center
+      HitTest = False
+      Size.Width = 102.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Ajouter'
+      TextSettings.Font.Family = 'Tajawal'
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.StyleExt = {00050000000000000004000000}
+    end
+    object ColorAnimation1: TColorAnimation
+      Duration = 0.200000002980232200
+      PropertyName = 'Fill.Color'
+      StartValue = xFFE0E0E0
+      StopValue = claSeagreen
+      Trigger = 'IsMouseOver=true'
+      TriggerInverse = 'IsMouseOver=false'
+    end
+  end
+  object Text17: TText
+    Position.X = 40.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'NSS'
+    TextSettings.HorzAlign = Leading
+  end
+  object Text18: TText
+    Position.X = 40.000000000000000000
+    Position.Y = 126.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Nom'
+    TextSettings.HorzAlign = Leading
+    OnClick = Text18Click
+  end
+  object Text19: TText
+    Position.X = 40.000000000000000000
+    Position.Y = 156.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Pr'#233'nom'
+    TextSettings.HorzAlign = Leading
+  end
+  object Text20: TText
+    Position.X = 41.000000000000000000
+    Position.Y = 186.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Adresse'
+    TextSettings.HorzAlign = Leading
+  end
+  object Text22: TText
+    Align = Top
+    Margins.Top = 11.000000000000000000
+    Position.Y = 11.000000000000000000
+    Size.Width = 680.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Ajouter Employ'#233'e'
+    TextSettings.Font.Family = 'Tajawal'
+    TextSettings.Font.Size = 18.000000000000000000
+    TextSettings.Font.StyleExt = {00050000000000000004000000}
+  end
+  object Text1: TText
+    Position.X = 336.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Date debut de travail'
+    TextSettings.HorzAlign = Leading
+  end
+  object DateEdit1: TDateEdit
+    Date = 44828.000000000000000000
+    Position.X = 465.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 144.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 20
+  end
+end

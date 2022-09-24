@@ -1,37 +1,43 @@
 object Form5: TForm5
   Left = 0
   Top = 0
+  BorderStyle = None
   Caption = 'Form5'
-  ClientHeight = 348
-  ClientWidth = 640
+  ClientHeight = 396
+  ClientWidth = 677
+  Position = DesktopCenter
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnClose = FormClose
+  OnShow = FormShow
   DesignerMasterStyle = 0
   object Button1: TButton
-    Position.X = 120.000000000000000000
-    Position.Y = 136.000000000000000000
-    TabOrder = 1
-    Text = 'Button1'
+    Align = Center
+    Size.Width = 161.000000000000000000
+    Size.Height = 100.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Imprimer'
     OnClick = Button1Click
   end
   object frxReport1: TfrxReport
     Version = '2022.1'
     DotMatrixReport = False
-    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFullScreen, pbOutline, pbThumbnails, pbPageSetup, pbEdit, pbNavigator, pbClose]
+    PreviewOptions.Buttons = [pbPrint, pbExport, pbZoom, pbFullScreen, pbOutline, pbThumbnails, pbPageSetup, pbEdit, pbNavigator, pbClose]
     PreviewOptions.Zoom = 1.000000000000000000
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 44827.461894525500000000
-    ReportOptions.LastChange = 44827.499515243060000000
+    ReportOptions.LastChange = 44827.630561296300000000
     ReportOptions.IsFMXReport = True
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
       ''
       'end.')
-    Left = 376
-    Top = 136
+    OnClosePreview = frxReport1ClosePreview
+    Left = 8
     Datasets = <
       item
         DataSet = frxDBDataset1
@@ -56,7 +62,7 @@ object Form5: TForm5
       TopMargin = 10.000000000000000000
       BottomMargin = 10.000000000000000000
       object PageHeader1: TfrxPageHeader
-        Height = 468.661720000000000000
+        Height = 540.472790000000000000
         Top = 18.897650000000000000
         Width = 718.110700000000000000
         object Memo1: TfrxMemoView
@@ -152,7 +158,7 @@ object Form5: TForm5
           Left = 3.779530000000000000
           Top = 215.433210000000000000
           Width = 102.047310000000000000
-          Height = 18.897650000000000000
+          Height = 26.456692913385800000
           ShowHint = False
           Font.Name = 'Tajawal'
           Font.PixelsPerInch = 96.000000000000000000
@@ -168,7 +174,7 @@ object Form5: TForm5
           Left = 3.779530000000000000
           Top = 253.228510000000000000
           Width = 102.047310000000000000
-          Height = 18.897650000000000000
+          Height = 26.456692913385800000
           ShowHint = False
           Font.Name = 'Tajawal'
           Font.PixelsPerInch = 96.000000000000000000
@@ -184,7 +190,7 @@ object Form5: TForm5
           Left = 105.826840000000000000
           Top = 215.433210000000000000
           Width = 238.110390000000000000
-          Height = 18.897650000000000000
+          Height = 26.456692913385800000
           ShowHint = False
           DataField = 'nom_adh'
           DataSet = frxDBDataset1
@@ -203,7 +209,7 @@ object Form5: TForm5
           Left = 105.826840000000000000
           Top = 253.228510000000000000
           Width = 238.110390000000000000
-          Height = 18.897650000000000000
+          Height = 26.456692913385800000
           ShowHint = False
           DataField = 'pre_adh'
           DataSet = frxDBDataset1
@@ -222,7 +228,7 @@ object Form5: TForm5
           Left = 3.779530000000000000
           Top = 291.023810000000000000
           Width = 170.078850000000000000
-          Height = 18.897650000000000000
+          Height = 26.456692913385800000
           ShowHint = False
           Font.Name = 'Tajawal'
           Font.PixelsPerInch = 96.000000000000000000
@@ -238,7 +244,7 @@ object Form5: TForm5
           Left = 377.953000000000000000
           Top = 215.433210000000000000
           Width = 124.724490000000000000
-          Height = 18.897650000000000000
+          Height = 26.456692913385800000
           ShowHint = False
           Font.Name = 'Tajawal'
           Font.PixelsPerInch = 96.000000000000000000
@@ -254,7 +260,7 @@ object Form5: TForm5
           Left = 377.953000000000000000
           Top = 253.228510000000000000
           Width = 124.724490000000000000
-          Height = 18.897650000000000000
+          Height = 26.456692913385800000
           ShowHint = False
           Font.Name = 'Tajawal'
           Font.PixelsPerInch = 96.000000000000000000
@@ -270,7 +276,7 @@ object Form5: TForm5
           Left = 377.953000000000000000
           Top = 291.023810000000000000
           Width = 132.283550000000000000
-          Height = 18.897650000000000000
+          Height = 26.456692913385800000
           ShowHint = False
           Font.Name = 'Tajawal'
           Font.PixelsPerInch = 96.000000000000000000
@@ -286,7 +292,7 @@ object Form5: TForm5
           Left = 173.858380000000000000
           Top = 291.023810000000000000
           Width = 170.078850000000000000
-          Height = 18.897650000000000000
+          Height = 26.456692913385800000
           ShowHint = False
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
@@ -304,7 +310,7 @@ object Form5: TForm5
           Left = 510.236550000000000000
           Top = 215.433210000000000000
           Width = 207.874150000000000000
-          Height = 18.897650000000000000
+          Height = 26.456692913385800000
           ShowHint = False
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
@@ -322,7 +328,7 @@ object Form5: TForm5
           Left = 510.236550000000000000
           Top = 253.228510000000000000
           Width = 207.874150000000000000
-          Height = 18.897650000000000000
+          Height = 26.456692913385800000
           ShowHint = False
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
@@ -340,7 +346,7 @@ object Form5: TForm5
           Left = 510.236550000000000000
           Top = 291.023810000000000000
           Width = 207.874150000000000000
-          Height = 18.897650000000000000
+          Height = 26.456692913385800000
           ShowHint = False
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
@@ -391,7 +397,7 @@ object Form5: TForm5
           Left = 222.992270000000000000
           Top = 389.291590000000000000
           Width = 170.078850000000000000
-          Height = 18.897650000000000000
+          Height = 26.456692913385800000
           ShowHint = False
           Font.Name = 'Tajawal'
           Font.PixelsPerInch = 96.000000000000000000
@@ -407,7 +413,7 @@ object Form5: TForm5
           Left = 113.385900000000000000
           Top = 389.291590000000000000
           Width = 105.826840000000000000
-          Height = 18.897650000000000000
+          Height = 26.456692913385800000
           ShowHint = False
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
@@ -425,7 +431,7 @@ object Form5: TForm5
           Left = 393.071120000000000000
           Top = 389.291590000000000000
           Width = 102.047310000000000000
-          Height = 18.897650000000000000
+          Height = 26.456692913385800000
           ShowHint = False
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
@@ -443,7 +449,7 @@ object Form5: TForm5
           Left = 506.457020000000000000
           Top = 389.291590000000000000
           Width = 52.913420000000000000
-          Height = 18.897650000000000000
+          Height = 26.456692913385800000
           ShowHint = False
           Font.Name = 'Tajawal'
           Font.PixelsPerInch = 96.000000000000000000
@@ -459,7 +465,7 @@ object Form5: TForm5
           Left = 559.370440000000000000
           Top = 389.291590000000000000
           Width = 158.740260000000000000
-          Height = 18.897650000000000000
+          Height = 26.456692913385800000
           ShowHint = False
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
@@ -477,7 +483,7 @@ object Form5: TForm5
           Left = 3.779530000000000000
           Top = 389.291590000000000000
           Width = 109.606370000000000000
-          Height = 18.897650000000000000
+          Height = 26.456692913385800000
           ShowHint = False
           Font.Name = 'Tajawal'
           Font.PixelsPerInch = 96.000000000000000000
@@ -493,7 +499,7 @@ object Form5: TForm5
           Left = 3.779530000000000000
           Top = 427.086890000000000000
           Width = 109.606370000000000000
-          Height = 18.897650000000000000
+          Height = 26.456692913385800000
           ShowHint = False
           Font.Name = 'Tajawal'
           Font.PixelsPerInch = 96.000000000000000000
@@ -509,7 +515,7 @@ object Form5: TForm5
           Left = 113.385900000000000000
           Top = 427.086890000000000000
           Width = 109.606370000000000000
-          Height = 18.897650000000000000
+          Height = 26.456692913385800000
           ShowHint = False
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
@@ -527,7 +533,7 @@ object Form5: TForm5
           Left = 222.992270000000000000
           Top = 427.086890000000000000
           Width = 234.330860000000000000
-          Height = 18.897650000000000000
+          Height = 26.456692913385800000
           ShowHint = False
           Font.Name = 'Tajawal'
           Font.PixelsPerInch = 96.000000000000000000
@@ -543,7 +549,7 @@ object Form5: TForm5
           Left = 457.323130000000000000
           Top = 427.086890000000000000
           Width = 260.787570000000000000
-          Height = 18.897650000000000000
+          Height = 26.456692913385800000
           ShowHint = False
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
@@ -557,19 +563,33 @@ object Form5: TForm5
           ParentFont = False
           VAlign = vaCenter
         end
+        object Line1: TfrxLineView
+          Left = -37.795300000000000000
+          Top = 495.118430000000000000
+          Width = 801.260360000000000000
+          ShowHint = False
+          Diagonal = True
+        end
+        object Line2: TfrxLineView
+          Left = -41.574830000000000000
+          Top = 154.960730000000000000
+          Width = 801.260360000000000000
+          ShowHint = False
+          Diagonal = True
+        end
       end
       object MasterData1: TfrxMasterData
         Height = 204.094620000000000000
-        Top = 544.252320000000100000
+        Top = 616.063390000000000000
         Width = 718.110700000000000000
         DataSet = frxDBDataset2
         DataSetName = 'frxDBDataset2'
         RowCount = 0
         object frxDBDataset2code_activite: TfrxMemoView
-          Left = 15.118120000000000000
-          Top = 3.779529999999909000
-          Width = 79.370130000000000000
-          Height = 18.897650000000000000
+          Left = 170.078850000000000000
+          Top = 22.677180000000020000
+          Width = 449.764070000000000000
+          Height = 26.456692913385800000
           ShowHint = False
           DataField = 'code_activite'
           DataSet = frxDBDataset2
@@ -585,10 +605,10 @@ object Form5: TForm5
           VAlign = vaCenter
         end
         object frxDBDataset2rais_act: TfrxMemoView
-          Left = 15.118120000000000000
-          Top = 45.354359999999930000
-          Width = 400.630180000000000000
-          Height = 18.897650000000000000
+          Left = 170.078850000000000000
+          Top = 60.472480000000020000
+          Width = 449.764070000000000000
+          Height = 26.456692910000000000
           ShowHint = False
           DataField = 'rais_act'
           DataSet = frxDBDataset2
@@ -604,10 +624,10 @@ object Form5: TForm5
           VAlign = vaCenter
         end
         object frxDBDataset2nom_act: TfrxMemoView
-          Left = 15.118120000000000000
-          Top = 90.708719999999970000
-          Width = 79.370130000000000000
-          Height = 18.897650000000000000
+          Left = 170.078850000000000000
+          Top = 98.267780000000020000
+          Width = 449.764070000000000000
+          Height = 26.456692913385800000
           ShowHint = False
           DataField = 'nom_act'
           DataSet = frxDBDataset2
@@ -623,10 +643,10 @@ object Form5: TForm5
           VAlign = vaCenter
         end
         object frxDBDataset2adr_act: TfrxMemoView
-          Left = 15.118120000000000000
+          Left = 170.078850000000000000
           Top = 136.063080000000000000
-          Width = 79.370130000000000000
-          Height = 18.897650000000000000
+          Width = 449.764070000000000000
+          Height = 26.456692913385800000
           ShowHint = False
           DataField = 'adr_act'
           DataSet = frxDBDataset2
@@ -641,6 +661,70 @@ object Form5: TForm5
           ParentFont = False
           VAlign = vaCenter
         end
+        object Memo26: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 22.677180000000020000
+          Width = 147.401670000000000000
+          Height = 26.456692913385800000
+          ShowHint = False
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = [fsBold]
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            'Code d'#39'activit'#233':')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo27: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 60.472480000000020000
+          Width = 151.181200000000000000
+          Height = 26.456692910000000000
+          ShowHint = False
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = [fsBold]
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            'Raison d'#39'activite:')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo28: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 98.267780000000020000
+          Width = 147.401670000000000000
+          Height = 26.456692913385800000
+          ShowHint = False
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = [fsBold]
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            'Nom d'#39'activit'#233':')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object Memo29: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 136.063080000000000000
+          Width = 170.078850000000000000
+          Height = 26.456692913385800000
+          ShowHint = False
+          Font.Name = 'Tajawal'
+          Font.PixelsPerInch = 96.000000000000000000
+          Font.Style = [fsBold]
+          Font.Color = claBlack
+          Font.Height = -18.666666030883790000
+          Memo.UTF8W = (
+            'Adresse d'#39'activite:')
+          ParentFont = False
+          VAlign = vaCenter
+        end
       end
     end
   end
@@ -649,15 +733,13 @@ object Form5: TForm5
     CloseDataSource = False
     DataSet = DataModule1.table_affiliations
     BCDToCurrency = False
-    Left = 376
-    Top = 208
+    Left = 120
   end
   object frxDBDataset2: TfrxDBDataset
     UserName = 'frxDBDataset2'
     CloseDataSource = False
     DataSet = DataModule1.table_activite
     BCDToCurrency = False
-    Left = 456
-    Top = 208
+    Left = 200
   end
 end

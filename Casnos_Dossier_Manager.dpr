@@ -8,7 +8,8 @@ uses
   uMain in 'uMain.pas' {Form2},
   uAdd_adherent in 'uAdd_adherent.pas' {Form3},
   uAdd_affiliation in 'uAdd_affiliation.pas' {Form4},
-  uPrinter in 'uPrinter.pas' {Form5};
+  uPrinter in 'uPrinter.pas' {Form5},
+  uAdd_société in 'uAdd_société.pas' {Form6};
 
 {$R *.res}
 
@@ -20,5 +21,6 @@ begin
   Application.CreateForm(TDataModule1, DataModule1);
   Application.CreateForm(TForm4, Form4);
   Application.CreateForm(TForm5, Form5);
+  Application.CreateForm(TForm6, Form6);
   Application.Run;
 end.

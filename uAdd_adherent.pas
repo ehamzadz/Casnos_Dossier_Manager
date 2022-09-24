@@ -122,7 +122,7 @@ begin
     DM.DataModule1.FDQuery1.ParamByName('raison').asstring := edit12.Text;
     DM.DataModule1.FDQuery1.ParamByName('nom').asstring := edit13.Text;
     DM.DataModule1.FDQuery1.ParamByName('adr').asstring := edit14.Text;
-    DM.DataModule1.FDQuery1.ParamByName('mat').asinteger := strtoint(matricule_adh);;     //matricule_adh
+    DM.DataModule1.FDQuery1.ParamByName('mat').asinteger := strtoint(matricule_adh);     //matricule_adh
     DM.DataModule1.FDQuery1.ExecSQL;
 
     // Create Affiliation
