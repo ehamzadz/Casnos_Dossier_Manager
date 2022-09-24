@@ -83,6 +83,8 @@ end;
 
 procedure TForm6.Rectangle1Click(Sender: TObject);
 begin
+  DM.DataModule1.table_societe.Active := false;
+  DM.DataModule1.table_societe.Active := true;
   form6.Close;
 end;
 

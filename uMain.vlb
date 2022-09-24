@@ -475,7 +475,7 @@ Coordinates=173,1,79,33
 Coordinates=996,714,68,33
 
 [DataModule1.table_employee]
-Coordinates=1271,10,158,159
+Coordinates=1310,10,158,159
 
 [Text27]
 Coordinates=787,483,46,51
@@ -514,7 +514,7 @@ Coordinates=1775,483,46,51
 Coordinates=499,483,46,51
 
 [StringGrid5]
-Coordinates=1690,30,70,141
+Coordinates=1720,30,70,141
 Visible=True
 
 [Rectangle59]
@@ -528,5 +528,20 @@ Coordinates=1455,10,146,33
 Visible=False
 
 [BindSourceDB5]
-Coordinates=1455,10,131,159
+Coordinates=1490,10,131,411
+
+[frxDBDataset1]
+Coordinates=173,53,85,33
+
+[frxReport1]
+Coordinates=342,417,66,33
+
+[PopupMenu2]
+Coordinates=483,417,79,33
+
+[frxDBDataset2]
+Coordinates=511,383,85,33
+
+[MenuItem2]
+Coordinates=673,260,68,33
 

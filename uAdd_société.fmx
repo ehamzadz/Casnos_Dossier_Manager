@@ -147,6 +147,7 @@ object Form6: TForm6
     Size.PlatformDefault = False
     TabOrder = 20
     object StringGrid1: TStringGrid
+      CanFocus = True
       ClipChildren = True
       DisableFocusEffect = True
       HitTest = False
@@ -155,8 +156,8 @@ object Form6: TForm6
       Size.Width = 569.000000000000000000
       Size.Height = 214.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 20
-      RowCount = 5
+      TabOrder = 18
+      RowCount = 3
       Options = [AlternatingRowBackground, ColLines, RowLines, Tabs, AutoDisplacement]
       Viewport.Width = 565.000000000000000000
       Viewport.Height = 194.000000000000000000

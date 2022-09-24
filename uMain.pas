@@ -11,7 +11,7 @@ uses
   Fmx.Bind.Grid, System.Bindings.Outputs, Fmx.Bind.Editors,
   Data.Bind.Components, Data.Bind.Grid, Data.Bind.DBScope, FireDAC.UI.Intf,
   FireDAC.FMXUI.Wait, FireDAC.Stan.Intf, FireDAC.Comp.UI, Vcl.Dialogs, FMX.Edit, FMX.DialogService, FireDAC.Stan.Param,
-  FMX.Menus;
+  FMX.Menus, FMX.frxClass, FMX.frxDBSet;
 
 type
   TForm2 = class(TForm)
@@ -184,6 +184,11 @@ type
     StringGrid5: TStringGrid;
     BindSourceDB5: TBindSourceDB;
     LinkGridToDataSourceBindSourceDB5: TLinkGridToDataSource;
+    frxReport1: TfrxReport;
+    frxDBDataset1: TfrxDBDataset;
+    frxDBDataset2: TfrxDBDataset;
+    PopupMenu2: TPopupMenu;
+    MenuItem2: TMenuItem;
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle15Click(Sender: TObject);
@@ -212,6 +217,8 @@ type
     procedure Edit1Change(Sender: TObject);
     procedure MenuItem1Click(Sender: TObject);
     procedure Edit4Change(Sender: TObject);
+    procedure MenuItem2Click(Sender: TObject);
+    procedure frxReport1ClosePreview(Sender: TObject);
   private
     { Private declarations }
   public
@@ -333,6 +340,12 @@ begin
   text_user.Text := 'Bienvenue ' + form1.VAR_USER_GLOB;
 end;
 
+procedure TForm2.frxReport1ClosePreview(Sender: TObject);
+begin
+  DM.DataModule1.table_societe.Filtered := false;
+  DM.DataModule1.table_employee.Filtered := false;
+end;
+
 procedure TForm2.Image7Click(Sender: TObject);
 begin
 
@@ -364,6 +377,20 @@ begin
   DM.DataModule1.table_affiliations.Filtered := true;
   //form5.ShowModal;
   form5.FrxReport1.ShowReport();
+end;
+
+procedure TForm2.MenuItem2Click(Sender: TObject);
+begin
+
+  DM.DataModule1.table_societe.Filtered := false;
+  DM.DataModule1.table_societe.Filter := 'code_activite = '+ Stringgrid5.Cells[0,Stringgrid5.Selected];
+  DM.DataModule1.table_societe.Filtered := true;
+
+  DM.DataModule1.table_employee.Filtered := false;
+  DM.DataModule1.table_employee.Filter := 'code_act = '+ Stringgrid5.Cells[0,Stringgrid5.Selected];
+  DM.DataModule1.table_employee.Filtered := true;
+
+  FrxReport1.ShowReport();
 end;
 
 procedure TForm2.nav_barMouseDown(Sender: TObject; Button: TMouseButton;

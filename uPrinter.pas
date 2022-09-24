@@ -49,7 +49,7 @@ end;
 
 procedure TForm5.FormShow(Sender: TObject);
 begin
-  Button1Click(nil);
+  //Button1Click(nil);
 end;
 
 procedure TForm5.frxReport1ClosePreview(Sender: TObject);
