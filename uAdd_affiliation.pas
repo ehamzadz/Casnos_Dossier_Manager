@@ -129,10 +129,9 @@ begin
 
     form4.Visible := false;
     try
-
       form6.show;
     finally
-      DM.DataModule1.table_employee.filtered := false;
+      //DM.DataModule1.table_employee.filtered := false;
       close;
     end;
   end else form4.close;

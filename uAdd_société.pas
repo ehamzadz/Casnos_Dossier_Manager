@@ -67,8 +67,6 @@ begin
     DM.DataModule1.FDQuery1.ParamByName('code').asinteger := strtoint(code_act);
     DM.DataModule1.FDQuery1.ExecSQL;
     //Refresh Tables
-    DM.DataModule1.table_employee.Active := false;
-    DM.DataModule1.table_employee.Active := true;
     DM.DataModule1.table_employee.filtered := false;
     DM.DataModule1.table_employee.filter:= 'code_act like ' + code_act;
     DM.DataModule1.table_employee.filtered := true;
@@ -78,8 +76,6 @@ end;
 
 procedure TForm6.FormShow(Sender: TObject);
 begin
-    DM.DataModule1.table_employee.Active := false;
-    DM.DataModule1.table_employee.Active := true;
     DM.DataModule1.table_employee.filtered := false;
     DM.DataModule1.table_employee.filter:= 'code_act like ' + code_act;
     DM.DataModule1.table_employee.filtered := true;

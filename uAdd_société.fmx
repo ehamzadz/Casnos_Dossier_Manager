@@ -84,7 +84,7 @@ object Form6: TForm6
   object Text17: TText
     Position.X = 40.000000000000000000
     Position.Y = 96.000000000000000000
-    Size.Width = 121.000000000000000000
+    Size.Width = 65.000000000000000000
     Size.Height = 22.000000000000000000
     Size.PlatformDefault = False
     Text = 'NSS'
@@ -93,7 +93,7 @@ object Form6: TForm6
   object Text18: TText
     Position.X = 40.000000000000000000
     Position.Y = 126.000000000000000000
-    Size.Width = 121.000000000000000000
+    Size.Width = 65.000000000000000000
     Size.Height = 22.000000000000000000
     Size.PlatformDefault = False
     Text = 'Nom'
@@ -102,7 +102,7 @@ object Form6: TForm6
   object Text19: TText
     Position.X = 40.000000000000000000
     Position.Y = 156.000000000000000000
-    Size.Width = 121.000000000000000000
+    Size.Width = 65.000000000000000000
     Size.Height = 22.000000000000000000
     Size.PlatformDefault = False
     Text = 'Pr'#233'nom'
@@ -111,7 +111,7 @@ object Form6: TForm6
   object Text20: TText
     Position.X = 41.000000000000000000
     Position.Y = 186.000000000000000000
-    Size.Width = 121.000000000000000000
+    Size.Width = 64.000000000000000000
     Size.Height = 22.000000000000000000
     Size.PlatformDefault = False
     Text = 'Adresse'
@@ -132,7 +132,7 @@ object Form6: TForm6
   object Text1: TText
     Position.X = 336.000000000000000000
     Position.Y = 96.000000000000000000
-    Size.Width = 121.000000000000000000
+    Size.Width = 129.000000000000000000
     Size.Height = 22.000000000000000000
     Size.PlatformDefault = False
     Text = 'Date debut de travail'
@@ -147,18 +147,19 @@ object Form6: TForm6
     Size.PlatformDefault = False
     TabOrder = 20
     object StringGrid1: TStringGrid
-      CanFocus = True
       ClipChildren = True
+      DisableFocusEffect = True
+      HitTest = False
       Position.X = -424.000000000000000000
       Position.Y = 145.000000000000000000
       Size.Width = 569.000000000000000000
       Size.Height = 214.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 24
-      RowCount = 4
-      Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, AutoDisplacement]
+      TabOrder = 20
+      RowCount = 5
+      Options = [AlternatingRowBackground, ColLines, RowLines, Tabs, AutoDisplacement]
       Viewport.Width = 565.000000000000000000
-      Viewport.Height = 173.000000000000000000
+      Viewport.Height = 194.000000000000000000
     end
   end
   object Button1: TButton
