@@ -60,8 +60,6 @@ begin
     //Refresh Tables
     DM.DataModule1.table_activite.Active := false;
     DM.DataModule1.table_activite.Active := true;
-
-    form6.close;
   end;
 
 

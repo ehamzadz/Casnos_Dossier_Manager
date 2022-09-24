@@ -28,7 +28,7 @@ type
     { Private declarations }
   public
     { Public declarations }
-    code_act :string;
+    matricule_act :string;
   end;
 
 var
@@ -54,14 +54,12 @@ begin
     DM.DataModule1.FDQuery1.ParamByName('prenom').asstring := edit13.Text;
     DM.DataModule1.FDQuery1.ParamByName('adr').asstring := edit14.Text;
     DM.DataModule1.FDQuery1.ParamByName('date').asdate := strtodate(dateedit1.Text);
-    DM.DataModule1.FDQuery1.ParamByName('mat').asinteger := strtoint(code_act);
+    DM.DataModule1.FDQuery1.ParamByName('mat').asinteger := strtoint(matricule_act);
     DM.DataModule1.FDQuery1.ExecSQL;
 
     //Refresh Tables
     DM.DataModule1.table_activite.Active := false;
     DM.DataModule1.table_activite.Active := true;
-
-    form6.close;
   end;
 
 

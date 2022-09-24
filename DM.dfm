@@ -46,4 +46,12 @@ object DataModule1: TDataModule1
     Left = 408
     Top = 168
   end
+  object table_employee: TFDTable
+    Active = True
+    IndexFieldNames = 'nss'
+    Connection = FDConnection1
+    TableName = 'employee'
+    Left = 512
+    Top = 168
+  end
 end

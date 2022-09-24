@@ -167,6 +167,21 @@ type
     LinkGridToDataSourceBindSourceDB4: TLinkGridToDataSource;
     PopupMenu1: TPopupMenu;
     MenuItem1: TMenuItem;
+    Societe: TTabItem;
+    Rectangle54: TRectangle;
+    Rectangle55: TRectangle;
+    Rectangle56: TRectangle;
+    Rectangle57: TRectangle;
+    Rectangle58: TRectangle;
+    Text27: TText;
+    Text33: TText;
+    Rectangle59: TRectangle;
+    Rectangle60: TRectangle;
+    Text34: TText;
+    Text35: TText;
+    Edit4: TEdit;
+    Text36: TText;
+    StringGrid5: TStringGrid;
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle15Click(Sender: TObject);
@@ -438,8 +453,8 @@ var
 begin
   this := TButton(sender);
   current_tab.Parent := this;
-  text_title.Text := 'Paramétres';
-  tabcontrol1.TabIndex := 3;
+  text_title.Text := 'Société';
+  tabcontrol1.TabIndex := 4;
 end;
 
 procedure TForm2.Rectangle7Click(Sender: TObject);

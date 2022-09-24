@@ -6,6 +6,7 @@ object DataModule1: TDataModule1
     Params.Strings = (
       'Database=D:\casnos.mdb'
       'DriverID=MSAcc')
+    Connected = True
     LoginPrompt = False
     Left = 136
     Top = 80
@@ -16,6 +17,7 @@ object DataModule1: TDataModule1
     Top = 80
   end
   object FDTable1: TFDTable
+    Active = True
     IndexFieldNames = 'mat_adh'
     Connection = FDConnection1
     TableName = 'adherent'
@@ -23,27 +25,24 @@ object DataModule1: TDataModule1
     Top = 168
   end
   object table_activite: TFDTable
+    Active = True
     IndexFieldNames = 'code_activite'
     Connection = FDConnection1
     TableName = 'activite'
-    Left = 200
+    Left = 208
     Top = 168
   end
   object table_affiliations: TFDTable
-    IndexFieldNames = 'code_affiliation'
+    Active = True
     Connection = FDConnection1
-    TableName = 'affiliation'
+    TableName = 'qry_affiliations'
     Left = 296
     Top = 168
   end
-  object FDQuery2: TFDQuery
+  object table_declaration_act: TFDTable
+    Active = True
     Connection = FDConnection1
-    SQL.Strings = (
-      'select * from affiliation'
-      
-        'inner join activite ON affiliation.code_act = activite.code_acti' +
-        'vite '
-      'inner join adherent ON affiliation.mat_adh = adherent.mat_adh')
+    TableName = 'qry_declaration_act'
     Left = 408
     Top = 168
   end

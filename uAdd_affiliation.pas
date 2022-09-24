@@ -106,40 +106,26 @@ uses DM, uMain, uAdd_société;
 procedure TForm4.Rectangle9Click(Sender: TObject);
 begin
 
+  // Create Affiliation
+  DM.DataModule1.FDQuery1.SQL.Clear;
+  DM.DataModule1.FDQuery1.SQL.Add(' INSERT INTO affiliation (date_creat,mat_adh,code_act) values(:date,:mat,:code_act) ');
+  DM.DataModule1.FDQuery1.ParamByName('date').asdate := now;
+  DM.DataModule1.FDQuery1.ParamByName('mat').asinteger := strtoint(edit1.text);
+  DM.DataModule1.FDQuery1.ParamByName('code_act').asinteger := strtoint(edit16.Text);
+  DM.DataModule1.FDQuery1.ExecSQL;
 
-
-    // Create Affiliation
-
-    DM.DataModule1.FDQuery1.SQL.Clear;
-    DM.DataModule1.FDQuery1.SQL.Add(' INSERT INTO affiliation (date_creat,mat_adh,code_act) values(:date,:mat,:code_act) ');
-    DM.DataModule1.FDQuery1.ParamByName('date').asdate := now;
-    DM.DataModule1.FDQuery1.ParamByName('mat').asinteger := strtoint(edit1.text);
-    DM.DataModule1.FDQuery1.ParamByName('code_act').asinteger := strtoint(edit16.Text);
-    DM.DataModule1.FDQuery1.ExecSQL;
-
-    //Refresh Tables
-    DM.DataModule1.table_affiliations.Active := false;
-    DM.DataModule1.table_affiliations.Active := true;
-
-                         {
-    edit1.Text :='';
-    edit2.Text :='';
-    edit3.Text :='';
-    edit4.Text :='';
-    edit5.Text :='';
-    edit6.Text :='';
-    edit7.Text :='';
-    edit8.Text :='';
-    edit9.Text :='';
-    edit10.Text :='';
-    edit15.Text :='';
-    edit16.Text :='';
-    edit17.Text :='';
-    edit18.Text :='';
-                        }
+  //Refresh Tables
+  DM.DataModule1.table_affiliations.Active := false;
+  DM.DataModule1.table_affiliations.Active := true;
 
   if checkbox1.IsChecked then begin
-    form6.show;
+    form6.code_act := edit16.Text;
+    form4.Visible := false;
+    try
+      form6.show;
+    finally
+      close;
+    end;
   end else form4.close;
 
 

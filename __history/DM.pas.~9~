@@ -18,7 +18,6 @@ type
     table_activite: TFDTable;
     table_affiliations: TFDTable;
     table_declaration_act: TFDTable;
-    table_employee: TFDTable;
   private
     { Private declarations }
   public

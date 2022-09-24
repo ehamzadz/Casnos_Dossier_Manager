@@ -78,14 +78,14 @@ type
     LinkControlToField9: TLinkControlToField;
     LinkControlToField10: TLinkControlToField;
     LinkControlToField11: TLinkControlToField;
-    LinkFillControlToField1: TLinkFillControlToField;
-    LinkFillControlToField2: TLinkFillControlToField;
     LinkControlToField12: TLinkControlToField;
     LinkControlToField13: TLinkControlToField;
     LinkControlToField14: TLinkControlToField;
     LinkControlToField15: TLinkControlToField;
     Text14: TText;
     CheckBox1: TCheckBox;
+    LinkFillControlToField1: TLinkFillControlToField;
+    LinkFillControlToField2: TLinkFillControlToField;
     procedure StringGrid1CellClick(const Column: TColumn; const Row: Integer);
     procedure Rectangle9Click(Sender: TObject);
   private
@@ -101,10 +101,13 @@ implementation
 
 {$R *.fmx}
 
-uses DM, uMain;
+uses DM, uMain, uAdd_société;
 
 procedure TForm4.Rectangle9Click(Sender: TObject);
 begin
+
+
+
     // Create Affiliation
 
     DM.DataModule1.FDQuery1.SQL.Clear;
@@ -118,6 +121,35 @@ begin
     DM.DataModule1.table_affiliations.Active := false;
     DM.DataModule1.table_affiliations.Active := true;
 
+                         {
+    edit1.Text :='';
+    edit2.Text :='';
+    edit3.Text :='';
+    edit4.Text :='';
+    edit5.Text :='';
+    edit6.Text :='';
+    edit7.Text :='';
+    edit8.Text :='';
+    edit9.Text :='';
+    edit10.Text :='';
+    edit15.Text :='';
+    edit16.Text :='';
+    edit17.Text :='';
+    edit18.Text :='';
+                        }
+
+  if checkbox1.IsChecked then begin
+    form6.code_act := edit16.Text;
+    form4.Visible := false;
+
+    try
+      form6.show;
+    finally
+      close;
+    end;
+
+  end else form4.close;
+
 
 end;
 
@@ -127,7 +159,7 @@ begin
 
 
   DM.DataModule1.table_activite.Filtered:= false;
-  DM.DataModule1.table_activite.Filter := 'mat_adh like ' + quotedstr('%'+edit1.Text+'%');
+  DM.DataModule1.table_activite.Filter := 'mat_adh = ' + edit1.Text;
   DM.DataModule1.table_activite.Filtered:= true;
 
 end;
