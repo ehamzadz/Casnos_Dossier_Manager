@@ -11,7 +11,7 @@ uses
   Fmx.Bind.Grid, System.Bindings.Outputs, Fmx.Bind.Editors,
   Data.Bind.Components, Data.Bind.Grid, Data.Bind.DBScope, FireDAC.UI.Intf,
   FireDAC.FMXUI.Wait, FireDAC.Stan.Intf, FireDAC.Comp.UI, Vcl.Dialogs, FMX.Edit, FMX.DialogService, FireDAC.Stan.Param,
-  FMX.Menus;
+  FMX.Menus, FMX.frxClass, FMX.frxDBSet;
 
 type
   TForm2 = class(TForm)
@@ -167,6 +167,33 @@ type
     LinkGridToDataSourceBindSourceDB4: TLinkGridToDataSource;
     PopupMenu1: TPopupMenu;
     MenuItem1: TMenuItem;
+    Societe: TTabItem;
+    Rectangle54: TRectangle;
+    Rectangle55: TRectangle;
+    Rectangle56: TRectangle;
+    Rectangle57: TRectangle;
+    Rectangle58: TRectangle;
+    Text27: TText;
+    Text33: TText;
+    Rectangle59: TRectangle;
+    Rectangle60: TRectangle;
+    Text34: TText;
+    Text35: TText;
+    Edit4: TEdit;
+    Text36: TText;
+    StringGrid5: TStringGrid;
+    BindSourceDB5: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB5: TLinkGridToDataSource;
+    frxReport1: TfrxReport;
+    frxDBDataset1: TfrxDBDataset;
+    frxDBDataset2: TfrxDBDataset;
+    PopupMenu2: TPopupMenu;
+    MenuItem2: TMenuItem;
+    Rectangle61: TRectangle;
+    Image9: TImage;
+    ColorAnimation7: TColorAnimation;
+    Rectangle62: TRectangle;
+    Text37: TText;
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle15Click(Sender: TObject);
@@ -194,6 +221,10 @@ type
     procedure Edit5Change(Sender: TObject);
     procedure Edit1Change(Sender: TObject);
     procedure MenuItem1Click(Sender: TObject);
+    procedure Edit4Change(Sender: TObject);
+    procedure MenuItem2Click(Sender: TObject);
+    procedure frxReport1ClosePreview(Sender: TObject);
+    procedure Rectangle61Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -281,6 +312,15 @@ begin
   end else DM.DataModule1.table_affiliations.Filtered:= false;
 end;
 
+procedure TForm2.Edit4Change(Sender: TObject);
+begin
+  if edit4.Text<>'' then begin
+    DM.DataModule1.table_societe.Filtered:= false;
+    DM.DataModule1.table_societe.Filter := 'code_actevete like ' + quotedstr(edit4.Text);
+    DM.DataModule1.table_societe.Filtered:= true;
+  end else DM.DataModule1.table_societe.Filtered:= false;
+end;
+
 procedure TForm2.Edit5Change(Sender: TObject);
 begin
   if edit5.Text<>'' then begin
@@ -304,6 +344,12 @@ end;
 procedure TForm2.FormShow(Sender: TObject);
 begin
   text_user.Text := 'Bienvenue ' + form1.VAR_USER_GLOB;
+end;
+
+procedure TForm2.frxReport1ClosePreview(Sender: TObject);
+begin
+  DM.DataModule1.table_societe.Filtered := false;
+  DM.DataModule1.table_employee.Filtered := false;
 end;
 
 procedure TForm2.Image7Click(Sender: TObject);
@@ -335,7 +381,22 @@ begin
   DM.DataModule1.table_affiliations.Filtered := false;
   DM.DataModule1.table_affiliations.Filter := 'mat_adh = '+ Stringgrid2.Cells[2,Stringgrid2.Selected];
   DM.DataModule1.table_affiliations.Filtered := true;
-  form5.ShowModal;
+  //form5.ShowModal;
+  form5.FrxReport1.ShowReport();
+end;
+
+procedure TForm2.MenuItem2Click(Sender: TObject);
+begin
+
+  DM.DataModule1.table_societe.Filtered := false;
+  DM.DataModule1.table_societe.Filter := 'code_activite = '+ Stringgrid5.Cells[0,Stringgrid5.Selected];
+  DM.DataModule1.table_societe.Filtered := true;
+
+  DM.DataModule1.table_employee.Filtered := false;
+  DM.DataModule1.table_employee.Filter := 'code_act = '+ Stringgrid5.Cells[0,Stringgrid5.Selected];
+  DM.DataModule1.table_employee.Filtered := true;
+
+  FrxReport1.ShowReport();
 end;
 
 procedure TForm2.nav_barMouseDown(Sender: TObject; Button: TMouseButton;
@@ -437,8 +498,18 @@ var
 begin
   this := TButton(sender);
   current_tab.Parent := this;
-  text_title.Text := 'Paramétres';
-  tabcontrol1.TabIndex := 3;
+  text_title.Text := 'Société';
+  tabcontrol1.TabIndex := 4;
+end;
+
+procedure TForm2.Rectangle61Click(Sender: TObject);
+var
+  this :TButton;
+begin
+  this := TButton(sender);
+  current_tab.Parent := this;
+  text_title.Text := 'PV d''Evaluation';
+  tabcontrol1.TabIndex := 4;
 end;
 
 procedure TForm2.Rectangle7Click(Sender: TObject);

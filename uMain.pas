@@ -189,6 +189,26 @@ type
     frxDBDataset2: TfrxDBDataset;
     PopupMenu2: TPopupMenu;
     MenuItem2: TMenuItem;
+    Rectangle61: TRectangle;
+    Image9: TImage;
+    ColorAnimation7: TColorAnimation;
+    Rectangle62: TRectangle;
+    Text37: TText;
+    pv_eval: TTabItem;
+    Rectangle63: TRectangle;
+    Rectangle64: TRectangle;
+    Rectangle65: TRectangle;
+    Rectangle66: TRectangle;
+    Rectangle67: TRectangle;
+    Text38: TText;
+    Text39: TText;
+    Rectangle68: TRectangle;
+    Rectangle69: TRectangle;
+    Text40: TText;
+    Text41: TText;
+    Edit6: TEdit;
+    Text42: TText;
+    StringGrid6: TStringGrid;
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle15Click(Sender: TObject);
@@ -219,6 +239,7 @@ type
     procedure Edit4Change(Sender: TObject);
     procedure MenuItem2Click(Sender: TObject);
     procedure frxReport1ClosePreview(Sender: TObject);
+    procedure Rectangle61Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -494,6 +515,16 @@ begin
   current_tab.Parent := this;
   text_title.Text := 'Société';
   tabcontrol1.TabIndex := 4;
+end;
+
+procedure TForm2.Rectangle61Click(Sender: TObject);
+var
+  this :TButton;
+begin
+  this := TButton(sender);
+  current_tab.Parent := this;
+  text_title.Text := 'PV d''Evaluation';
+  tabcontrol1.TabIndex := 5;
 end;
 
 procedure TForm2.Rectangle7Click(Sender: TObject);
