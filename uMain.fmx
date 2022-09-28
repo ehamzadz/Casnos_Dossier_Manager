@@ -36139,7 +36139,7 @@ object Form2: TForm2
                   Size.Height = 36.000000000000000000
                   Size.PlatformDefault = False
                   Stroke.Kind = None
-                  OnClick = Rectangle28Click
+                  OnClick = Rectangle66Click
                   object Rectangle67: TRectangle
                     Align = Right
                     Fill.Color = xFF14CC85

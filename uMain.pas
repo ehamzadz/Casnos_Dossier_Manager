@@ -243,6 +243,7 @@ type
     procedure frxReport1ClosePreview(Sender: TObject);
     procedure Rectangle61Click(Sender: TObject);
     procedure Edit6Change(Sender: TObject);
+    procedure Rectangle66Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -457,7 +458,7 @@ procedure TForm2.Rectangle28Click(Sender: TObject);
 begin
   //form3.tabcontrol1.TabIndex := 0;
   //form3.type_of_operation := 'ajouter adherent + activité';
-  form7.ShowModal;
+  form4.ShowModal;
 end;
 
 procedure TForm2.Rectangle30Click(Sender: TObject);
@@ -537,6 +538,11 @@ begin
   current_tab.Parent := this;
   text_title.Text := 'Etat de décompte';
   tabcontrol1.TabIndex := 5;
+end;
+
+procedure TForm2.Rectangle66Click(Sender: TObject);
+begin
+  form7.ShowModal;
 end;
 
 procedure TForm2.Rectangle7Click(Sender: TObject);
