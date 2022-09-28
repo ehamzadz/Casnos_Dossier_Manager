@@ -316,7 +316,7 @@ Coordinates=670,30,162,33
 Visible=False
 
 [BindSourceDB2]
-Coordinates=10,10,144,447
+Coordinates=10,10,144,465
 
 [activite]
 Coordinates=207,832,49,33
@@ -364,7 +364,7 @@ Coordinates=1787,714,75,33
 Coordinates=151,483,40,51
 
 [StringGrid3]
-Coordinates=1175,28,70,123
+Coordinates=1175,28,70,141
 Visible=True
 
 [Rectangle35]
@@ -383,7 +383,7 @@ Coordinates=427,483,46,51
 Coordinates=217,483,46,51
 
 [BindSourceDB3]
-Coordinates=965,10,130,159
+Coordinates=965,10,130,177
 
 [Text29]
 Coordinates=1069,560,46,51
@@ -466,7 +466,7 @@ Coordinates=820,280,186,33
 Visible=False
 
 [BindSourceDB4]
-Coordinates=621,10,168,231
+Coordinates=621,10,168,249
 
 [PopupMenu1]
 Coordinates=173,1,79,33
@@ -544,4 +544,73 @@ Coordinates=511,383,85,33
 
 [MenuItem2]
 Coordinates=673,260,68,33
+
+[Edit6]
+Coordinates=691,887,40,51
+
+[Rectangle64]
+Coordinates=201,402,75,33
+
+[Rectangle61]
+Coordinates=716,386,75,33
+
+[Rectangle66]
+Coordinates=716,441,75,33
+
+[ColorAnimation7]
+Coordinates=896,335,97,33
+
+[Text40]
+Coordinates=73,1,46,51
+
+[Rectangle65]
+Coordinates=919,390,75,33
+
+[Rectangle62]
+Coordinates=919,445,75,33
+
+[Text41]
+Coordinates=201,1,46,51
+
+[Text37]
+Coordinates=691,692,46,51
+
+[Image9]
+Coordinates=643,386,49,51
+
+[Rectangle69]
+Coordinates=891,884,75,33
+
+[pv_eval]
+Coordinates=762,884,52,33
+
+[Text42]
+Coordinates=427,788,46,51
+
+[Rectangle67]
+Coordinates=602,884,75,33
+
+[StringGrid6]
+Coordinates=201,126,70,51
+
+[Rectangle68]
+Coordinates=513,884,75,33
+
+[Text38]
+Coordinates=0,0,46,51
+
+[Text39]
+Coordinates=506,692,46,51
+
+[Rectangle63]
+Coordinates=424,884,75,33
+
+[Form3.BindSourceDB1]
+Coordinates=506,939,127,303
+
+[Form7.BindSourceDB2]
+Coordinates=295,903,127,159
+
+[Form7.BindSourceDB1]
+Coordinates=673,957,127,303
 

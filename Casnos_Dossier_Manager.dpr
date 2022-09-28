@@ -9,12 +9,14 @@ uses
   uAdd_adherent in 'uAdd_adherent.pas' {Form3},
   uAdd_affiliation in 'uAdd_affiliation.pas' {Form4},
   uPrinter in 'uPrinter.pas' {Form5},
-  uAdd_société in 'uAdd_société.pas' {Form6};
+  uAdd_société in 'uAdd_société.pas' {Form6},
+  uAdd_etatdecompte in 'uAdd_etatdecompte.pas' {Form7};
 
 {$R *.res}
 
 begin
   Application.Initialize;
+  Application.CreateForm(TForm7, Form7);
   Application.CreateForm(TForm2, Form2);
   Application.CreateForm(TForm3, Form3);
   Application.CreateForm(TForm1, Form1);

@@ -3,7 +3,7 @@ object Form3: TForm3
   Top = 0
   BorderIcons = [biSystemMenu]
   BorderStyle = Single
-  ClientHeight = 361
+  ClientHeight = 393
   ClientWidth = 717
   Position = DesktopCenter
   FormFactor.Width = 320
@@ -13,18 +13,18 @@ object Form3: TForm3
   object TabControl1: TTabControl
     Align = Contents
     Size.Width = 717.000000000000000000
-    Size.Height = 361.000000000000000000
+    Size.Height = 393.000000000000000000
     Size.PlatformDefault = False
     TabIndex = 1
     TabOrder = 0
     TabPosition = None
     Sizes = (
       717s
-      361s
+      393s
       717s
-      361s
+      393s
       717s
-      361s)
+      393s)
     object TabItem1: TTabItem
       CustomIcon = <
         item
@@ -304,7 +304,7 @@ object Form3: TForm3
         Margins.Right = 11.000000000000000000
         Margins.Bottom = 11.000000000000000000
         Position.X = 11.000000000000000000
-        Position.Y = 309.000000000000000000
+        Position.Y = 341.000000000000000000
         Size.Width = 695.000000000000000000
         Size.Height = 41.000000000000000000
         Size.PlatformDefault = False
@@ -366,7 +366,7 @@ object Form3: TForm3
         Margins.Right = 11.000000000000000000
         Margins.Bottom = 11.000000000000000000
         Position.X = 11.000000000000000000
-        Position.Y = 309.000000000000000000
+        Position.Y = 341.000000000000000000
         Size.Width = 695.000000000000000000
         Size.Height = 41.000000000000000000
         Size.PlatformDefault = False
@@ -405,7 +405,7 @@ object Form3: TForm3
       end
       object Edit11: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
-        TabOrder = 13
+        TabOrder = 14
         Position.X = 144.000000000000000000
         Position.Y = 78.000000000000000000
         Size.Width = 153.000000000000000000
@@ -423,7 +423,7 @@ object Form3: TForm3
       end
       object Edit12: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
-        TabOrder = 12
+        TabOrder = 13
         Position.X = 144.000000000000000000
         Position.Y = 126.000000000000000000
         Size.Width = 153.000000000000000000
@@ -478,6 +478,24 @@ object Form3: TForm3
         TextSettings.Font.Size = 18.000000000000000000
         TextSettings.Font.StyleExt = {00050000000000000004000000}
       end
+      object Text29: TText
+        Position.X = 328.000000000000000000
+        Position.Y = 126.000000000000000000
+        Size.Width = 121.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Assiette (DA)'
+        TextSettings.HorzAlign = Leading
+      end
+      object Edit19: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 12
+        Position.X = 432.000000000000000000
+        Position.Y = 126.000000000000000000
+        Size.Width = 217.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
     end
     object TabItem3: TTabItem
       CustomIcon = <
@@ -500,7 +518,7 @@ object Form3: TForm3
         Margins.Right = 11.000000000000000000
         Margins.Bottom = 11.000000000000000000
         Position.X = 11.000000000000000000
-        Position.Y = 309.000000000000000000
+        Position.Y = 341.000000000000000000
         Size.Width = 695.000000000000000000
         Size.Height = 41.000000000000000000
         Size.PlatformDefault = False
@@ -539,7 +557,7 @@ object Form3: TForm3
       end
       object Edit15: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
-        TabOrder = 13
+        TabOrder = 14
         Position.X = 120.000000000000000000
         Position.Y = 244.000000000000000000
         Size.Width = 217.000000000000000000
@@ -557,7 +575,7 @@ object Form3: TForm3
       end
       object Edit16: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
-        TabOrder = 12
+        TabOrder = 13
         Position.X = 120.000000000000000000
         Position.Y = 274.000000000000000000
         Size.Width = 217.000000000000000000
@@ -583,8 +601,8 @@ object Form3: TForm3
         Size.PlatformDefault = False
       end
       object Text27: TText
-        Position.X = 363.000000000000000000
-        Position.Y = 274.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 304.000000000000000000
         Size.Width = 121.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -594,9 +612,9 @@ object Form3: TForm3
       object Edit18: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
         TabOrder = 10
-        Position.X = 467.000000000000000000
-        Position.Y = 274.000000000000000000
-        Size.Width = 239.000000000000000000
+        Position.X = 120.000000000000000000
+        Position.Y = 304.000000000000000000
+        Size.Width = 586.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
       end
@@ -620,11 +638,29 @@ object Form3: TForm3
         Size.Width = 690.000000000000000000
         Size.Height = 197.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 42
-        RowCount = 2
+        TabOrder = 43
+        RowCount = 3
         Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, AutoDisplacement]
         Viewport.Width = 690.000000000000000000
         Viewport.Height = 197.000000000000000000
+      end
+      object Text30: TText
+        Position.X = 363.000000000000000000
+        Position.Y = 274.000000000000000000
+        Size.Width = 121.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Assiette (DA)'
+        TextSettings.HorzAlign = Leading
+      end
+      object Edit20: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 12
+        Position.X = 467.000000000000000000
+        Position.Y = 274.000000000000000000
+        Size.Width = 239.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
       end
     end
   end

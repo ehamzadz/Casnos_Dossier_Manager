@@ -9,6 +9,7 @@ object Form4: TForm4
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnClose = FormClose
   DesignerMasterStyle = 0
   object TabControl1: TTabControl
     Align = Contents
@@ -81,16 +82,18 @@ object Form4: TForm4
         object ComboBox1: TComboBox
           Items.Strings = (
             'C'#233'libataire'
+            'Mari'#233
             'C'#233'libataire')
           Position.X = 440.000000000000000000
           Position.Y = 204.000000000000000000
           Size.Width = 105.000000000000000000
           Size.Height = 22.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 23
+          TabOrder = 22
         end
         object ComboBox2: TComboBox
           Items.Strings = (
+            'Homme'
             'Homme'
             'Homme')
           Position.X = 608.000000000000000000
@@ -98,7 +101,7 @@ object Form4: TForm4
           Size.Width = 73.000000000000000000
           Size.Height = 22.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 22
+          TabOrder = 21
         end
         object DateEdit1: TDateEdit
           Date = 35325.000000000000000000
@@ -108,12 +111,12 @@ object Form4: TForm4
           Size.Width = 169.000000000000000000
           Size.Height = 22.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 13
+          TabOrder = 12
           TextSettings.HorzAlign = Center
         end
         object Edit1: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
-          TabOrder = 11
+          TabOrder = 10
           ReadOnly = True
           Text = '1'
           Position.X = 152.000000000000000000
@@ -135,7 +138,7 @@ object Form4: TForm4
         end
         object Edit2: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
-          TabOrder = 10
+          TabOrder = 9
           ReadOnly = True
           Text = 'Hamouche'
           Position.X = 152.000000000000000000
@@ -157,7 +160,7 @@ object Form4: TForm4
         end
         object Edit4: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
-          TabOrder = 9
+          TabOrder = 8
           ReadOnly = True
           Text = 'Salim'
           Position.X = 512.000000000000000000
@@ -355,35 +358,16 @@ object Form4: TForm4
           CanFocus = True
           ClipChildren = True
           Position.X = 704.000000000000000000
-          Position.Y = 36.000000000000000000
+          Position.Y = 15.000000000000000000
           Size.Width = 397.000000000000000000
-          Size.Height = 259.000000000000000000
+          Size.Height = 280.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 42
-          RowCount = 2
+          TabOrder = 41
+          RowCount = 3
           Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, AutoDisplacement]
           OnCellClick = StringGrid1CellClick
-          Viewport.Width = 397.000000000000000000
-          Viewport.Height = 259.000000000000000000
-        end
-        object Edit11: TEdit
-          Touch.InteractiveGestures = [LongTap, DoubleTap]
-          TabOrder = 8
-          ReadOnly = True
-          Position.X = 855.000000000000000000
-          Position.Y = 8.000000000000000000
-          Size.Width = 138.000000000000000000
-          Size.Height = 22.000000000000000000
-          Size.PlatformDefault = False
-        end
-        object Text17: TText
-          Position.X = 704.000000000000000000
-          Position.Y = 8.000000000000000000
-          Size.Width = 153.000000000000000000
-          Size.Height = 22.000000000000000000
-          Size.PlatformDefault = False
-          Text = 'Rechercher par Matricule'
-          TextSettings.HorzAlign = Leading
+          Viewport.Width = 393.000000000000000000
+          Viewport.Height = 239.000000000000000000
         end
         object Text14: TText
           Position.X = 619.000000000000000000
@@ -403,7 +387,7 @@ object Form4: TForm4
           Size.Width = 17.000000000000000000
           Size.Height = 17.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 44
+          TabOrder = 43
           TextSettings.FontColor = claTomato
         end
       end
@@ -426,7 +410,7 @@ object Form4: TForm4
         end
         object Edit15: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
-          TabOrder = 11
+          TabOrder = 10
           ReadOnly = True
           Text = 'sgfh'
           Position.X = 424.000000000000000000
@@ -459,7 +443,7 @@ object Form4: TForm4
         end
         object Edit16: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
-          TabOrder = 14
+          TabOrder = 13
           ReadOnly = True
           Text = '5'
           Position.X = 136.000000000000000000
@@ -479,7 +463,7 @@ object Form4: TForm4
         end
         object Edit17: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
-          TabOrder = 12
+          TabOrder = 11
           ReadOnly = True
           Text = 'seh'
           Position.X = 136.000000000000000000
@@ -499,7 +483,7 @@ object Form4: TForm4
         end
         object Edit18: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
-          TabOrder = 10
+          TabOrder = 9
           ReadOnly = True
           Text = 'sfgh'
           Position.X = 136.000000000000000000
@@ -508,38 +492,19 @@ object Form4: TForm4
           Size.Height = 22.000000000000000000
           Size.PlatformDefault = False
         end
-        object Edit12: TEdit
-          Touch.InteractiveGestures = [LongTap, DoubleTap]
-          TabOrder = 8
-          ReadOnly = True
-          Position.X = 855.000000000000000000
-          Position.Y = 16.000000000000000000
-          Size.Width = 138.000000000000000000
-          Size.Height = 22.000000000000000000
-          Size.PlatformDefault = False
-        end
-        object Text18: TText
-          Position.X = 704.000000000000000000
-          Position.Y = 16.000000000000000000
-          Size.Width = 153.000000000000000000
-          Size.Height = 22.000000000000000000
-          Size.PlatformDefault = False
-          Text = 'Rechercher par Code'
-          TextSettings.HorzAlign = Leading
-        end
         object StringGrid2: TStringGrid
           CanFocus = True
           ClipChildren = True
           Position.X = 704.000000000000000000
-          Position.Y = 46.000000000000000000
+          Position.Y = 16.000000000000000000
           Size.Width = 397.000000000000000000
-          Size.Height = 139.000000000000000000
+          Size.Height = 169.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 43
-          RowCount = 4
+          TabOrder = 42
+          RowCount = 6
           Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, AutoDisplacement]
-          Viewport.Width = 397.000000000000000000
-          Viewport.Height = 139.000000000000000000
+          Viewport.Width = 377.000000000000000000
+          Viewport.Height = 128.000000000000000000
         end
       end
       object Rectangle4: TRectangle

@@ -254,7 +254,7 @@ implementation
 
 {$R *.fmx}
 
-uses uLogin, DM, uAdd_adherent, uAdd_affiliation, uPrinter;
+uses uLogin, DM, uAdd_adherent, uAdd_affiliation, uPrinter, uAdd_etatdecompte;
 
 procedure TForm2.btn_add_adherentClick(Sender: TObject);
 begin
@@ -331,7 +331,7 @@ procedure TForm2.Edit4Change(Sender: TObject);
 begin
   if edit4.Text<>'' then begin
     DM.DataModule1.table_societe.Filtered:= false;
-    DM.DataModule1.table_societe.Filter := 'code_actevete like ' + quotedstr(edit4.Text);
+    DM.DataModule1.table_societe.Filter := 'code_activite like ' + quotedstr(edit4.Text);
     DM.DataModule1.table_societe.Filtered:= true;
   end else DM.DataModule1.table_societe.Filtered:= false;
 end;
@@ -445,7 +445,7 @@ procedure TForm2.Rectangle28Click(Sender: TObject);
 begin
   //form3.tabcontrol1.TabIndex := 0;
   //form3.type_of_operation := 'ajouter adherent + activité';
-  form4.ShowModal;
+  form7.ShowModal;
 end;
 
 procedure TForm2.Rectangle30Click(Sender: TObject);

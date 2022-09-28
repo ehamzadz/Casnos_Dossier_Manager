@@ -59,10 +59,6 @@ type
     Edit18: TEdit;
     Text16: TText;
     StringGrid1: TStringGrid;
-    Edit11: TEdit;
-    Text17: TText;
-    Edit12: TEdit;
-    Text18: TText;
     StringGrid2: TStringGrid;
     BindingsList1: TBindingsList;
     LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
@@ -88,6 +84,7 @@ type
     LinkFillControlToField2: TLinkFillControlToField;
     procedure StringGrid1CellClick(const Column: TColumn; const Row: Integer);
     procedure Rectangle9Click(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
   public
@@ -102,6 +99,12 @@ implementation
 {$R *.fmx}
 
 uses DM, uMain, uAdd_société;
+
+procedure TForm4.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+
+  DM.DataModule1.table_activite.Filtered:= false;
+end;
 
 procedure TForm4.Rectangle9Click(Sender: TObject);
 begin

@@ -156,11 +156,11 @@ object Form6: TForm6
       Size.Width = 569.000000000000000000
       Size.Height = 214.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 18
+      TabOrder = 15
       RowCount = 3
       Options = [AlternatingRowBackground, ColLines, RowLines, Tabs, AutoDisplacement]
-      Viewport.Width = 565.000000000000000000
-      Viewport.Height = 194.000000000000000000
+      Viewport.Width = 569.000000000000000000
+      Viewport.Height = 214.000000000000000000
     end
   end
   object Button1: TButton
