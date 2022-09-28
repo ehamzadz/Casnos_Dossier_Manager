@@ -242,6 +242,7 @@ type
     procedure MenuItem2Click(Sender: TObject);
     procedure frxReport1ClosePreview(Sender: TObject);
     procedure Rectangle61Click(Sender: TObject);
+    procedure Edit6Change(Sender: TObject);
   private
     { Private declarations }
   public
@@ -345,6 +346,15 @@ begin
     DM.DataModule1.table_declaration_act.Filter := 'mat_adh  like ' + quotedstr(edit5.Text);
     DM.DataModule1.table_declaration_act.Filtered:= true;
   end else DM.DataModule1.table_declaration_act.Filtered:= false;
+end;
+
+procedure TForm2.Edit6Change(Sender: TObject);
+begin
+  if edit6.Text<>'' then begin
+    DM.DataModule1.table_etat.Filtered:= false;
+    DM.DataModule1.table_etat.Filter := 'id_etat like ' + quotedstr(edit6.Text);
+    DM.DataModule1.table_etat.Filtered:= true;
+  end else DM.DataModule1.table_etat.Filtered:= false;
 end;
 
 procedure TForm2.FormCreate(Sender: TObject);
@@ -525,7 +535,7 @@ var
 begin
   this := TButton(sender);
   current_tab.Parent := this;
-  text_title.Text := 'PV d''Evaluation';
+  text_title.Text := 'Etat de décompte';
   tabcontrol1.TabIndex := 5;
 end;
 

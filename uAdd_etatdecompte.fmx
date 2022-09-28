@@ -3,7 +3,6 @@ object Form7: TForm7
   Top = 0
   BorderIcons = [biSystemMenu]
   BorderStyle = Single
-  Caption = 'Form7'
   ClientHeight = 563
   ClientWidth = 875
   Position = DesktopCenter
