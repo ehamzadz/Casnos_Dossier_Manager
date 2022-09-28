@@ -8,20 +8,23 @@ Coordinates=82,1,90,33
 Coordinates=92,1,88,303
 
 [table_affiliations]
-Coordinates=199,179,95,429
+Coordinates=199,179,95,447
 
 [table_activite]
-Coordinates=218,1,79,141
+Coordinates=218,1,79,159
 
 []
 Coordinates=23,80,63,51
 
 [table_declaration_act]
-Coordinates=360,50,119,213
+Coordinates=360,50,119,231
 
 [table_employee]
 Coordinates=90,323,108,159
 
 [table_societe]
-Coordinates=0,291,103,141
+Coordinates=0,291,103,393
+
+[table_etat]
+Coordinates=23,80,80,231
 

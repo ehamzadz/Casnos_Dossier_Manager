@@ -55,6 +55,7 @@ type
 
 var
   Form7: TForm7;
+  mat_ecai :real;
 
 implementation
 
@@ -69,20 +70,25 @@ begin
   if edit11.Text<>'' then begin
 
     DM.DataModule1.FDQuery1.SQL.Clear;
-    DM.DataModule1.FDQuery1.SQL.Add(' select solde from etat_de_decompte where mat_adh=:mat and code_act=:code order by date_versement DESC ');
+    DM.DataModule1.FDQuery1.SQL.Add(' select * from etat_de_decompte where mat_adh=:mat and code_act=:code order by date_versement DESC ');
     DM.DataModule1.FDQuery1.ParamByName('mat').asinteger := strtoint(Stringgrid1.Cells[0,Stringgrid1.Selected]);
     DM.DataModule1.FDQuery1.ParamByName('code').asinteger := strtoint(Stringgrid2.Cells[0,Stringgrid2.Selected]);
     DM.DataModule1.FDQuery1.open;
 
-    if DM.DataModule1.FDQuery1.Fields[0].Value>0 then begin
-      solde := DM.DataModule1.FDQuery1.Fields[0].Value;
+    if DM.DataModule1.FDQuery1.FieldByName('mont_encai').Value>0 then begin
+      solde := DM.DataModule1.FDQuery1.FieldByName('mont_encai').Value;
+      mat_ecai := DM.DataModule1.FDQuery1.FieldByName('mont_encai').Value;
       edit4.text := floattostr(solde);
-      edit12.text := floattostr(DM.DataModule1.FDQuery1.Fields[0].Value + strtofloat(edit3.text) - strtofloat(edit11.text));
+      edit12.text := floattostr(solde + strtofloat(edit3.text) - strtofloat(edit11.text));
     end else begin
       solde := 0;
       edit4.text := floattostr(solde);
       edit12.text := floattostr(strtofloat(edit3.text) - strtofloat(edit11.text));
     end;
+//
+//    if DM.DataModule1.FDQuery1.FieldByName('mont_encai').Value>0 then begin
+//      mat_ecai := DM.DataModule1.FDQuery1.FieldByName('mont_encai').Value;
+//    end else mat_ecai:=0;
 
   end;
 
@@ -102,13 +108,14 @@ procedure TForm7.Rectangle1Click(Sender: TObject);
 begin
 
 
+
     DM.DataModule1.FDQuery1.SQL.Clear;
     DM.DataModule1.FDQuery1.SQL.Add(' insert into etat_de_decompte (periode,nature,assiette,mont_fact,solde,date_versement,mont_encai,mat_adh,code_act) values(:periode,:nature,:ass,:mont_fact,:solde,:date,:mont_enc,:mat,:code) ');
     DM.DataModule1.FDQuery1.ParamByName('periode').asstring := edit2.text;
     DM.DataModule1.FDQuery1.ParamByName('nature').asstring := edit14.text;
     DM.DataModule1.FDQuery1.ParamByName('ass').asstring := edit1.text;
     DM.DataModule1.FDQuery1.ParamByName('mont_fact').asstring := edit11.text;
-    DM.DataModule1.FDQuery1.ParamByName('solde').asstring := edit4.text;
+    DM.DataModule1.FDQuery1.ParamByName('solde').asstring := floattostr(mat_ecai);
     DM.DataModule1.FDQuery1.ParamByName('date').asdate := now;
     DM.DataModule1.FDQuery1.ParamByName('mont_enc').asstring := edit12.text;
     DM.DataModule1.FDQuery1.ParamByName('mat').asinteger := strtoint(Stringgrid1.Cells[0,Stringgrid1.Selected]);

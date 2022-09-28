@@ -20,6 +20,7 @@ type
     table_declaration_act: TFDTable;
     table_employee: TFDTable;
     table_societe: TFDTable;
+    table_etat: TFDTable;
   private
     { Private declarations }
   public

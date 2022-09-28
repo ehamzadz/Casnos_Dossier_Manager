@@ -209,6 +209,8 @@ type
     Edit6: TEdit;
     Text42: TText;
     StringGrid6: TStringGrid;
+    BindSourceDB6: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB6: TLinkGridToDataSource;
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle15Click(Sender: TObject);

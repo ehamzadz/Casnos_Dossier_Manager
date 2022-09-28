@@ -61,4 +61,12 @@ object DataModule1: TDataModule1
     Left = 512
     Top = 240
   end
+  object table_etat: TFDTable
+    Active = True
+    IndexFieldNames = 'id_etat'
+    Connection = FDConnection1
+    TableName = 'etat_de_decompte'
+    Left = 408
+    Top = 240
+  end
 end
