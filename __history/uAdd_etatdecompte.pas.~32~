@@ -38,13 +38,15 @@ type
     LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
     BindSourceDB2: TBindSourceDB;
     LinkGridToDataSourceBindSourceDB2: TLinkGridToDataSource;
-    LinkControlToField1: TLinkControlToField;
     Text3: TText;
     Edit3: TEdit;
     Button1: TButton;
+    Edit4: TEdit;
+    Text4: TText;
     procedure StringGrid1CellClick(const Column: TColumn; const Row: Integer);
     procedure Button1Click(Sender: TObject);
     procedure Edit1Change(Sender: TObject);
+    procedure Rectangle1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -61,18 +63,24 @@ implementation
 uses DM;
 
 procedure TForm7.Button1Click(Sender: TObject);
+var
+  solde :real;
 begin
   if edit11.Text<>'' then begin
 
     DM.DataModule1.FDQuery1.SQL.Clear;
-    DM.DataModule1.FDQuery1.SQL.Add(' select SUM(solde) from etat_de_decompte where mat_adh=:mat and code_act=:code');
+    DM.DataModule1.FDQuery1.SQL.Add(' select solde from etat_de_decompte where mat_adh=:mat and code_act=:code order by date_versement DESC ');
     DM.DataModule1.FDQuery1.ParamByName('mat').asinteger := strtoint(Stringgrid1.Cells[0,Stringgrid1.Selected]);
     DM.DataModule1.FDQuery1.ParamByName('code').asinteger := strtoint(Stringgrid2.Cells[0,Stringgrid2.Selected]);
     DM.DataModule1.FDQuery1.open;
 
     if DM.DataModule1.FDQuery1.Fields[0].Value>0 then begin
+      solde := DM.DataModule1.FDQuery1.Fields[0].Value;
+      edit4.text := floattostr(solde);
       edit12.text := floattostr(DM.DataModule1.FDQuery1.Fields[0].Value + strtofloat(edit3.text) - strtofloat(edit11.text));
     end else begin
+      solde := 0;
+      edit4.text := floattostr(solde);
       edit12.text := floattostr(strtofloat(edit3.text) - strtofloat(edit11.text));
     end;
 
@@ -88,6 +96,21 @@ begin
     montant := strtoint(edit1.text) * 0.15;
     edit3.text := floattostr(montant);
   end;
+end;
+
+procedure TForm7.Rectangle1Click(Sender: TObject);
+begin
+
+
+    DM.DataModule1.FDQuery1.SQL.Clear;
+    DM.DataModule1.FDQuery1.SQL.Add(' insert into etat_de_decompte values(:periode,:nature,:mont_fact,:mont_enc,:solde,:date,:mat,:code) ');
+    DM.DataModule1.FDQuery1.ParamByName('mat').asinteger := strtoint(Stringgrid1.Cells[0,Stringgrid1.Selected]);
+    DM.DataModule1.FDQuery1.ParamByName('code').asinteger := ;
+    DM.DataModule1.FDQuery1.ParamByName('code').asinteger := ;
+    DM.DataModule1.FDQuery1.ParamByName('code').asinteger := ;
+    DM.DataModule1.FDQuery1.ParamByName('code').asinteger := strtoint(Stringgrid2.Cells[0,Stringgrid2.Selected]);
+    DM.DataModule1.FDQuery1.open;
+
 end;
 
 procedure TForm7.StringGrid1CellClick(const Column: TColumn;

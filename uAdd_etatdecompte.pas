@@ -46,6 +46,7 @@ type
     procedure StringGrid1CellClick(const Column: TColumn; const Row: Integer);
     procedure Button1Click(Sender: TObject);
     procedure Edit1Change(Sender: TObject);
+    procedure Rectangle1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -95,6 +96,25 @@ begin
     montant := strtoint(edit1.text) * 0.15;
     edit3.text := floattostr(montant);
   end;
+end;
+
+procedure TForm7.Rectangle1Click(Sender: TObject);
+begin
+
+
+    DM.DataModule1.FDQuery1.SQL.Clear;
+    DM.DataModule1.FDQuery1.SQL.Add(' insert into etat_de_decompte (periode,nature,assiette,mont_fact,solde,date_versement,mont_encai,mat_adh,code_act) values(:periode,:nature,:ass,:mont_fact,:solde,:date,:mont_enc,:mat,:code) ');
+    DM.DataModule1.FDQuery1.ParamByName('periode').asstring := edit2.text;
+    DM.DataModule1.FDQuery1.ParamByName('nature').asstring := edit14.text;
+    DM.DataModule1.FDQuery1.ParamByName('ass').asstring := edit1.text;
+    DM.DataModule1.FDQuery1.ParamByName('mont_fact').asstring := edit11.text;
+    DM.DataModule1.FDQuery1.ParamByName('solde').asstring := edit4.text;
+    DM.DataModule1.FDQuery1.ParamByName('date').asdate := now;
+    DM.DataModule1.FDQuery1.ParamByName('mont_enc').asstring := edit12.text;
+    DM.DataModule1.FDQuery1.ParamByName('mat').asinteger := strtoint(Stringgrid1.Cells[0,Stringgrid1.Selected]);
+    DM.DataModule1.FDQuery1.ParamByName('code').asinteger := strtoint(Stringgrid2.Cells[0,Stringgrid2.Selected]);
+    DM.DataModule1.FDQuery1.ExecSQL;
+
 end;
 
 procedure TForm7.StringGrid1CellClick(const Column: TColumn;

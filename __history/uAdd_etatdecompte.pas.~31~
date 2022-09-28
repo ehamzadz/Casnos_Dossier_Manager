@@ -38,10 +38,11 @@ type
     LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
     BindSourceDB2: TBindSourceDB;
     LinkGridToDataSourceBindSourceDB2: TLinkGridToDataSource;
-    LinkControlToField1: TLinkControlToField;
     Text3: TText;
     Edit3: TEdit;
     Button1: TButton;
+    Edit4: TEdit;
+    Text4: TText;
     procedure StringGrid1CellClick(const Column: TColumn; const Row: Integer);
     procedure Button1Click(Sender: TObject);
     procedure Edit1Change(Sender: TObject);
@@ -61,6 +62,8 @@ implementation
 uses DM;
 
 procedure TForm7.Button1Click(Sender: TObject);
+var
+  solde :real;
 begin
   if edit11.Text<>'' then begin
 
@@ -71,8 +74,12 @@ begin
     DM.DataModule1.FDQuery1.open;
 
     if DM.DataModule1.FDQuery1.Fields[0].Value>0 then begin
+      solde := DM.DataModule1.FDQuery1.Fields[0].Value;
+      edit4.text := floattostr(solde);
       edit12.text := floattostr(DM.DataModule1.FDQuery1.Fields[0].Value + strtofloat(edit3.text) - strtofloat(edit11.text));
     end else begin
+      solde := 0;
+      edit4.text := floattostr(solde);
       edit12.text := floattostr(strtofloat(edit3.text) - strtofloat(edit11.text));
     end;
 

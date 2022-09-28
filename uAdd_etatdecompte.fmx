@@ -50,6 +50,7 @@ object Form7: TForm7
         Stroke.Kind = None
         XRadius = 10.000000000000000000
         YRadius = 10.000000000000000000
+        OnClick = Rectangle1Click
         object Text16: TText
           Align = Center
           HitTest = False
