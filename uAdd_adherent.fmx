@@ -641,8 +641,8 @@ object Form3: TForm3
         TabOrder = 43
         RowCount = 3
         Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, AutoDisplacement]
-        Viewport.Width = 690.000000000000000000
-        Viewport.Height = 197.000000000000000000
+        Viewport.Width = 686.000000000000000000
+        Viewport.Height = 156.000000000000000000
       end
       object Text30: TText
         Position.X = 363.000000000000000000

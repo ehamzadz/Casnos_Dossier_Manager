@@ -29,7 +29,7 @@ object DataModule1: TDataModule1
     IndexFieldNames = 'code_activite'
     Connection = FDConnection1
     TableName = 'activite'
-    Left = 200
+    Left = 208
     Top = 168
   end
   object table_affiliations: TFDTable
@@ -38,5 +38,35 @@ object DataModule1: TDataModule1
     TableName = 'qry_affiliations'
     Left = 296
     Top = 168
+  end
+  object table_declaration_act: TFDTable
+    Active = True
+    Connection = FDConnection1
+    TableName = 'qry_declaration_act'
+    Left = 408
+    Top = 168
+  end
+  object table_employee: TFDTable
+    Active = True
+    IndexFieldNames = 'nss'
+    Connection = FDConnection1
+    TableName = 'employee'
+    Left = 512
+    Top = 168
+  end
+  object table_societe: TFDTable
+    Active = True
+    Connection = FDConnection1
+    TableName = 'qry_societe'
+    Left = 512
+    Top = 240
+  end
+  object table_etat: TFDTable
+    Active = True
+    IndexFieldNames = 'id_etat'
+    Connection = FDConnection1
+    TableName = 'etat_de_decompte'
+    Left = 408
+    Top = 240
   end
 end

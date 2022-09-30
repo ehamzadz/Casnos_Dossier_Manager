@@ -3,8 +3,8 @@ object Form3: TForm3
   Top = 0
   BorderIcons = [biSystemMenu]
   BorderStyle = Single
-  ClientHeight = 361
-  ClientWidth = 713
+  ClientHeight = 393
+  ClientWidth = 717
   Position = DesktopCenter
   FormFactor.Width = 320
   FormFactor.Height = 480
@@ -12,17 +12,19 @@ object Form3: TForm3
   DesignerMasterStyle = 0
   object TabControl1: TTabControl
     Align = Contents
-    Size.Width = 713.000000000000000000
-    Size.Height = 361.000000000000000000
+    Size.Width = 717.000000000000000000
+    Size.Height = 393.000000000000000000
     Size.PlatformDefault = False
     TabIndex = 1
     TabOrder = 0
     TabPosition = None
     Sizes = (
-      713s
-      361s
-      713s
-      361s)
+      717s
+      393s
+      717s
+      393s
+      717s
+      393s)
     object TabItem1: TTabItem
       CustomIcon = <
         item
@@ -302,8 +304,8 @@ object Form3: TForm3
         Margins.Right = 11.000000000000000000
         Margins.Bottom = 11.000000000000000000
         Position.X = 11.000000000000000000
-        Position.Y = 309.000000000000000000
-        Size.Width = 691.000000000000000000
+        Position.Y = 341.000000000000000000
+        Size.Width = 695.000000000000000000
         Size.Height = 41.000000000000000000
         Size.PlatformDefault = False
         Stroke.Kind = None
@@ -334,7 +336,7 @@ object Form3: TForm3
         Align = Top
         Margins.Top = 11.000000000000000000
         Position.Y = 11.000000000000000000
-        Size.Width = 713.000000000000000000
+        Size.Width = 717.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
         Text = 'Ajouter Adh'#233'rent'
@@ -364,8 +366,8 @@ object Form3: TForm3
         Margins.Right = 11.000000000000000000
         Margins.Bottom = 11.000000000000000000
         Position.X = 11.000000000000000000
-        Position.Y = 309.000000000000000000
-        Size.Width = 691.000000000000000000
+        Position.Y = 341.000000000000000000
+        Size.Width = 695.000000000000000000
         Size.Height = 41.000000000000000000
         Size.PlatformDefault = False
         Stroke.Kind = None
@@ -403,7 +405,7 @@ object Form3: TForm3
       end
       object Edit11: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
-        TabOrder = 13
+        TabOrder = 14
         Position.X = 144.000000000000000000
         Position.Y = 78.000000000000000000
         Size.Width = 153.000000000000000000
@@ -421,7 +423,7 @@ object Form3: TForm3
       end
       object Edit12: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
-        TabOrder = 12
+        TabOrder = 13
         Position.X = 144.000000000000000000
         Position.Y = 126.000000000000000000
         Size.Width = 153.000000000000000000
@@ -468,7 +470,7 @@ object Form3: TForm3
         Align = Top
         Margins.Top = 11.000000000000000000
         Position.Y = 11.000000000000000000
-        Size.Width = 713.000000000000000000
+        Size.Width = 717.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
         Text = 'Ajouter une Activit'#233
@@ -476,6 +478,237 @@ object Form3: TForm3
         TextSettings.Font.Size = 18.000000000000000000
         TextSettings.Font.StyleExt = {00050000000000000004000000}
       end
+      object Text29: TText
+        Position.X = 328.000000000000000000
+        Position.Y = 126.000000000000000000
+        Size.Width = 121.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Assiette (DA)'
+        TextSettings.HorzAlign = Leading
+      end
+      object Edit19: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 12
+        Position.X = 432.000000000000000000
+        Position.Y = 126.000000000000000000
+        Size.Width = 217.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object TabItem3: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Activit'#233
+      ExplicitSize.cx = 60.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object Rectangle2: TRectangle
+        Align = Bottom
+        Cursor = crHandPoint
+        Margins.Left = 11.000000000000000000
+        Margins.Top = 11.000000000000000000
+        Margins.Right = 11.000000000000000000
+        Margins.Bottom = 11.000000000000000000
+        Position.X = 11.000000000000000000
+        Position.Y = 341.000000000000000000
+        Size.Width = 695.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 10.000000000000000000
+        YRadius = 10.000000000000000000
+        OnClick = Rectangle2Click
+        object Text23: TText
+          Align = Center
+          HitTest = False
+          Size.Width = 102.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Ajouter'
+          TextSettings.Font.Family = 'Tajawal'
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.StyleExt = {00050000000000000004000000}
+        end
+        object ColorAnimation2: TColorAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Fill.Color'
+          StartValue = xFFE0E0E0
+          StopValue = claSeagreen
+          Trigger = 'IsMouseOver=true'
+          TriggerInverse = 'IsMouseOver=false'
+        end
+      end
+      object Text24: TText
+        Position.X = 16.000000000000000000
+        Position.Y = 244.000000000000000000
+        Size.Width = 121.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Code Activit'#233
+        TextSettings.HorzAlign = Leading
+      end
+      object Edit15: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 14
+        Position.X = 120.000000000000000000
+        Position.Y = 244.000000000000000000
+        Size.Width = 217.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Text25: TText
+        Position.X = 16.000000000000000000
+        Position.Y = 274.000000000000000000
+        Size.Width = 121.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Raison d'#39'activit'#233
+        TextSettings.HorzAlign = Leading
+      end
+      object Edit16: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 13
+        Position.X = 120.000000000000000000
+        Position.Y = 274.000000000000000000
+        Size.Width = 217.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Text26: TText
+        Position.X = 363.000000000000000000
+        Position.Y = 244.000000000000000000
+        Size.Width = 121.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Nom d'#39'activit'#233
+        TextSettings.HorzAlign = Leading
+      end
+      object Edit17: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 11
+        Position.X = 467.000000000000000000
+        Position.Y = 244.000000000000000000
+        Size.Width = 239.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Text27: TText
+        Position.X = 16.000000000000000000
+        Position.Y = 304.000000000000000000
+        Size.Width = 121.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Adresse'
+        TextSettings.HorzAlign = Leading
+      end
+      object Edit18: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 10
+        Position.X = 120.000000000000000000
+        Position.Y = 304.000000000000000000
+        Size.Width = 586.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Text28: TText
+        Align = Top
+        Margins.Top = 11.000000000000000000
+        Position.Y = 11.000000000000000000
+        Size.Width = 717.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Ajouter une Activit'#233
+        TextSettings.Font.Family = 'Tajawal'
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.Font.StyleExt = {00050000000000000004000000}
+      end
+      object StringGrid1: TStringGrid
+        CanFocus = True
+        ClipChildren = True
+        Position.X = 16.000000000000000000
+        Position.Y = 39.000000000000000000
+        Size.Width = 690.000000000000000000
+        Size.Height = 197.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 43
+        RowCount = 3
+        Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, AutoDisplacement]
+        Viewport.Width = 690.000000000000000000
+        Viewport.Height = 197.000000000000000000
+      end
+      object Text30: TText
+        Position.X = 363.000000000000000000
+        Position.Y = 274.000000000000000000
+        Size.Width = 121.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Assiette (DA)'
+        TextSettings.HorzAlign = Leading
+      end
+      object Edit20: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 12
+        Position.X = 467.000000000000000000
+        Position.Y = 274.000000000000000000
+        Size.Width = 239.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = DataModule1.FDTable1
+    ScopeMappings = <>
+    Left = 344
+    Top = 168
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = StringGrid1
+      Columns = <
+        item
+          MemberName = 'mat_adh'
+        end
+        item
+          MemberName = 'nom_adh'
+        end
+        item
+          MemberName = 'pre_adh'
+        end
+        item
+          MemberName = 'date_adh'
+          Width = 100
+        end
+        item
+          MemberName = 'adr_adh'
+          Width = 100
+        end
+        item
+          MemberName = 'num_tel_adh'
+          Width = 100
+        end
+        item
+          MemberName = 'num_compt_banc'
+          Width = 100
+        end
+        item
+          MemberName = 'type_personne'
+          Width = 100
+        end>
     end
   end
 end

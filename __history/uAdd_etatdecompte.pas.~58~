@@ -47,6 +47,7 @@ type
     procedure Button1Click(Sender: TObject);
     procedure Edit1Change(Sender: TObject);
     procedure Rectangle1Click(Sender: TObject);
+    procedure StringGrid2CellClick(const Column: TColumn; const Row: Integer);
   private
     { Private declarations }
   public
@@ -113,7 +114,7 @@ begin
     DM.DataModule1.FDQuery1.SQL.Add(' insert into etat_de_decompte (periode,nature,assiette,mont_fact,solde,date_versement,mont_encai,mat_adh,code_act) values(:periode,:nature,:ass,:mont_fact,:solde,:date,:mont_enc,:mat,:code) ');
     DM.DataModule1.FDQuery1.ParamByName('periode').asstring := edit2.text;
     DM.DataModule1.FDQuery1.ParamByName('nature').asstring := edit14.text;
-    DM.DataModule1.FDQuery1.ParamByName('ass').asstring := edit1.text;
+    DM.DataModule1.FDQuery1.ParamByName('ass').asstring := Stringgrid2.Cells[4,Stringgrid2.Selected] // edit1.text;
     DM.DataModule1.FDQuery1.ParamByName('mont_fact').asstring := edit11.text;
     DM.DataModule1.FDQuery1.ParamByName('solde').asstring := floattostr(mat_ecai);
     DM.DataModule1.FDQuery1.ParamByName('date').asdate := now;
@@ -121,6 +122,18 @@ begin
     DM.DataModule1.FDQuery1.ParamByName('mat').asinteger := strtoint(Stringgrid1.Cells[0,Stringgrid1.Selected]);
     DM.DataModule1.FDQuery1.ParamByName('code').asinteger := strtoint(Stringgrid2.Cells[0,Stringgrid2.Selected]);
     DM.DataModule1.FDQuery1.ExecSQL;
+
+    DM.DataModule1.table_etat.Active := false;
+    DM.DataModule1.table_etat.Active := true;
+
+    DM.DataModule1.FDQuery1.SQL.Clear;
+    DM.DataModule1.FDQuery1.SQL.Add(' UPDATE activite SET assiette=:assiette where code_activite=:code ');
+    DM.DataModule1.FDQuery1.ParamByName('assiette').asinteger := strtoint(edit12.text);
+    DM.DataModule1.FDQuery1.ParamByName('code').asinteger := strtoint(Stringgrid2.Cells[0,Stringgrid2.Selected]);
+    DM.DataModule1.FDQuery1.ExecSQL;
+
+    DM.DataModule1.table_activite.Active := false;
+    DM.DataModule1.table_activite.Active := true;
 
     form7.Close;
 end;
@@ -131,6 +144,14 @@ begin
   DM.DataModule1.table_activite.Filtered:= true;
   DM.DataModule1.table_activite.Filter := 'mat_adh = ' + Stringgrid1.Cells[0,Stringgrid1.Selected];
   DM.DataModule1.table_activite.Filtered:= true;
+end;
+
+procedure TForm7.StringGrid2CellClick(const Column: TColumn;
+  const Row: Integer);
+begin
+
+  edit1.Text:= Stringgrid2.Cells[4,Stringgrid2.Selected];
+
 end;
 
 end.
