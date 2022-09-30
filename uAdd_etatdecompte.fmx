@@ -227,6 +227,7 @@ object Form7: TForm7
         TabOrder = 41
         RowCount = 6
         Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, AutoDisplacement]
+        OnCellClick = StringGrid2CellClick
         Viewport.Width = 503.000000000000000000
         Viewport.Height = 161.000000000000000000
       end
@@ -285,7 +286,7 @@ object Form7: TForm7
   object BindSourceDB1: TBindSourceDB
     DataSet = DataModule1.FDTable1
     ScopeMappings = <>
-    Left = 424
+    Left = 328
     Top = 264
   end
   object BindingsList1: TBindingsList
@@ -326,25 +327,30 @@ object Form7: TForm7
       Columns = <
         item
           MemberName = 'code_activite'
+          Width = 70
         end
         item
           MemberName = 'rais_act'
+          Width = 150
         end
         item
           MemberName = 'nom_act'
+          Width = 150
         end
         item
           MemberName = 'adr_act'
+          Width = 150
         end
         item
           MemberName = 'assiette'
+          Width = 150
         end>
     end
   end
   object BindSourceDB2: TBindSourceDB
     DataSet = DataModule1.table_activite
     ScopeMappings = <>
-    Left = 432
-    Top = 272
+    Left = 560
+    Top = 256
   end
 end

@@ -211,6 +211,11 @@ type
     StringGrid6: TStringGrid;
     BindSourceDB6: TBindSourceDB;
     LinkGridToDataSourceBindSourceDB6: TLinkGridToDataSource;
+    frxReport2: TfrxReport;
+    frxDBDataset3: TfrxDBDataset;
+    frxDBDataset4: TfrxDBDataset;
+    PopupMenu3: TPopupMenu;
+    MenuItem3: TMenuItem;
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle15Click(Sender: TObject);
@@ -244,6 +249,8 @@ type
     procedure Rectangle61Click(Sender: TObject);
     procedure Edit6Change(Sender: TObject);
     procedure Rectangle66Click(Sender: TObject);
+    procedure MenuItem3Click(Sender: TObject);
+    procedure frxReport2ClosePreview(Sender: TObject);
   private
     { Private declarations }
   public
@@ -380,6 +387,12 @@ begin
   DM.DataModule1.table_employee.Filtered := false;
 end;
 
+procedure TForm2.frxReport2ClosePreview(Sender: TObject);
+begin
+  DM.DataModule1.fdtable1.Filtered := false;
+  DM.DataModule1.table_etat.Filtered := false;
+end;
+
 procedure TForm2.Image7Click(Sender: TObject);
 begin
 
@@ -425,6 +438,20 @@ begin
   DM.DataModule1.table_employee.Filtered := true;
 
   FrxReport1.ShowReport();
+end;
+
+procedure TForm2.MenuItem3Click(Sender: TObject);
+begin
+
+  DM.DataModule1.fdtable1.Filtered := false;
+  DM.DataModule1.fdtable1.Filter := 'mat_adh = '+ Stringgrid6.Cells[5,Stringgrid6.Selected];
+  DM.DataModule1.fdtable1.Filtered := true;
+
+  DM.DataModule1.table_etat.Filtered := false;
+  DM.DataModule1.table_etat.Filter := 'id_etat = '+ Stringgrid6.Cells[0,Stringgrid6.Selected];
+  DM.DataModule1.table_etat.Filtered := true;
+
+  FrxReport2.ShowReport();
 end;
 
 procedure TForm2.nav_barMouseDown(Sender: TObject; Button: TMouseButton;

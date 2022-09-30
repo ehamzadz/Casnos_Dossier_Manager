@@ -103,3 +103,12 @@ Coordinates=128,476,40,51
 [Button1]
 Coordinates=366,210,53,51
 
+[Text4]
+Coordinates=128,476,41,51
+
+[DataModule1.table_etat]
+Coordinates=191,1,129,231
+
+[Edit4]
+Coordinates=366,280,40,51
+
