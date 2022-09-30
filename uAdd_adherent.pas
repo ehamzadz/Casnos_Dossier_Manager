@@ -127,7 +127,7 @@ begin
     DM.DataModule1.FDQuery1.ParamByName('nom').asstring := edit13.Text;
     DM.DataModule1.FDQuery1.ParamByName('adr').asstring := edit14.Text;
     DM.DataModule1.FDQuery1.ParamByName('ass').asinteger := strtoint(edit19.Text);
-    DM.DataModule1.FDQuery1.ParamByName('solde').asinteger := strtoint(edit19.Text);
+    DM.DataModule1.FDQuery1.ParamByName('solde').value := strtoint(edit19.Text)*0.15;
     DM.DataModule1.FDQuery1.ParamByName('mat').asinteger := strtoint(matricule_adh);     //matricule_adh
     DM.DataModule1.FDQuery1.ExecSQL;
 
@@ -175,7 +175,7 @@ begin
     DM.DataModule1.FDQuery1.ParamByName('nom').asstring := edit17.Text;
     DM.DataModule1.FDQuery1.ParamByName('adr').asstring := edit18.Text;
     DM.DataModule1.FDQuery1.ParamByName('ass').asinteger := strtoint(edit20.Text);
-    DM.DataModule1.FDQuery1.ParamByName('solde').asinteger := strtoint(edit20.Text);
+    DM.DataModule1.FDQuery1.ParamByName('solde').Value := strtoint(edit20.Text)*0.15;
     DM.DataModule1.FDQuery1.ParamByName('mat').asinteger := strtoint(Stringgrid1.Cells[0,Stringgrid1.Selected]);
     DM.DataModule1.FDQuery1.ExecSQL;
 

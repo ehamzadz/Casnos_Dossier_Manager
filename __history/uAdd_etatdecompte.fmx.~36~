@@ -15,17 +15,19 @@ object Form7: TForm7
     Size.Width = 875.000000000000000000
     Size.Height = 563.000000000000000000
     Size.PlatformDefault = False
-    TabIndex = 0
+    TabIndex = 1
     TabOrder = 0
     TabPosition = None
     Sizes = (
+      875s
+      563s
       875s
       563s)
     object TabItem2: TTabItem
       CustomIcon = <
         item
         end>
-      IsSelected = True
+      IsSelected = False
       Size.Width = 8.000000000000000000
       Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
@@ -225,8 +227,9 @@ object Form7: TForm7
         Size.Height = 202.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 41
-        RowCount = 6
+        RowCount = 7
         Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, AutoDisplacement]
+        OnCellClick = StringGrid2CellClick
         Viewport.Width = 503.000000000000000000
         Viewport.Height = 161.000000000000000000
       end
@@ -281,12 +284,271 @@ object Form7: TForm7
         TextSettings.HorzAlign = Leading
       end
     end
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Activit'#233
+      ExplicitSize.cx = 60.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object Rectangle2: TRectangle
+        Align = Bottom
+        Cursor = crHandPoint
+        Margins.Left = 11.000000000000000000
+        Margins.Top = 11.000000000000000000
+        Margins.Right = 11.000000000000000000
+        Margins.Bottom = 11.000000000000000000
+        Position.X = 11.000000000000000000
+        Position.Y = 511.000000000000000000
+        Size.Width = 853.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 10.000000000000000000
+        YRadius = 10.000000000000000000
+        object Text5: TText
+          Align = Center
+          HitTest = False
+          Size.Width = 102.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Ajouter'
+          TextSettings.Font.Family = 'Tajawal'
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.StyleExt = {00050000000000000004000000}
+        end
+        object ColorAnimation2: TColorAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Fill.Color'
+          StartValue = xFFE0E0E0
+          StopValue = claSeagreen
+          Trigger = 'IsMouseOver=true'
+          TriggerInverse = 'IsMouseOver=false'
+        end
+      end
+      object Text6: TText
+        Position.X = 40.000000000000000000
+        Position.Y = 194.000000000000000000
+        Size.Width = 105.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Montant Factur'#233
+        TextSettings.HorzAlign = Leading
+      end
+      object Edit5: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 16
+        TextSettings.HorzAlign = Center
+        Position.X = 144.000000000000000000
+        Position.Y = 194.000000000000000000
+        Size.Width = 153.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Text7: TText
+        Position.X = 40.000000000000000000
+        Position.Y = 284.000000000000000000
+        Size.Width = 105.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Montant encaiss'#233
+        TextSettings.HorzAlign = Leading
+      end
+      object Edit6: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 14
+        ReadOnly = True
+        TextSettings.HorzAlign = Center
+        Position.X = 144.000000000000000000
+        Position.Y = 284.000000000000000000
+        Enabled = False
+        Size.Width = 153.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Text8: TText
+        Position.X = 40.000000000000000000
+        Position.Y = 254.000000000000000000
+        Size.Width = 105.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Date de versement'
+        TextSettings.HorzAlign = Leading
+        object DateEdit2: TDateEdit
+          Date = 44832.000000000000000000
+          Enabled = False
+          Position.X = 104.000000000000000000
+          Position.Y = 1.000000000000000000
+          ReadOnly = True
+          Size.Width = 153.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          TextSettings.HorzAlign = Center
+        end
+      end
+      object Text9: TText
+        Position.X = 40.000000000000000000
+        Position.Y = 104.000000000000000000
+        Size.Width = 105.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Nature'
+        TextSettings.HorzAlign = Leading
+      end
+      object Edit7: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 13
+        TextSettings.HorzAlign = Center
+        Position.X = 144.000000000000000000
+        Position.Y = 104.000000000000000000
+        Size.Width = 153.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Text10: TText
+        Align = Top
+        Margins.Top = 11.000000000000000000
+        Position.Y = 11.000000000000000000
+        Size.Width = 875.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Etat de d'#233'compte'
+        TextSettings.Font.Family = 'Tajawal'
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.Font.StyleExt = {00050000000000000004000000}
+      end
+      object Edit8: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 11
+        TextSettings.HorzAlign = Center
+        Position.X = 144.000000000000000000
+        Position.Y = 134.000000000000000000
+        Size.Width = 153.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = Edit1Change
+      end
+      object Text11: TText
+        Position.X = 40.000000000000000000
+        Position.Y = 134.000000000000000000
+        Size.Width = 105.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Assiette'
+        TextSettings.HorzAlign = Leading
+      end
+      object Text12: TText
+        Position.X = 40.000000000000000000
+        Position.Y = 74.000000000000000000
+        Size.Width = 105.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'P'#233'riode'
+        TextSettings.HorzAlign = Leading
+      end
+      object Edit9: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 12
+        TextSettings.HorzAlign = Center
+        Position.X = 144.000000000000000000
+        Position.Y = 74.000000000000000000
+        Size.Width = 153.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object StringGrid3: TStringGrid
+        CanFocus = True
+        ClipChildren = True
+        Position.X = 336.000000000000000000
+        Position.Y = 74.000000000000000000
+        Size.Width = 507.000000000000000000
+        Size.Height = 202.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 42
+        RowCount = 3
+        Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, AutoDisplacement]
+        OnCellClick = StringGrid3CellClick
+        Viewport.Width = 503.000000000000000000
+        Viewport.Height = 161.000000000000000000
+      end
+      object StringGrid4: TStringGrid
+        CanFocus = True
+        ClipChildren = True
+        Position.X = 336.000000000000000000
+        Position.Y = 284.000000000000000000
+        Size.Width = 507.000000000000000000
+        Size.Height = 202.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 41
+        RowCount = 7
+        Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, AutoDisplacement]
+        OnCellClick = StringGrid2CellClick
+        Viewport.Width = 503.000000000000000000
+        Viewport.Height = 161.000000000000000000
+      end
+      object Text13: TText
+        Position.X = 40.000000000000000000
+        Position.Y = 164.000000000000000000
+        Size.Width = 105.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Montant'
+        TextSettings.HorzAlign = Leading
+      end
+      object Edit10: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 10
+        ReadOnly = True
+        TextSettings.HorzAlign = Center
+        Position.X = 144.000000000000000000
+        Position.Y = 164.000000000000000000
+        Enabled = False
+        Size.Width = 153.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Button2: TButton
+        Position.X = 39.000000000000000000
+        Position.Y = 336.000000000000000000
+        Size.Width = 258.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 44
+        Text = 'Calculer'
+      end
+      object Edit13: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 15
+        TextSettings.HorzAlign = Center
+        Position.X = 144.000000000000000000
+        Position.Y = 224.000000000000000000
+        Size.Width = 153.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Text14: TText
+        Position.X = 41.000000000000000000
+        Position.Y = 224.000000000000000000
+        Size.Width = 105.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Solde'
+        TextSettings.HorzAlign = Leading
+      end
+    end
   end
   object BindSourceDB1: TBindSourceDB
     DataSet = DataModule1.FDTable1
     ScopeMappings = <>
-    Left = 424
-    Top = 264
+    Left = 224
+    Top = 392
   end
   object BindingsList1: TBindingsList
     Methods = <>
@@ -326,25 +588,82 @@ object Form7: TForm7
       Columns = <
         item
           MemberName = 'code_activite'
+          Width = 70
         end
         item
           MemberName = 'rais_act'
+          Width = 150
         end
         item
           MemberName = 'nom_act'
+          Width = 150
         end
         item
           MemberName = 'adr_act'
+          Width = 150
         end
         item
           MemberName = 'assiette'
+          Width = 150
+        end>
+    end
+    object LinkGridToDataSourceBindSourceDB12: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = StringGrid3
+      Columns = <
+        item
+          MemberName = 'mat_adh'
+          Width = 70
+        end
+        item
+          MemberName = 'nom_adh'
+          Width = 150
+        end
+        item
+          MemberName = 'pre_adh'
+          Width = 150
+        end
+        item
+          MemberName = 'adr_adh'
+          Width = 150
+        end
+        item
+          MemberName = 'num_compt_banc'
+          Width = 150
+        end>
+    end
+    object LinkGridToDataSourceBindSourceDB22: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      GridControl = StringGrid4
+      Columns = <
+        item
+          MemberName = 'code_activite'
+          Width = 70
+        end
+        item
+          MemberName = 'rais_act'
+          Width = 150
+        end
+        item
+          MemberName = 'nom_act'
+          Width = 150
+        end
+        item
+          MemberName = 'adr_act'
+          Width = 150
+        end
+        item
+          MemberName = 'assiette'
+          Width = 150
         end>
     end
   end
   object BindSourceDB2: TBindSourceDB
     DataSet = DataModule1.table_activite
     ScopeMappings = <>
-    Left = 432
-    Top = 272
+    Left = 240
+    Top = 384
   end
 end

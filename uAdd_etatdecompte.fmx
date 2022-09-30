@@ -74,7 +74,7 @@ object Form7: TForm7
       end
       object Text17: TText
         Position.X = 40.000000000000000000
-        Position.Y = 194.000000000000000000
+        Position.Y = 224.000000000000000000
         Size.Width = 105.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -86,14 +86,14 @@ object Form7: TForm7
         TabOrder = 16
         TextSettings.HorzAlign = Center
         Position.X = 144.000000000000000000
-        Position.Y = 194.000000000000000000
+        Position.Y = 224.000000000000000000
         Size.Width = 153.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
       end
       object Text18: TText
         Position.X = 40.000000000000000000
-        Position.Y = 284.000000000000000000
+        Position.Y = 364.000000000000000000
         Size.Width = 105.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -106,7 +106,7 @@ object Form7: TForm7
         ReadOnly = True
         TextSettings.HorzAlign = Center
         Position.X = 144.000000000000000000
-        Position.Y = 284.000000000000000000
+        Position.Y = 364.000000000000000000
         Enabled = False
         Size.Width = 153.000000000000000000
         Size.Height = 22.000000000000000000
@@ -114,7 +114,7 @@ object Form7: TForm7
       end
       object Text19: TText
         Position.X = 40.000000000000000000
-        Position.Y = 254.000000000000000000
+        Position.Y = 334.000000000000000000
         Size.Width = 105.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -124,7 +124,6 @@ object Form7: TForm7
           Date = 44832.000000000000000000
           Enabled = False
           Position.X = 104.000000000000000000
-          Position.Y = 1.000000000000000000
           ReadOnly = True
           Size.Width = 153.000000000000000000
           Size.Height = 22.000000000000000000
@@ -235,7 +234,7 @@ object Form7: TForm7
       end
       object Text3: TText
         Position.X = 40.000000000000000000
-        Position.Y = 164.000000000000000000
+        Position.Y = 194.000000000000000000
         Size.Width = 105.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -248,16 +247,16 @@ object Form7: TForm7
         ReadOnly = True
         TextSettings.HorzAlign = Center
         Position.X = 144.000000000000000000
-        Position.Y = 164.000000000000000000
+        Position.Y = 194.000000000000000000
         Enabled = False
         Size.Width = 153.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
       end
       object Button1: TButton
-        Position.X = 39.000000000000000000
-        Position.Y = 336.000000000000000000
-        Size.Width = 258.000000000000000000
+        Position.X = 40.000000000000000000
+        Position.Y = 284.000000000000000000
+        Size.Width = 257.000000000000000000
         Size.Height = 30.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 44
@@ -269,14 +268,15 @@ object Form7: TForm7
         TabOrder = 15
         TextSettings.HorzAlign = Center
         Position.X = 144.000000000000000000
-        Position.Y = 224.000000000000000000
+        Position.Y = 164.000000000000000000
+        Enabled = False
         Size.Width = 153.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
       end
       object Text4: TText
-        Position.X = 41.000000000000000000
-        Position.Y = 224.000000000000000000
+        Position.X = 40.000000000000000000
+        Position.Y = 164.000000000000000000
         Size.Width = 105.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -312,7 +312,6 @@ object Form7: TForm7
         Stroke.Kind = None
         XRadius = 10.000000000000000000
         YRadius = 10.000000000000000000
-        OnClick = Rectangle1Click
         object Text5: TText
           Align = Center
           HitTest = False
@@ -344,7 +343,7 @@ object Form7: TForm7
       end
       object Edit5: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
-        TabOrder = 16
+        TabOrder = 17
         TextSettings.HorzAlign = Center
         Position.X = 144.000000000000000000
         Position.Y = 194.000000000000000000
@@ -354,7 +353,7 @@ object Form7: TForm7
       end
       object Text7: TText
         Position.X = 40.000000000000000000
-        Position.Y = 284.000000000000000000
+        Position.Y = 372.000000000000000000
         Size.Width = 105.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
@@ -363,11 +362,11 @@ object Form7: TForm7
       end
       object Edit6: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
-        TabOrder = 14
+        TabOrder = 15
         ReadOnly = True
         TextSettings.HorzAlign = Center
         Position.X = 144.000000000000000000
-        Position.Y = 284.000000000000000000
+        Position.Y = 372.000000000000000000
         Enabled = False
         Size.Width = 153.000000000000000000
         Size.Height = 22.000000000000000000
@@ -375,24 +374,12 @@ object Form7: TForm7
       end
       object Text8: TText
         Position.X = 40.000000000000000000
-        Position.Y = 254.000000000000000000
+        Position.Y = 342.000000000000000000
         Size.Width = 105.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
         Text = 'Date de versement'
         TextSettings.HorzAlign = Leading
-        object DateEdit2: TDateEdit
-          Date = 44832.000000000000000000
-          Enabled = False
-          Position.X = 104.000000000000000000
-          Position.Y = 1.000000000000000000
-          ReadOnly = True
-          Size.Width = 153.000000000000000000
-          Size.Height = 22.000000000000000000
-          Size.PlatformDefault = False
-          TabOrder = 0
-          TextSettings.HorzAlign = Center
-        end
       end
       object Text9: TText
         Position.X = 40.000000000000000000
@@ -405,7 +392,7 @@ object Form7: TForm7
       end
       object Edit7: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
-        TabOrder = 13
+        TabOrder = 14
         TextSettings.HorzAlign = Center
         Position.X = 144.000000000000000000
         Position.Y = 104.000000000000000000
@@ -427,7 +414,7 @@ object Form7: TForm7
       end
       object Edit8: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
-        TabOrder = 11
+        TabOrder = 12
         TextSettings.HorzAlign = Center
         Position.X = 144.000000000000000000
         Position.Y = 134.000000000000000000
@@ -456,7 +443,7 @@ object Form7: TForm7
       end
       object Edit9: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
-        TabOrder = 12
+        TabOrder = 13
         TextSettings.HorzAlign = Center
         Position.X = 144.000000000000000000
         Position.Y = 74.000000000000000000
@@ -472,7 +459,7 @@ object Form7: TForm7
         Size.Width = 507.000000000000000000
         Size.Height = 202.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 42
+        TabOrder = 43
         RowCount = 3
         Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, AutoDisplacement]
         OnCellClick = StringGrid3CellClick
@@ -487,7 +474,7 @@ object Form7: TForm7
         Size.Width = 507.000000000000000000
         Size.Height = 202.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 41
+        TabOrder = 42
         RowCount = 7
         Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, AutoDisplacement]
         OnCellClick = StringGrid2CellClick
@@ -505,7 +492,7 @@ object Form7: TForm7
       end
       object Edit10: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
-        TabOrder = 10
+        TabOrder = 11
         ReadOnly = True
         TextSettings.HorzAlign = Center
         Position.X = 144.000000000000000000
@@ -515,34 +502,46 @@ object Form7: TForm7
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
       end
-      object Button2: TButton
-        Position.X = 39.000000000000000000
-        Position.Y = 336.000000000000000000
-        Size.Width = 258.000000000000000000
-        Size.Height = 30.000000000000000000
-        Size.PlatformDefault = False
-        TabOrder = 44
-        Text = 'Calculer'
-        OnClick = Button1Click
-      end
       object Edit13: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
-        TabOrder = 15
+        TabOrder = 16
         TextSettings.HorzAlign = Center
         Position.X = 144.000000000000000000
-        Position.Y = 224.000000000000000000
+        Position.Y = 312.000000000000000000
+        Enabled = False
         Size.Width = 153.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
       end
       object Text14: TText
-        Position.X = 41.000000000000000000
-        Position.Y = 224.000000000000000000
+        Position.X = 40.000000000000000000
+        Position.Y = 312.000000000000000000
         Size.Width = 105.000000000000000000
         Size.Height = 22.000000000000000000
         Size.PlatformDefault = False
         Text = 'Solde'
         TextSettings.HorzAlign = Leading
+      end
+      object DateEdit2: TDateEdit
+        Date = 44832.000000000000000000
+        Enabled = False
+        Position.X = 144.000000000000000000
+        Position.Y = 342.000000000000000000
+        ReadOnly = True
+        Size.Width = 153.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        TextSettings.HorzAlign = Center
+      end
+      object Button2: TButton
+        Position.X = 40.000000000000000000
+        Position.Y = 246.000000000000000000
+        Size.Width = 257.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 44
+        Text = 'Calculer'
       end
     end
   end

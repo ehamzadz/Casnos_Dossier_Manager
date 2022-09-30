@@ -64,11 +64,11 @@ type
     StringGrid4: TStringGrid;
     Text13: TText;
     Edit10: TEdit;
-    Button2: TButton;
     Edit13: TEdit;
     Text14: TText;
     LinkGridToDataSourceBindSourceDB12: TLinkGridToDataSource;
     LinkGridToDataSourceBindSourceDB22: TLinkGridToDataSource;
+    Button2: TButton;
     procedure StringGrid1CellClick(const Column: TColumn; const Row: Integer);
     procedure Button1Click(Sender: TObject);
     procedure Edit1Change(Sender: TObject);
@@ -104,10 +104,12 @@ begin
     DM.DataModule1.FDQuery1.open;
 
     if DM.DataModule1.FDQuery1.FieldByName('mont_encai').Value>0 then begin
+
       solde := DM.DataModule1.FDQuery1.FieldByName('mont_encai').Value;
       mat_ecai := DM.DataModule1.FDQuery1.FieldByName('mont_encai').Value;
       edit4.text := floattostr(solde);
       edit12.text := floattostr(solde + strtofloat(edit3.text) - strtofloat(edit11.text));
+
     end else begin
       solde := 0;
       edit4.text := floattostr(solde);

@@ -36,6 +36,7 @@ Coordinates=10,840,59,33
 
 [StringGrid2]
 Coordinates=20,500,70,141
+Visible=True
 
 [Edit2]
 Coordinates=1211,686,40,51
@@ -63,7 +64,7 @@ Visible=True
 Coordinates=784,686,130,51
 
 [DataModule1.table_affiliations]
-Coordinates=10,10,162,447
+Coordinates=10,10,162,465
 
 [DataModule1.table_activite]
 Coordinates=500,30,146,33
@@ -89,10 +90,10 @@ Coordinates=510,20,115,411
 Coordinates=191,422,82,33
 
 [BindSourceDB2]
-Coordinates=200,420,130,267
+Coordinates=200,420,130,285
 
 []
-Coordinates=128,476,40,51
+Coordinates=10,686,53,51
 
 [Text3]
 Coordinates=10,763,41,51
@@ -110,7 +111,7 @@ Coordinates=298,686,41,51
 Coordinates=873,10,129,231
 
 [Edit4]
-Coordinates=941,763,40,51
+Coordinates=500,620,40,51
 
 [Text11]
 Coordinates=1073,686,46,51
@@ -184,5 +185,5 @@ Visible=True
 Coordinates=1277,686,41,51
 
 [Button2]
-Coordinates=10,686,53,51
+Coordinates=142,494,53,51
 

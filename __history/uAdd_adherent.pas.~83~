@@ -77,6 +77,10 @@ type
     BindSourceDB1: TBindSourceDB;
     BindingsList1: TBindingsList;
     LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
+    Text29: TText;
+    Edit19: TEdit;
+    Text30: TText;
+    Edit20: TEdit;
     procedure CheckBox1Change(Sender: TObject);
     procedure Rectangle9Click(Sender: TObject);
     procedure Rectangle1Click(Sender: TObject);
@@ -117,12 +121,14 @@ begin
   end else begin
 
     DM.DataModule1.FDQuery1.SQL.Clear;
-    DM.DataModule1.FDQuery1.SQL.Add(' INSERT INTO activite values(:code,:raison,:nom,:adr,:mat) ');
+    DM.DataModule1.FDQuery1.SQL.Add(' INSERT INTO activite values(:code,:raison,:nom,:adr,:ass,:solde,:mat) ');
     DM.DataModule1.FDQuery1.ParamByName('code').asinteger := strtoint(edit11.Text);
     DM.DataModule1.FDQuery1.ParamByName('raison').asstring := edit12.Text;
     DM.DataModule1.FDQuery1.ParamByName('nom').asstring := edit13.Text;
     DM.DataModule1.FDQuery1.ParamByName('adr').asstring := edit14.Text;
-    DM.DataModule1.FDQuery1.ParamByName('mat').asinteger := strtoint(matricule_adh);;     //matricule_adh
+    DM.DataModule1.FDQuery1.ParamByName('ass').asinteger := strtoint(edit19.Text);
+    DM.DataModule1.FDQuery1.ParamByName('solde').asinteger := strtoint(edit19.Text);
+    DM.DataModule1.FDQuery1.ParamByName('mat').asinteger := strtoint(matricule_adh);     //matricule_adh
     DM.DataModule1.FDQuery1.ExecSQL;
 
     // Create Affiliation
@@ -163,15 +169,15 @@ begin
   end else begin
 
     DM.DataModule1.FDQuery1.SQL.Clear;
-    DM.DataModule1.FDQuery1.SQL.Add(' INSERT INTO activite values(:code,:raison,:nom,:adr,:mat) ');
+    DM.DataModule1.FDQuery1.SQL.Add(' INSERT INTO activite values(:code,:raison,:nom,:adr,:ass,:solde,:mat) ');
     DM.DataModule1.FDQuery1.ParamByName('code').asinteger := strtoint(edit15.Text);
     DM.DataModule1.FDQuery1.ParamByName('raison').asstring := edit16.Text;
     DM.DataModule1.FDQuery1.ParamByName('nom').asstring := edit17.Text;
     DM.DataModule1.FDQuery1.ParamByName('adr').asstring := edit18.Text;
+    DM.DataModule1.FDQuery1.ParamByName('ass').asinteger := strtoint(edit20.Text);
+    DM.DataModule1.FDQuery1.ParamByName('solde').Value := strtoint(edit20.Text)*0.15;
     DM.DataModule1.FDQuery1.ParamByName('mat').asinteger := strtoint(Stringgrid1.Cells[0,Stringgrid1.Selected]);
     DM.DataModule1.FDQuery1.ExecSQL;
-
-
 
     //Refresh Tables
     DM.DataModule1.table_activite.Active := false;

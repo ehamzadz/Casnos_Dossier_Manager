@@ -227,7 +227,7 @@ object Form7: TForm7
         Size.Height = 202.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 41
-        RowCount = 6
+        RowCount = 7
         Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, AutoDisplacement]
         OnCellClick = StringGrid2CellClick
         Viewport.Width = 503.000000000000000000
@@ -475,7 +475,7 @@ object Form7: TForm7
         TabOrder = 42
         RowCount = 3
         Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, AutoDisplacement]
-        OnCellClick = StringGrid1CellClick
+        OnCellClick = StringGrid3CellClick
         Viewport.Width = 503.000000000000000000
         Viewport.Height = 161.000000000000000000
       end
@@ -488,11 +488,11 @@ object Form7: TForm7
         Size.Height = 202.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 41
-        RowCount = 6
+        RowCount = 7
         Options = [ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, AutoDisplacement]
         OnCellClick = StringGrid2CellClick
         Viewport.Width = 503.000000000000000000
-        Viewport.Height = 177.000000000000000000
+        Viewport.Height = 161.000000000000000000
       end
       object Text13: TText
         Position.X = 40.000000000000000000
@@ -523,7 +523,6 @@ object Form7: TForm7
         Size.PlatformDefault = False
         TabOrder = 44
         Text = 'Calculer'
-        OnClick = Button1Click
       end
       object Edit13: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
@@ -549,8 +548,8 @@ object Form7: TForm7
   object BindSourceDB1: TBindSourceDB
     DataSet = DataModule1.FDTable1
     ScopeMappings = <>
-    Left = 328
-    Top = 264
+    Left = 224
+    Top = 392
   end
   object BindingsList1: TBindingsList
     Methods = <>
@@ -635,11 +634,37 @@ object Form7: TForm7
           Width = 150
         end>
     end
+    object LinkGridToDataSourceBindSourceDB22: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      GridControl = StringGrid4
+      Columns = <
+        item
+          MemberName = 'code_activite'
+          Width = 70
+        end
+        item
+          MemberName = 'rais_act'
+          Width = 150
+        end
+        item
+          MemberName = 'nom_act'
+          Width = 150
+        end
+        item
+          MemberName = 'adr_act'
+          Width = 150
+        end
+        item
+          MemberName = 'assiette'
+          Width = 150
+        end>
+    end
   end
   object BindSourceDB2: TBindSourceDB
     DataSet = DataModule1.table_activite
     ScopeMappings = <>
-    Left = 560
-    Top = 256
+    Left = 240
+    Top = 384
   end
 end
