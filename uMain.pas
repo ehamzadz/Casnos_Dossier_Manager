@@ -238,6 +238,10 @@ type
     StringGrid7: TStringGrid;
     BindSourceDB7: TBindSourceDB;
     LinkGridToDataSourceBindSourceDB7: TLinkGridToDataSource;
+    PopupMenu4: TPopupMenu;
+    MenuItem4: TMenuItem;
+    frxReport3: TfrxReport;
+    frxDBDataset5: TfrxDBDataset;
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle15Click(Sender: TObject);
@@ -275,6 +279,8 @@ type
     procedure frxReport2ClosePreview(Sender: TObject);
     procedure Rectangle70Click(Sender: TObject);
     procedure Rectangle75Click(Sender: TObject);
+    procedure MenuItem4Click(Sender: TObject);
+    procedure frxReport3ClosePreview(Sender: TObject);
   private
     { Private declarations }
   public
@@ -418,6 +424,11 @@ begin
   DM.DataModule1.table_etat.Filtered := false;
 end;
 
+procedure TForm2.frxReport3ClosePreview(Sender: TObject);
+begin
+  DM.DataModule1.table_mise_ajour_total.Filtered := false;
+end;
+
 procedure TForm2.Image7Click(Sender: TObject);
 begin
 
@@ -477,6 +488,17 @@ begin
   DM.DataModule1.table_etat.Filtered := true;
 
   FrxReport2.ShowReport();
+end;
+
+procedure TForm2.MenuItem4Click(Sender: TObject);
+begin
+
+  DM.DataModule1.table_mise_ajour_total.Filtered := false;
+  DM.DataModule1.table_mise_ajour_total.Filter := 'id_mise_ajour = '+ Stringgrid7.Cells[0,Stringgrid7.Selected];
+  DM.DataModule1.table_mise_ajour_total.Filtered := true;
+
+  FrxReport3.ShowReport();
+
 end;
 
 procedure TForm2.nav_barMouseDown(Sender: TObject; Button: TMouseButton;

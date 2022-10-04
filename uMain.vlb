@@ -606,12 +606,6 @@ Coordinates=1097,976,75,33
 [Form3.BindSourceDB1]
 Coordinates=506,939,127,303
 
-[Form7.BindSourceDB2]
-Coordinates=316,501,127,177
-
-[Form7.BindSourceDB1]
-Coordinates=928,10,127,303
-
 [DataModule1.table_etat]
 Coordinates=1425,10,129,33
 Visible=False
