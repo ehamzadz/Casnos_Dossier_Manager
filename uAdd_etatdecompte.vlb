@@ -101,4 +101,5 @@ Coordinates=1145,763,53,51
 
 [DataModule1.table_etat]
 Coordinates=873,10,129,231
+Visible=False
 

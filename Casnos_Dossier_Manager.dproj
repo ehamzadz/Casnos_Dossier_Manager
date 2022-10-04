@@ -227,6 +227,10 @@
             <Form>Form7</Form>
             <FormType>fmx</FormType>
         </DCCReference>
+        <DCCReference Include="uAdd_mise_ajour.pas">
+            <Form>Form8</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

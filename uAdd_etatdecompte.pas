@@ -44,6 +44,7 @@ type
     procedure Edit1Change(Sender: TObject);
     procedure Rectangle1Click(Sender: TObject);
     procedure StringGrid2CellClick(const Column: TColumn; const Row: Integer);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
   public
@@ -58,7 +59,7 @@ implementation
 
 {$R *.fmx}
 
-uses DM;
+uses DM, uAdd_mise_ajour;
 
 procedure TForm7.Button1Click(Sender: TObject);
 var
@@ -103,6 +104,11 @@ begin
   end;
 end;
 
+procedure TForm7.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  DM.DataModule1.table_activite.Filtered:= false;
+end;
+
 procedure TForm7.Rectangle1Click(Sender: TObject);
 begin
 
@@ -127,7 +133,7 @@ begin
 //    DM.DataModule1.FDQuery1.ParamByName('assiette').asinteger := strtoint(edit12.text);
 //    DM.DataModule1.FDQuery1.ParamByName('code').asinteger := strtoint(Stringgrid2.Cells[0,Stringgrid2.Selected]);
 //    DM.DataModule1.FDQuery1.ExecSQL;
-////
+//
 //    DM.DataModule1.table_activite.Active := false;
 //    DM.DataModule1.table_activite.Active := true;
 
@@ -137,7 +143,7 @@ end;
 procedure TForm7.StringGrid1CellClick(const Column: TColumn;
   const Row: Integer);
 begin
-  DM.DataModule1.table_activite.Filtered:= true;
+  DM.DataModule1.table_activite.Filtered:= false;
   DM.DataModule1.table_activite.Filter := 'mat_adh = ' + Stringgrid1.Cells[0,Stringgrid1.Selected];
   DM.DataModule1.table_activite.Filtered:= true;
 end;

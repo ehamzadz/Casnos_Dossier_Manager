@@ -1,0 +1,241 @@
+object Form8: TForm8
+  Left = 0
+  Top = 0
+  Caption = 'Form8'
+  ClientHeight = 744
+  ClientWidth = 560
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object TabControl1: TTabControl
+    Align = Contents
+    Size.Width = 560.000000000000000000
+    Size.Height = 744.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = None
+    Sizes = (
+      560s
+      744s)
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Activit'#233
+      ExplicitSize.cx = 60.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object Rectangle1: TRectangle
+        Align = Bottom
+        Cursor = crHandPoint
+        Margins.Left = 11.000000000000000000
+        Margins.Top = 11.000000000000000000
+        Margins.Right = 11.000000000000000000
+        Margins.Bottom = 11.000000000000000000
+        Position.X = 11.000000000000000000
+        Position.Y = 692.000000000000000000
+        Size.Width = 538.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 10.000000000000000000
+        YRadius = 10.000000000000000000
+        OnClick = Rectangle1Click
+        object Text16: TText
+          Align = Center
+          HitTest = False
+          Size.Width = 102.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Ajouter'
+          TextSettings.Font.Family = 'Tajawal'
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.StyleExt = {00050000000000000004000000}
+        end
+        object ColorAnimation1: TColorAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Fill.Color'
+          StartValue = xFFE0E0E0
+          StopValue = claSeagreen
+          Trigger = 'IsMouseOver=true'
+          TriggerInverse = 'IsMouseOver=false'
+        end
+      end
+      object Text22: TText
+        Align = Top
+        Margins.Top = 11.000000000000000000
+        Position.Y = 11.000000000000000000
+        Size.Width = 560.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Mise '#224' jour'
+        TextSettings.Font.Family = 'Tajawal'
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.Font.StyleExt = {00050000000000000004000000}
+      end
+      object StringGrid1: TStringGrid
+        CanFocus = True
+        ClipChildren = True
+        Position.X = 32.000000000000000000
+        Position.Y = 50.000000000000000000
+        Size.Width = 507.000000000000000000
+        Size.Height = 202.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 30
+        RowCount = 2
+        Options = [ColumnResize, ColumnMove, ColLines, RowLines, RowSelect, Tabs, Header, AutoDisplacement]
+        Viewport.Width = 507.000000000000000000
+        Viewport.Height = 202.000000000000000000
+      end
+      object StringGrid2: TStringGrid
+        CanFocus = True
+        ClipChildren = True
+        Position.X = 32.000000000000000000
+        Position.Y = 260.000000000000000000
+        Size.Width = 507.000000000000000000
+        Size.Height = 202.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 29
+        RowCount = 3
+        Options = [ColumnResize, ColumnMove, ColLines, RowLines, RowSelect, Tabs, Header, AutoDisplacement]
+        Viewport.Width = 507.000000000000000000
+        Viewport.Height = 202.000000000000000000
+      end
+      object StringGrid3: TStringGrid
+        CanFocus = True
+        ClipChildren = True
+        Position.X = 32.000000000000000000
+        Position.Y = 470.000000000000000000
+        Size.Width = 507.000000000000000000
+        Size.Height = 202.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 28
+        RowCount = 8
+        Options = [ColumnResize, ColumnMove, ColLines, RowLines, RowSelect, Tabs, Header, AutoDisplacement]
+        Viewport.Width = 507.000000000000000000
+        Viewport.Height = 202.000000000000000000
+      end
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = DataModule1.FDTable1
+    ScopeMappings = <>
+    Left = 264
+    Top = 368
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = StringGrid1
+      Columns = <
+        item
+          MemberName = 'mat_adh'
+          Width = 70
+        end
+        item
+          MemberName = 'nom_adh'
+          Width = 150
+        end
+        item
+          MemberName = 'pre_adh'
+          Width = 150
+        end
+        item
+          MemberName = 'adr_adh'
+          Width = 150
+        end
+        item
+          MemberName = 'num_tel_adh'
+          Width = 150
+        end
+        item
+          MemberName = 'num_compt_banc'
+          Width = 150
+        end>
+    end
+    object LinkGridToDataSourceBindSourceDB2: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      GridControl = StringGrid2
+      Columns = <
+        item
+          MemberName = 'code_activite'
+          Width = 70
+        end
+        item
+          MemberName = 'rais_act'
+          Width = 150
+        end
+        item
+          MemberName = 'nom_act'
+          Width = 150
+        end
+        item
+          MemberName = 'adr_act'
+          Width = 150
+        end
+        item
+          MemberName = 'assiette'
+          Width = 150
+        end>
+    end
+    object LinkGridToDataSourceBindSourceDB3: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB3
+      GridControl = StringGrid3
+      Columns = <
+        item
+          MemberName = 'id_etat'
+          Width = 70
+        end
+        item
+          MemberName = 'periode'
+          Width = 100
+        end
+        item
+          MemberName = 'nature'
+          Width = 100
+        end
+        item
+          MemberName = 'assiette'
+          Width = 100
+        end
+        item
+          MemberName = 'mont_fact'
+          Width = 100
+        end
+        item
+          MemberName = 'mont_encai'
+          Width = 100
+        end
+        item
+          MemberName = 'date_versement'
+          Width = 100
+        end>
+    end
+  end
+  object BindSourceDB2: TBindSourceDB
+    DataSet = DataModule1.table_activite
+    ScopeMappings = <>
+    Left = 272
+    Top = 376
+  end
+  object BindSourceDB3: TBindSourceDB
+    DataSet = DataModule1.table_etat
+    ScopeMappings = <>
+    Left = 280
+    Top = 384
+  end
+end

@@ -194,7 +194,7 @@ type
     ColorAnimation7: TColorAnimation;
     Rectangle62: TRectangle;
     Text37: TText;
-    pv_eval: TTabItem;
+    etat: TTabItem;
     Rectangle63: TRectangle;
     Rectangle64: TRectangle;
     Rectangle65: TRectangle;
@@ -216,6 +216,28 @@ type
     frxDBDataset4: TfrxDBDataset;
     PopupMenu3: TPopupMenu;
     MenuItem3: TMenuItem;
+    Rectangle70: TRectangle;
+    Image10: TImage;
+    ColorAnimation8: TColorAnimation;
+    Rectangle71: TRectangle;
+    Text43: TText;
+    TabItem1: TTabItem;
+    Rectangle72: TRectangle;
+    Rectangle73: TRectangle;
+    Rectangle74: TRectangle;
+    Rectangle75: TRectangle;
+    Rectangle76: TRectangle;
+    Text44: TText;
+    Text45: TText;
+    Rectangle77: TRectangle;
+    Rectangle78: TRectangle;
+    Text46: TText;
+    Text47: TText;
+    Edit7: TEdit;
+    Text48: TText;
+    StringGrid7: TStringGrid;
+    BindSourceDB7: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB7: TLinkGridToDataSource;
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle15Click(Sender: TObject);
@@ -251,6 +273,8 @@ type
     procedure Rectangle66Click(Sender: TObject);
     procedure MenuItem3Click(Sender: TObject);
     procedure frxReport2ClosePreview(Sender: TObject);
+    procedure Rectangle70Click(Sender: TObject);
+    procedure Rectangle75Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -265,7 +289,8 @@ implementation
 
 {$R *.fmx}
 
-uses uLogin, DM, uAdd_adherent, uAdd_affiliation, uPrinter, uAdd_etatdecompte;
+uses uLogin, DM, uAdd_adherent, uAdd_affiliation, uPrinter, uAdd_etatdecompte,
+  uAdd_mise_ajour;
 
 procedure TForm2.btn_add_adherentClick(Sender: TObject);
 begin
@@ -570,6 +595,22 @@ end;
 procedure TForm2.Rectangle66Click(Sender: TObject);
 begin
   form7.ShowModal;
+end;
+
+procedure TForm2.Rectangle70Click(Sender: TObject);
+var
+  this :TButton;
+begin
+  this := TButton(sender);
+  current_tab.Parent := this;
+  text_title.Text := 'Mise à jour';
+  tabcontrol1.TabIndex := 6;
+
+end;
+
+procedure TForm2.Rectangle75Click(Sender: TObject);
+begin
+  form8.showmodal;
 end;
 
 procedure TForm2.Rectangle7Click(Sender: TObject);

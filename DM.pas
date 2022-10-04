@@ -21,6 +21,7 @@ type
     table_employee: TFDTable;
     table_societe: TFDTable;
     table_etat: TFDTable;
+    table_mise_ajour_total: TFDTable;
   private
     { Private declarations }
   public

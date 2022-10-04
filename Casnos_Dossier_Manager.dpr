@@ -10,7 +10,8 @@ uses
   uAdd_affiliation in 'uAdd_affiliation.pas' {Form4},
   uPrinter in 'uPrinter.pas' {Form5},
   uAdd_société in 'uAdd_société.pas' {Form6},
-  uAdd_etatdecompte in 'uAdd_etatdecompte.pas' {Form7};
+  uAdd_etatdecompte in 'uAdd_etatdecompte.pas' {Form7},
+  uAdd_mise_ajour in 'uAdd_mise_ajour.pas' {Form8};
 
 {$R *.res}
 
@@ -24,5 +25,6 @@ begin
   Application.CreateForm(TForm4, Form4);
   Application.CreateForm(TForm5, Form5);
   Application.CreateForm(TForm6, Form6);
+  Application.CreateForm(TForm8, Form8);
   Application.Run;
 end.

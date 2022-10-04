@@ -8,7 +8,7 @@ object DataModule1: TDataModule1
       'DriverID=MSAcc')
     Connected = True
     LoginPrompt = False
-    Left = 136
+    Left = 128
     Top = 80
   end
   object FDQuery1: TFDQuery
@@ -67,6 +67,13 @@ object DataModule1: TDataModule1
     Connection = FDConnection1
     TableName = 'etat_de_decompte'
     Left = 408
+    Top = 240
+  end
+  object table_mise_ajour_total: TFDTable
+    Active = True
+    Connection = FDConnection1
+    TableName = 'qry_mise_ajour_total'
+    Left = 296
     Top = 240
   end
 end
