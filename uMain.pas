@@ -264,6 +264,10 @@ type
     StringGrid8: TStringGrid;
     BindSourceDB8: TBindSourceDB;
     LinkGridToDataSourceBindSourceDB8: TLinkGridToDataSource;
+    PopupMenu5: TPopupMenu;
+    MenuItem5: TMenuItem;
+    frxReport4: TfrxReport;
+    frxDBDataset6: TfrxDBDataset;
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle15Click(Sender: TObject);
@@ -305,6 +309,10 @@ type
     procedure frxReport3ClosePreview(Sender: TObject);
     procedure Rectangle79Click(Sender: TObject);
     procedure Rectangle84Click(Sender: TObject);
+    procedure MenuItem5Click(Sender: TObject);
+    procedure frxReport4ClosePreview(Sender: TObject);
+    procedure Edit8Change(Sender: TObject);
+    procedure Edit7Change(Sender: TObject);
   private
     { Private declarations }
   public
@@ -420,6 +428,24 @@ begin
   end else DM.DataModule1.table_etat.Filtered:= false;
 end;
 
+procedure TForm2.Edit7Change(Sender: TObject);
+begin
+  if edit7.Text<>'' then begin
+    DM.DataModule1.table_mise_ajour_total.Filtered:= false;
+    DM.DataModule1.table_mise_ajour_total.Filter := 'id_mise_ajour like ' + quotedstr(edit7.Text);
+    DM.DataModule1.table_mise_ajour_total.Filtered:= true;
+  end else DM.DataModule1.table_mise_ajour_total.Filtered:= false;
+end;
+
+procedure TForm2.Edit8Change(Sender: TObject);
+begin
+  if edit8.Text<>'' then begin
+    DM.DataModule1.table_mise_en_demeur.Filtered:= false;
+    DM.DataModule1.table_mise_en_demeur.Filter := 'id_mise_en_demeur like ' + quotedstr(edit8.Text);
+    DM.DataModule1.table_mise_en_demeur.Filtered:= true;
+  end else DM.DataModule1.table_mise_en_demeur.Filtered:= false;
+end;
+
 procedure TForm2.FormCreate(Sender: TObject);
 begin
   i := 1;
@@ -451,6 +477,11 @@ end;
 procedure TForm2.frxReport3ClosePreview(Sender: TObject);
 begin
   DM.DataModule1.table_mise_ajour_total.Filtered := false;
+end;
+
+procedure TForm2.frxReport4ClosePreview(Sender: TObject);
+begin
+  DM.DataModule1.table_mise_en_demeur.Filtered := false;
 end;
 
 procedure TForm2.Image7Click(Sender: TObject);
@@ -522,6 +553,16 @@ begin
   DM.DataModule1.table_mise_ajour_total.Filtered := true;
 
   FrxReport3.ShowReport();
+
+end;
+
+procedure TForm2.MenuItem5Click(Sender: TObject);
+begin
+  DM.DataModule1.table_mise_en_demeur.Filtered := false;
+  DM.DataModule1.table_mise_en_demeur.Filter := 'id_mise_en_demeur = '+ Stringgrid8.Cells[0,Stringgrid8.Selected];
+  DM.DataModule1.table_mise_en_demeur.Filtered := true;
+
+  FrxReport4.ShowReport();
 
 end;
 
