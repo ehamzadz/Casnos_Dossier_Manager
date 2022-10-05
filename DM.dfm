@@ -76,4 +76,12 @@ object DataModule1: TDataModule1
     Left = 296
     Top = 240
   end
+  object table_mise_en_demeur: TFDTable
+    Active = True
+    IndexFieldNames = 'id_mise_en_demeur'
+    Connection = FDConnection1
+    TableName = 'mise_en_demeur'
+    Left = 128
+    Top = 240
+  end
 end

@@ -22,6 +22,7 @@ type
     table_societe: TFDTable;
     table_etat: TFDTable;
     table_mise_ajour_total: TFDTable;
+    table_mise_en_demeur: TFDTable;
   private
     { Private declarations }
   public

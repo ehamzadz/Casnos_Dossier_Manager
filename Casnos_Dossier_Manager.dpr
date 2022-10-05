@@ -11,7 +11,8 @@ uses
   uPrinter in 'uPrinter.pas' {Form5},
   uAdd_société in 'uAdd_société.pas' {Form6},
   uAdd_etatdecompte in 'uAdd_etatdecompte.pas' {Form7},
-  uAdd_mise_ajour in 'uAdd_mise_ajour.pas' {Form8};
+  uAdd_mise_ajour in 'uAdd_mise_ajour.pas' {Form8},
+  uAdd_mise_en_demeure in 'uAdd_mise_en_demeure.pas' {Form9};
 
 {$R *.res}
 
@@ -26,5 +27,6 @@ begin
   Application.CreateForm(TForm5, Form5);
   Application.CreateForm(TForm6, Form6);
   Application.CreateForm(TForm8, Form8);
+  Application.CreateForm(TForm9, Form9);
   Application.Run;
 end.

@@ -1,0 +1,47 @@
+unit uAdd_mise_en_demeure;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, System.Rtti,
+  FMX.Grid.Style, FMX.ScrollBox, FMX.Grid, FMX.Ani, FMX.Objects, FMX.StdCtrls,
+  FMX.ListBox, FMX.DateTimeCtrls, FMX.Controls.Presentation, FMX.Edit,
+  FMX.TabControl, Data.Bind.EngExt, Fmx.Bind.DBEngExt, Fmx.Bind.Grid,
+  System.Bindings.Outputs, Fmx.Bind.Editors, Data.Bind.Components,
+  Data.Bind.Grid, Data.Bind.DBScope;
+
+type
+  TForm9 = class(TForm)
+    TabControl1: TTabControl;
+    TabItem2: TTabItem;
+    Rectangle1: TRectangle;
+    Text16: TText;
+    ColorAnimation1: TColorAnimation;
+    Text22: TText;
+    StringGrid1: TStringGrid;
+    BindSourceDB1: TBindSourceDB;
+    BindingsList1: TBindingsList;
+    LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
+    Text1: TText;
+    Edit1: TEdit;
+    Text2: TText;
+    Edit2: TEdit;
+    Text3: TText;
+    Edit3: TEdit;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form9: TForm9;
+
+implementation
+
+{$R *.fmx}
+
+uses DM;
+
+end.

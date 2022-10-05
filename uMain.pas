@@ -221,7 +221,7 @@ type
     ColorAnimation8: TColorAnimation;
     Rectangle71: TRectangle;
     Text43: TText;
-    TabItem1: TTabItem;
+    mise_ajour: TTabItem;
     Rectangle72: TRectangle;
     Rectangle73: TRectangle;
     Rectangle74: TRectangle;
@@ -242,6 +242,28 @@ type
     MenuItem4: TMenuItem;
     frxReport3: TfrxReport;
     frxDBDataset5: TfrxDBDataset;
+    Rectangle79: TRectangle;
+    Image11: TImage;
+    ColorAnimation9: TColorAnimation;
+    Rectangle80: TRectangle;
+    Text49: TText;
+    TabItem1: TTabItem;
+    Rectangle81: TRectangle;
+    Rectangle82: TRectangle;
+    Rectangle83: TRectangle;
+    Rectangle84: TRectangle;
+    Rectangle85: TRectangle;
+    Text50: TText;
+    Text51: TText;
+    Rectangle86: TRectangle;
+    Rectangle87: TRectangle;
+    Text52: TText;
+    Text53: TText;
+    Edit8: TEdit;
+    Text54: TText;
+    StringGrid8: TStringGrid;
+    BindSourceDB8: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB8: TLinkGridToDataSource;
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle15Click(Sender: TObject);
@@ -281,6 +303,8 @@ type
     procedure Rectangle75Click(Sender: TObject);
     procedure MenuItem4Click(Sender: TObject);
     procedure frxReport3ClosePreview(Sender: TObject);
+    procedure Rectangle79Click(Sender: TObject);
+    procedure Rectangle84Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -296,7 +320,7 @@ implementation
 {$R *.fmx}
 
 uses uLogin, DM, uAdd_adherent, uAdd_affiliation, uPrinter, uAdd_etatdecompte,
-  uAdd_mise_ajour;
+  uAdd_mise_ajour, uAdd_mise_en_demeure;
 
 procedure TForm2.btn_add_adherentClick(Sender: TObject);
 begin
@@ -635,6 +659,16 @@ begin
   form8.showmodal;
 end;
 
+procedure TForm2.Rectangle79Click(Sender: TObject);
+var
+  this :TButton;
+begin
+  this := TButton(sender);
+  current_tab.Parent := this;
+  text_title.Text := 'Mise en demeure';
+  tabcontrol1.TabIndex := 7;
+end;
+
 procedure TForm2.Rectangle7Click(Sender: TObject);
 var
   this :TButton;
@@ -643,6 +677,11 @@ begin
   current_tab.Parent := this;
   text_title.Text := 'Activités';
   tabcontrol1.TabIndex := 2;
+end;
+
+procedure TForm2.Rectangle84Click(Sender: TObject);
+begin
+  form9.ShowModal;
 end;
 
 procedure TForm2.SubMenu_AnimationFinish(Sender: TObject);

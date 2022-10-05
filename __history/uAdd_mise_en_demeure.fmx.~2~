@@ -1,0 +1,175 @@
+object Form9: TForm9
+  Left = 0
+  Top = 0
+  BorderStyle = Single
+  ClientHeight = 556
+  ClientWidth = 695
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object TabControl1: TTabControl
+    Align = Contents
+    Size.Width = 695.000000000000000000
+    Size.Height = 556.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = None
+    Sizes = (
+      695s
+      556s)
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Activit'#233
+      ExplicitSize.cx = 60.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object Rectangle1: TRectangle
+        Align = Bottom
+        Cursor = crHandPoint
+        Margins.Left = 11.000000000000000000
+        Margins.Top = 11.000000000000000000
+        Margins.Right = 11.000000000000000000
+        Margins.Bottom = 11.000000000000000000
+        Position.X = 11.000000000000000000
+        Position.Y = 504.000000000000000000
+        Size.Width = 673.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 10.000000000000000000
+        YRadius = 10.000000000000000000
+        object Text16: TText
+          Align = Center
+          HitTest = False
+          Size.Width = 102.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Ajouter'
+          TextSettings.Font.Family = 'Tajawal'
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.StyleExt = {00050000000000000004000000}
+        end
+        object ColorAnimation1: TColorAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Fill.Color'
+          StartValue = xFFE0E0E0
+          StopValue = claSeagreen
+          Trigger = 'IsMouseOver=true'
+          TriggerInverse = 'IsMouseOver=false'
+        end
+      end
+      object Text17: TText
+        Position.X = 40.000000000000000000
+        Position.Y = 78.000000000000000000
+        Size.Width = 121.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Code Activit'#233
+        TextSettings.HorzAlign = Leading
+      end
+      object Edit11: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 14
+        Position.X = 144.000000000000000000
+        Position.Y = 78.000000000000000000
+        Size.Width = 153.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Text18: TText
+        Position.X = 40.000000000000000000
+        Position.Y = 126.000000000000000000
+        Size.Width = 121.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Raison d'#39'activit'#233
+        TextSettings.HorzAlign = Leading
+      end
+      object Edit12: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 13
+        Position.X = 144.000000000000000000
+        Position.Y = 126.000000000000000000
+        Size.Width = 153.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Text19: TText
+        Position.X = 328.000000000000000000
+        Position.Y = 78.000000000000000000
+        Size.Width = 121.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Nom d'#39'activit'#233
+        TextSettings.HorzAlign = Leading
+      end
+      object Edit13: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 11
+        Position.X = 432.000000000000000000
+        Position.Y = 78.000000000000000000
+        Size.Width = 217.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Text20: TText
+        Position.X = 40.000000000000000000
+        Position.Y = 190.000000000000000000
+        Size.Width = 121.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Adresse'
+        TextSettings.HorzAlign = Leading
+      end
+      object Edit14: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 10
+        Position.X = 144.000000000000000000
+        Position.Y = 190.000000000000000000
+        Size.Width = 505.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Text22: TText
+        Align = Top
+        Margins.Top = 11.000000000000000000
+        Position.Y = 11.000000000000000000
+        Size.Width = 695.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Mise en demeure'
+        TextSettings.Font.Family = 'Tajawal'
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.Font.StyleExt = {00050000000000000004000000}
+      end
+      object Text29: TText
+        Position.X = 328.000000000000000000
+        Position.Y = 126.000000000000000000
+        Size.Width = 121.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Assiette (DA)'
+        TextSettings.HorzAlign = Leading
+      end
+      object Edit19: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 12
+        Position.X = 432.000000000000000000
+        Position.Y = 126.000000000000000000
+        Size.Width = 217.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+end

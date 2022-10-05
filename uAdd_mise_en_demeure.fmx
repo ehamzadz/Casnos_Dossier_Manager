@@ -1,0 +1,200 @@
+object Form9: TForm9
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = Single
+  ClientHeight = 447
+  ClientWidth = 575
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object TabControl1: TTabControl
+    Align = Contents
+    Size.Width = 575.000000000000000000
+    Size.Height = 447.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = None
+    Sizes = (
+      575s
+      447s)
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Activit'#233
+      ExplicitSize.cx = 60.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object Rectangle1: TRectangle
+        Align = Bottom
+        Cursor = crHandPoint
+        Margins.Left = 11.000000000000000000
+        Margins.Top = 11.000000000000000000
+        Margins.Right = 11.000000000000000000
+        Margins.Bottom = 11.000000000000000000
+        Position.X = 11.000000000000000000
+        Position.Y = 395.000000000000000000
+        Size.Width = 553.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 10.000000000000000000
+        YRadius = 10.000000000000000000
+        OnClick = Rectangle1Click
+        object Text16: TText
+          Align = Center
+          HitTest = False
+          Size.Width = 102.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Ajouter'
+          TextSettings.Font.Family = 'Tajawal'
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.StyleExt = {00050000000000000004000000}
+        end
+        object ColorAnimation1: TColorAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Fill.Color'
+          StartValue = xFFE0E0E0
+          StopValue = claSeagreen
+          Trigger = 'IsMouseOver=true'
+          TriggerInverse = 'IsMouseOver=false'
+        end
+      end
+      object Text22: TText
+        Align = Top
+        Margins.Top = 11.000000000000000000
+        Position.Y = 11.000000000000000000
+        Size.Width = 575.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Mise en demeure'
+        TextSettings.Font.Family = 'Tajawal'
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.Font.StyleExt = {00050000000000000004000000}
+      end
+      object StringGrid1: TStringGrid
+        CanFocus = True
+        ClipChildren = True
+        Position.X = 24.000000000000000000
+        Position.Y = 50.000000000000000000
+        Size.Width = 530.000000000000000000
+        Size.Height = 202.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 30
+        RowCount = 2
+        Options = [ColumnResize, ColumnMove, ColLines, RowLines, RowSelect, Tabs, Header, AutoDisplacement]
+        Viewport.Width = 526.000000000000000000
+        Viewport.Height = 177.000000000000000000
+      end
+      object Text1: TText
+        Position.X = 48.000000000000000000
+        Position.Y = 276.000000000000000000
+        Size.Width = 137.000000000000000000
+        Size.Height = 45.000000000000000000
+        Size.PlatformDefault = False
+        Text = #1575#1604#1573#1588#1578#1585#1575#1603#1575#1578' '#1575#1604#1585#1574#1610#1587#1610#1577' ('#1583#1580')    Prix Dette (DA)'
+      end
+      object Edit1: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 34
+        TextSettings.HorzAlign = Center
+        Position.X = 24.000000000000000000
+        Position.Y = 321.000000000000000000
+        Size.Width = 177.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Text2: TText
+        Position.X = 223.000000000000000000
+        Position.Y = 276.000000000000000000
+        Size.Width = 178.000000000000000000
+        Size.Height = 45.000000000000000000
+        Size.PlatformDefault = False
+        Text = #1586#1610#1575#1583#1577' '#1575#1604#1578#1571#1582#1610#1585' '#1593#1606' '#1583#1601#1593' '#1575#1604#1573#1588#1578#1585#1575#1603#1575#1578'('#1583#1580')    P'#233'nalit'#233' retard (DA)'
+      end
+      object Edit2: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 33
+        TextSettings.HorzAlign = Center
+        Position.X = 223.000000000000000000
+        Position.Y = 321.000000000000000000
+        Size.Width = 178.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Text3: TText
+        Position.X = 439.000000000000000000
+        Position.Y = 276.000000000000000000
+        Size.Width = 98.000000000000000000
+        Size.Height = 45.000000000000000000
+        Size.PlatformDefault = False
+        Text = #1575#1604#1587#1606#1577'            Periode'
+      end
+      object Edit3: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 32
+        TextSettings.HorzAlign = Center
+        Position.X = 423.000000000000000000
+        Position.Y = 321.000000000000000000
+        Size.Width = 131.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object DateEdit1: TDateEdit
+        Date = 44839.000000000000000000
+        TodayDefault = True
+        Position.X = 454.000000000000000000
+        Position.Y = 368.000000000000000000
+        TabOrder = 37
+        TextSettings.HorzAlign = Center
+      end
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = DataModule1.FDTable1
+    ScopeMappings = <>
+    Left = 48
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = StringGrid1
+      Columns = <
+        item
+          MemberName = 'mat_adh'
+          Width = 70
+        end
+        item
+          MemberName = 'nom_adh'
+          Width = 150
+        end
+        item
+          MemberName = 'pre_adh'
+          Width = 100
+        end
+        item
+          MemberName = 'num_tel_adh'
+          Width = 100
+        end
+        item
+          MemberName = 'num_compt_banc'
+          Width = 100
+        end>
+    end
+  end
+end

@@ -96,8 +96,8 @@ object Form8: TForm8
         RowCount = 2
         Options = [ColumnResize, ColumnMove, ColLines, RowLines, RowSelect, Tabs, Header, AutoDisplacement]
         OnCellClick = StringGrid1CellClick
-        Viewport.Width = 503.000000000000000000
-        Viewport.Height = 161.000000000000000000
+        Viewport.Width = 507.000000000000000000
+        Viewport.Height = 202.000000000000000000
       end
       object StringGrid2: TStringGrid
         CanFocus = True
@@ -111,8 +111,8 @@ object Form8: TForm8
         RowCount = 3
         Options = [ColumnResize, ColumnMove, ColLines, RowLines, RowSelect, Tabs, Header, AutoDisplacement]
         OnCellClick = StringGrid2CellClick
-        Viewport.Width = 503.000000000000000000
-        Viewport.Height = 161.000000000000000000
+        Viewport.Width = 507.000000000000000000
+        Viewport.Height = 202.000000000000000000
       end
       object StringGrid3: TStringGrid
         CanFocus = True
@@ -125,8 +125,8 @@ object Form8: TForm8
         TabOrder = 28
         RowCount = 8
         Options = [ColumnResize, ColumnMove, ColLines, RowLines, RowSelect, Tabs, Header, AutoDisplacement]
-        Viewport.Width = 487.000000000000000000
-        Viewport.Height = 161.000000000000000000
+        Viewport.Width = 507.000000000000000000
+        Viewport.Height = 202.000000000000000000
       end
     end
   end
